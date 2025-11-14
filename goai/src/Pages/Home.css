@@ -25,9 +25,10 @@
 }
 .hero-image {
   position: absolute;
+  top: 20% !important;
   bottom: 0;          /* anchor to bottom */
-  right: 5%;          /* keep some margin from right */
-  max-width: 35%;     /* responsive size */
+  right: 3%;          /* keep some margin from right */
+  max-width: 40%;     /* responsive size */
   z-index: 0;         /* behind text */
   pointer-events: none;
   filter: drop-shadow(0 0 40px rgba(156, 77, 255, 0.7)); /* glowing effect */
@@ -123,7 +124,7 @@
 /* ===== TYPOGRAPHY ===== */
 .text-content h1 {
   font-size: 79px;
-  font-weight: 500 !important;
+  font-weight: 600 !important;
   line-height: 1.05;
   margin: 0 0 2rem;
   letter-spacing: -1.5px;
