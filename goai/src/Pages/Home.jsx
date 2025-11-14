@@ -5,7 +5,7 @@ import "./Home.css";
 export default function Home() {
   return (
     <>
-      <section className="hero-section">
+    <section className="hero-section">
   <div className="background-effects"></div>
 
   <div className="content-wrapper">
@@ -45,7 +45,10 @@ export default function Home() {
     <div className="orb orb-3"></div>
   </div>
 
+  {/* Hero Image */}
+  <img src={Images.heroimage} alt="heroimage" className="hero-image" />
 </section>
+
 <section className="mission-section">
   <div className="background-effects"></div>
 

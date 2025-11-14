@@ -23,6 +23,35 @@
     linear-gradient(135deg, #0a0a0a 0%, #000000 100%);
   background-attachment: fixed;
 }
+.hero-image {
+  position: absolute;
+  bottom: 0;          /* anchor to bottom */
+  right: 5%;          /* keep some margin from right */
+  max-width: 35%;     /* responsive size */
+  z-index: 0;         /* behind text */
+  pointer-events: none;
+  filter: drop-shadow(0 0 40px rgba(156, 77, 255, 0.7)); /* glowing effect */
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.hero-image:hover {
+  transform: scale(1.05) rotate(1.5deg); /* subtle hover animation */
+  filter: drop-shadow(0 0 60px rgba(156, 77, 255, 0.9));
+}
+
+/* Optional: make image responsive for smaller screens */
+@media (max-width: 1024px) {
+  .hero-image {
+    max-width: 50%;
+    right: 2%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-image {
+    display: none; /* hide on mobile for performance */
+  }
+}
 
 /* Subtle animated background dots */
 .background-effects {
@@ -93,7 +122,7 @@
 
 /* ===== TYPOGRAPHY ===== */
 .text-content h1 {
-  font-size: clamp(3rem, 4.5vw, 5rem);
+  font-size: 79px;
   font-weight: 500 !important;
   line-height: 1.05;
   margin: 0 0 2rem;
@@ -122,19 +151,11 @@
   transform: translateY(20px);
 }
 
-.stat-item:nth-child(1) {
-  animation-delay: 0.2s;
-}
-.stat-item:nth-child(2) {
-  animation-delay: 0.4s;
-}
-.stat-item:nth-child(3) {
-  animation-delay: 0.6s;
-}
+
 
 .stat-item strong {
   display: block;
-  font-size: clamp(2.2rem, 3vw, 3.5rem);
+  font-size: 40px;
   font-weight: 400;
   background: linear-gradient(120deg, #ffffff, #cccccc);
   -webkit-background-clip: text;
@@ -337,14 +358,14 @@
 }
 
 .mission-content h1 {
-  font-size: clamp(3rem, 4vw, 4.5rem);
+  font-size: 100px;
   margin-bottom: 1.5rem;
   font-weight: 600;
   letter-spacing: -1px;
 }
 
 .mission-content p {
-  font-size: clamp(1.1rem, 1.5vw, 1.3rem);
+  font-size:20px; 
   line-height: 1.8;
   color: rgba(255, 255, 255, 0.85);
 }
