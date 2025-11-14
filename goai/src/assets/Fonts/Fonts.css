@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "SF Pro Regular";
+  src: url("./SFPRODISPLAYBOLD.OTF") format("truetype");
+}
+
+@font-face {
+  font-family: "SF Pro Medium";
+  src: url(".SFPRODISPLAYMEDIUM.OTF") format("truetype");
+}
+
+@font-face {
+  font-family: "SF Pro Bold";
+  src: url("./SFPRODISPLAYBOLD.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SF Pro SemiBold Italic";
+  src: url("./SFPRODISPLAYSEMIBOLDITALIC.ttf") format("truetype");
+}
