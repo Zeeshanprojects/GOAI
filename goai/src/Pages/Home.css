@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: center;
 
+
   /* Darker background with purple focus */
   background: radial-gradient(
       circle at 80% 20%,
@@ -25,13 +26,13 @@
 }
 .hero-image {
   position: absolute;
-  top: 20% !important;
+  top: 30% !important;
   bottom: 0;          /* anchor to bottom */
-  right: 3%;          /* keep some margin from right */
-  max-width: 40%;     /* responsive size */
+  right: 6%;          /* keep some margin from right */
+  max-width: 35%;     /* responsive size */
   z-index: 0;         /* behind text */
   pointer-events: none;
-  filter: drop-shadow(0 0 40px rgba(156, 77, 255, 0.7)); /* glowing effect */
+  filter: drop-shadow(0 0 40px rgba(140, 77, 255, 0.7)); glowing effect
   transition: transform 0.5s ease, filter 0.5s ease;
 }
 
@@ -108,7 +109,7 @@
   width: 100% !important;
   padding: 0 5%;
   display: flex;
-  margin-top: 100px;
+  margin-top: 150px;
   align-items: center;
   z-index: 2;
 }

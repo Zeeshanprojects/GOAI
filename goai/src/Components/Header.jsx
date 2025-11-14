@@ -1,4 +1,5 @@
 import React from 'react'
+import Images from '../assets/Images/Image'
 import "./Header.css"
 export default function Header() {
   return (
@@ -6,7 +7,7 @@ export default function Header() {
    <nav className="navbar navbar-expand-lg navbar-light bg-light">
   <div className="container-fluid">
     <a className="navbar-brand" href="#">
-      Navbar
+      <img src={Images.logo} alt='logo' className='logo'/>
     </a>
     <button
       className="navbar-toggler"
