@@ -46,6 +46,19 @@ export default function Home() {
   </div>
 
 </section>
+<section className="mission-section">
+  <div className="background-effects"></div>
+
+  <div className="mission-content">
+    <h1>Mission</h1>
+    <p>
+      GO Ai exists to merge financial education, trading technology, and human potential into a single ecosystem of empowerment.
+      We engineer prosperity through community, automation, and data-driven precision.
+      We are building the next generation of digital wealth creators, a network where ambition meets algorithm.
+    </p>
+  </div>
+</section>
+
     </>
 
 
