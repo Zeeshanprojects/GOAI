@@ -93,10 +93,7 @@ export default function Home() {
   <div className="mission-overlay"></div>
 
   <div className="mission-content">
-    <h1 className="mission-title">Our Mission</h1>
-
-    <div className="mission-divider"></div>
-
+     <h1 className="title">Mission</h1>
     <p className="mission-text">
   GO Ai exists to merge financial education, trading technology, and human
   potential into a unified ecosystem of empowerment. Our mission is to make
