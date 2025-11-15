@@ -149,7 +149,7 @@ export default function Home() {
   </div>
 </section>
 <section className="rank-section">
-  <h1 className="rank-title">Ranks</h1>
+  <h1 className="title">Ranks</h1>
 
   <div className="rank-wrapper">
     
@@ -165,9 +165,9 @@ export default function Home() {
       <div className="rank-group">
         <h2 className="rank-heading">TRANSCEND ERA</h2>
         <ul>
-          <li><img src={Images.echelon}/> Echelon</li>
-          <li><img src={Images.whitediamond}/> White Diamond</li>
-          <li><img src={Images.blackdiamond}/> Black Diamond</li>
+          <li><img src={Images.smallicon1}/> Echelon</li>
+          <li><img src={Images.smallicon2}/> White Diamond</li>
+          <li><img src={Images.smallicon3}/> Black Diamond</li>
         </ul>
       </div>
   </div>

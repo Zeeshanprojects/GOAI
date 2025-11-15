@@ -563,11 +563,15 @@
 }
 /* ==== RANK SECTION ==== */
 .rank-section {
-  padding: 120px 0;
+  padding-top: 40px ;
   width: 100%;
-  background: #050008;
   color: white;
   text-align: center;
+  
+  background: radial-gradient(circle at 50% 20%,
+      rgba(140, 77, 255, 0.25),
+      rgba(0, 0, 0, 1)),
+    linear-gradient(135deg, #0b0114 0%, #07000e 100%);
 }
 
 .rank-title {
@@ -585,7 +589,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 80px;
+  gap: 40px;
   padding: 0 5%;
 }
 
@@ -596,16 +600,12 @@
   justify-content: center;
 }
 
-.rank-image {
-  max-width: 1850px !important;
-  width: 80%;
-  filter: drop-shadow(0 0 25px rgba(120, 60, 255, 0.5));
-}
+
 
 /* RIGHT CONTENT */
 .rank-content {
   flex: 1;
-  text-align: left;
+margin-left: 100px;
 }
 
 /* Individual Groups */
@@ -654,8 +654,9 @@
 
 /* LEFT SIDE IMAGE */
 .rank-image {
-  width: 100%;
-  height: auto;
+  width: 105%;
+  margin-left: 120px;
+  height:auto
 }
 
 /* RIGHT SIDE: distribute content vertically equal */
@@ -667,12 +668,9 @@
 }
 
 /* ERA content */
-.rank-group {
-  margin-left: 30px;
-}
 
 .rank-heading {
   margin-bottom: 12px;
-  font-size: 22px;
+  font-size: 18px;
   letter-spacing: 2px;
 }
