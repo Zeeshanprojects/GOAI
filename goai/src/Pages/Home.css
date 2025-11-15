@@ -33,14 +33,7 @@
   transition: transform 0.5s ease, filter 0.5s ease;
 }
 
-@media (min-width:1024px) and (max-width:1299px) {
-  .hero-image{
-      right: 2%;
-  }
-  .text-content h1{
-    font-size: 75px !important;
-  }
-}
+
 
 /* ===== Mission Section ===== */
 .mission-section {
