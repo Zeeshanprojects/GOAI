@@ -425,6 +425,7 @@
 }
 
 .select-btn {
+  font-family: "gamingfont" !important;
   margin-top: auto;
   padding: 12px 0;
   width: 100%;
