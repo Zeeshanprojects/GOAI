@@ -394,7 +394,11 @@
   flex-direction: column;
   justify-content: flex-start;
 }
-
+@media (min-width:1024px) and (max-width:1299px) {
+  .pricing-card{
+ width: 270px;
+  }
+}
 .orb-img {
   width: 110px;
   margin: 0 auto;
