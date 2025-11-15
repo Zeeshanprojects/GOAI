@@ -17,3 +17,7 @@
   font-family: "SF Pro SemiBold Italic";
   src: url("./SFPRODISPLAYSEMIBOLDITALIC.ttf") format("truetype");
 }
+@font-face{
+  font-family:"Specter Trial";
+  src:url("./SpecterTRIAL-Regular-BF64ed585c0b037.otf")format("truetype")
+}

@@ -11,11 +11,7 @@
 
 
   /* Darker background with purple focus */
-  background: radial-gradient(
-      circle at 80% 20%,
-      rgba(156, 77, 255, 0.35) 0%,
-      transparent 50%
-    ),
+  background: 
     radial-gradient(
       circle at 50% 80%,
       rgba(120, 40, 200, 0.25) 0%,
@@ -32,7 +28,7 @@
   max-width: 35%;     /* responsive size */
   z-index: 0;         /* behind text */
   pointer-events: none;
-  filter: drop-shadow(0 0 40px rgba(140, 77, 255, 0.7)); glowing effect
+  filter: drop-shadow(0 0 40px rgba(140, 77, 255, 0.7));
   transition: transform 0.5s ease, filter 0.5s ease;
 }
 
@@ -104,7 +100,6 @@
   }
 }
 
-/* ===== CONTENT WRAPPER ===== */
 .content-wrapper {
   width: 100% !important;
   padding: 0 5%;
@@ -124,6 +119,7 @@
 
 /* ===== TYPOGRAPHY ===== */
 .text-content h1 {
+    font-family: "SF Pro Bold" !important;
   font-size: 79px;
   font-weight: 600 !important;
   line-height: 1.05;
@@ -140,6 +136,7 @@
 
 /* ===== STATS ===== */
 .stats {
+    font-family: "Specter Trial" !important;
   display: flex;
   gap: clamp(1.5rem, 4vw, 3rem);
   margin-bottom: 2.5rem;
@@ -147,14 +144,12 @@
 }
 
 .stat-item {
+
   text-align: center;
   animation: floatUp 1.2s ease-out forwards;
   opacity: 0;
   transform: translateY(20px);
 }
-
-
-
 .stat-item strong {
   display: block;
   font-size: 40px;
