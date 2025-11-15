@@ -380,3 +380,97 @@
   opacity: 0.5;
   z-index: 1;
 }
+.pricing-section {
+  padding: 80px 0;
+  background: #0c0218;
+}
+
+.pricing-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.pricing-card {
+  width: 300px;
+  height: 520px;
+  padding: 25px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 18px rgba(150, 50, 255, 0.3);
+  text-align: center;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.orb-img {
+  width: 110px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  filter: drop-shadow(0 0 15px rgba(200, 0, 255, 0.6));
+}
+
+.price {
+  font-size: 40px;
+  margin: 5px 0;
+}
+
+.fee-text {
+  margin-bottom: 25px;
+  opacity: 0.8;
+}
+
+.features p {
+  margin: 6px 0;
+  font-size: 15px;
+}
+
+.select-btn {
+  margin-top: auto;
+  padding: 12px 0;
+  width: 100%;
+  border-radius: 50px;
+  font-size: 18px;
+  color: white;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.05)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  text-shadow: 0 0 6px white;
+  letter-spacing: 3px;
+  transition: 0.3s;
+}
+
+.select-btn:hover {
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.7);
+  transform: translateY(-3px);
+}
+.title {
+  font-size: 80px;
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: -2px;
+  margin: 0;
+  text-align: center !important;
+  background: linear-gradient(to right, #ffffff, #eaeaea, #d4d4d4);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}

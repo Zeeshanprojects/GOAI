@@ -3,6 +3,46 @@ import Images from "../assets/Images/Image";
 import "./Home.css";
 
 export default function Home() {
+   const plans = [
+    {
+      image:Images.orbit1,
+      title: "Go Concept",
+      price: "$199",
+      fee: "Initial Fee",
+      features: ["Basic"],
+      orb: "/orb1.png",
+    },
+    {
+        image:Images.orbit1,
+      title: "Go Connect",
+      price: "$349",
+      fee: "Initial Fee",
+      features: ["More Education", "More Alerts"],
+      orb: "/orb2.png",
+    },
+    {
+        image:Images.orbit1,
+      title: "Go Create",
+      price: "$999",
+      fee: "Initial Fee",
+      features: ["More Education", "More Alerts", "More Softwares"],
+      orb: "/orb3.png",
+    },
+    {
+        image:Images.orbit1,
+      title: "Go Complete",
+      price: "$1,699",
+      fee: "Initial Fee",
+      features: [
+        "More Education",
+        "More Alerts",
+        "More Softwares",
+        "VIP",
+        "Automations",
+      ],
+      orb: "/orb4.png",
+    },
+  ]
   return (
     <>
       <section className="hero-section">
@@ -53,7 +93,7 @@ export default function Home() {
         <div className="background-effects"></div>
 
         <div className="mission-content">
-          <h1>Mission</h1>
+          <h1 className="title">Mission</h1>
           <p>
             GO Ai exists to merge financial education, trading technology, and
             human potential into a single ecosystem of empowerment. We engineer
@@ -63,6 +103,38 @@ export default function Home() {
           </p>
         </div>
       </section>
+<section className="pricing-section">
+  
+  {/* Heading + Description */}
+  <div className="pricing-header">
+    <h1 className="title">Membership</h1>
+    <p className="subtitle">
+      Choose the perfect plan tailored for your growth and digital success.
+    </p>
+  </div>
+
+  <div className="pricing-wrapper mt-5">
+    {plans.map((plan, index) => (
+      <div key={index} className="pricing-card">
+        <img src={plan.image} className="orb-img" alt="" />
+
+        <h3>{plan.title}</h3>
+
+        <h2 className="price">{plan.price}</h2>
+        <p className="fee-text">{plan.fee}</p>
+
+        <div className="features">
+          {plan.features.map((f, i) => (
+            <p key={i}>{f}</p>
+          ))}
+        </div>
+
+        <button className="select-btn">SELECT</button>
+      </div>
+    ))}
+  </div>
+</section>
+
     </>
   );
 }
