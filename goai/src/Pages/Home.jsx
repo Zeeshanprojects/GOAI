@@ -176,9 +176,9 @@ export default function Home() {
       <div className="rank-group">
         <h2 className="rank-heading">LEGACY ERA</h2>
         <ul>
-          <li><img src={Images.ruby}/> Ruby</li>
-          <li><img src={Images.emerald}/> Emerald</li>
-          <li><img src={Images.sapphire}/> Sapphire</li>
+          <li><img src={Images.smallicon4}/> Ruby</li>
+          <li><img src={Images.smallicon5}/> Emerald</li>
+          <li><img src={Images.smallicon6}/> Sapphire</li>
         </ul>
       </div>
   </div>
@@ -187,9 +187,9 @@ export default function Home() {
       <div className="rank-group">
         <h2 className="rank-heading">RISE ERA</h2>
         <ul>
-          <li><img src={Images.gold}/> Gold</li>
-          <li><img src={Images.silver}/> Silver</li>
-          <li><img src={Images.opal}/> Opal</li>
+          <li><img src={Images.smallicon7}/> Gold</li>
+          <li><img src={Images.smallicon8}/> Silver</li>
+          <li><img src={Images.smallicon9}/> Opal</li>
         </ul>
       </div>
   </div>
@@ -198,9 +198,9 @@ export default function Home() {
       <div className="rank-group">
         <h2 className="rank-heading">FOUNDATION ERA</h2>
         <ul>
-          <li><img src={Images.onyx}/> Onyx</li>
-          <li><img src={Images.pearl}/> Pearl</li>
-          <li><img src={Images.amber}/> Amber</li>
+          <li><img src={Images.smallicon10}/> Onyx</li>
+          <li><img src={Images.smallicon11}/> Pearl</li>
+          <li><img src={Images.smallicon12}/> Amber</li>
         </ul>
       </div>
   </div>
