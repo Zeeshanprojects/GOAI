@@ -1,23 +1,23 @@
 @font-face {
   font-family: "SF Pro Regular";
-  src: url("./SFPRODISPLAYBOLD.OTF") format("truetype");
+  src: url("./SFPRODISPLAYREGULAR.OTF") format("truetype");
 }
 
 @font-face {
   font-family: "SF Pro Medium";
-  src: url(".SFPRODISPLAYMEDIUM.OTF") format("truetype");
+  src: url("./SFPRODISPLAYMEDIUM.OTF") format("truetype");
 }
 
 @font-face {
   font-family: "SF Pro Bold";
-  src: url("./SFPRODISPLAYBOLD.ttf") format("truetype");
+  src: url("./SFPRODISPLAYBOLD.OTF") format("truetype");
 }
 
 @font-face {
   font-family: "SF Pro SemiBold Italic";
-  src: url("./SFPRODISPLAYSEMIBOLDITALIC.ttf") format("truetype");
+  src: url("./SFPRODISPLAYSEMIBOLDITALIC.OTF") format("truetype");
 }
 @font-face{
-  font-family:"Specter Trial";
-  src:url("./SpecterTRIAL-Regular-BF64ed585c0b037.otf")format("truetype")
+font-family: "gamingfont";
+ src:url("./Spectre-Demo.otf")format("truetype")
 }

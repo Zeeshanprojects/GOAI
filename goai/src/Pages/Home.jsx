@@ -46,11 +46,12 @@ export default function Home() {
   return (
     <>
       <section className="hero-section">
+        
         <div className="background-effects"></div>
 
         <div className="content-wrapper">
           <div className="text-content">
-            <h1>
+            <h1 >
               Built for the new era of
               <br />
               wealth
@@ -66,7 +67,7 @@ export default function Home() {
                 <span>PRODUCTS</span>
               </div>
               <div className="stat-item">
-                <strong>15K+</strong>
+                <strong>15000+</strong>
                 <span>MEMBERS</span>
               </div>
             </div>
@@ -79,11 +80,7 @@ export default function Home() {
         </div>
 
         {/* Floating orbs */}
-        <div className="floating-orbs">
-          <div className="orb orb-1"></div>
-          <div className="orb orb-2"></div>
-          <div className="orb orb-3"></div>
-        </div>
+       
 
         {/* Hero Image */}
         <img src={Images.heroimage} alt="heroimage" className="hero-image" />
@@ -119,9 +116,7 @@ export default function Home() {
   {/* Heading + Description */}
   <div className="pricing-header">
     <h1 className="title">Membership</h1>
-    <p className="subtitle">
-      Choose the perfect plan tailored for your growth and digital success.
-    </p>
+   
   </div>
 
   <div className="pricing-wrapper mt-5">
