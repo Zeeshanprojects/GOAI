@@ -13,7 +13,7 @@ export default function Home() {
       orb: "/orb1.png",
     },
     {
-        image:Images.orbit1,
+        image:Images.orbit2,
       title: "Go Connect",
       price: "$349",
       fee: "Initial Fee",
@@ -21,7 +21,7 @@ export default function Home() {
       orb: "/orb2.png",
     },
     {
-        image:Images.orbit1,
+        image:Images.orbit3,
       title: "Go Create",
       price: "$999",
       fee: "Initial Fee",
@@ -29,7 +29,7 @@ export default function Home() {
       orb: "/orb3.png",
     },
     {
-        image:Images.orbit1,
+        image:Images.orbit4,
       title: "Go Complete",
       price: "$1,699",
       fee: "Initial Fee",
