@@ -535,7 +535,7 @@
 }
 .rank-wrapper {
   display: grid;
-  grid-template-columns: 55% 45%;
+  grid-template-columns: 60% 40%;
   align-items: center;
   width: 100%;
   padding: 0 5%;
@@ -543,11 +543,24 @@
 
 /* LEFT SIDE IMAGE */
 .rank-image {
-  width: 105%;
+  width: 105% !important;
   margin-left: 120px;
   height: auto;
 }
-
+@media (min-width:1024px) and  (max-width:1299px) {
+  .rank-image {
+  width: 120% !important;
+  margin-left: 120px;
+  height: auto;
+}
+.rank-wrapper {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items: center;
+  width: 100%;
+  padding: 0 5%;
+}
+}
 /* RIGHT SIDE: distribute content vertically equal */
 
 /* Each ERA group wrapper aligns perfectly with arrow */
