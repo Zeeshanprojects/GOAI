@@ -98,12 +98,22 @@ export default function Home() {
     <div className="mission-divider"></div>
 
     <p className="mission-text">
-      GO Ai exists to merge financial education, trading technology, and human
-      potential into a single ecosystem of empowerment. We engineer prosperity
-      through community, automation, and data-driven precision. We are building
-      the next generation of digital wealth creators—where ambition meets
-      algorithm.
-    </p>
+  GO Ai exists to merge financial education, trading technology, and human
+  potential into a unified ecosystem of empowerment. Our mission is to make
+  advanced wealth-building tools accessible to everyone—combining intelligent
+  automation, real-time analytics, and the strength of community.  
+  <br /><br />
+  We believe financial growth should not depend on luck or background, but on
+  knowledge, precision, and scalable systems. By connecting people with
+  cutting-edge tools, mentorship, and AI-driven strategies, we enable individuals
+  to think smarter, move faster, and create opportunities that once seemed out
+  of reach.  
+  <br /><br />
+  GO Ai is building the next generation of digital wealth creators—a global
+  network where ambition meets algorithm, and where every member has the power
+  to transform information into impact.
+</p>
+
   </div>
 </section>
 
