@@ -1,3 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html,body{
   overflow-x: hidden !important;
+}
+.hero-section, 
+.mission-section, 
+.pricing-section, 
+.floating-orbs, 
+.orb {
+  overflow: hidden !important;
 }

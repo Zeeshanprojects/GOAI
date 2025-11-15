@@ -148,6 +148,67 @@ export default function Home() {
     ))}
   </div>
 </section>
+<section className="rank-section">
+  <h1 className="rank-title">Ranks</h1>
+
+  <div className="rank-wrapper">
+    
+    {/* LEFT SIDE PYRAMID IMAGE */}
+    <div className="rank-image-wrapper">
+      <img src={Images.ranks} alt="Ranks Pyramid" className="rank-image" />
+    </div>
+
+    {/* RIGHT SIDE TEXT CONTENT */}
+ <div className="rank-content">
+
+  <div className="rank-group-wrapper">
+      <div className="rank-group">
+        <h2 className="rank-heading">TRANSCEND ERA</h2>
+        <ul>
+          <li><img src={Images.echelon}/> Echelon</li>
+          <li><img src={Images.whitediamond}/> White Diamond</li>
+          <li><img src={Images.blackdiamond}/> Black Diamond</li>
+        </ul>
+      </div>
+  </div>
+
+  <div className="rank-group-wrapper">
+      <div className="rank-group">
+        <h2 className="rank-heading">LEGACY ERA</h2>
+        <ul>
+          <li><img src={Images.ruby}/> Ruby</li>
+          <li><img src={Images.emerald}/> Emerald</li>
+          <li><img src={Images.sapphire}/> Sapphire</li>
+        </ul>
+      </div>
+  </div>
+
+  <div className="rank-group-wrapper">
+      <div className="rank-group">
+        <h2 className="rank-heading">RISE ERA</h2>
+        <ul>
+          <li><img src={Images.gold}/> Gold</li>
+          <li><img src={Images.silver}/> Silver</li>
+          <li><img src={Images.opal}/> Opal</li>
+        </ul>
+      </div>
+  </div>
+
+  <div className="rank-group-wrapper">
+      <div className="rank-group">
+        <h2 className="rank-heading">FOUNDATION ERA</h2>
+        <ul>
+          <li><img src={Images.onyx}/> Onyx</li>
+          <li><img src={Images.pearl}/> Pearl</li>
+          <li><img src={Images.amber}/> Amber</li>
+        </ul>
+      </div>
+  </div>
+
+</div>
+
+  </div>
+</section>
 
     </>
   );

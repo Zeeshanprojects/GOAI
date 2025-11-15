@@ -2,7 +2,7 @@
 .hero-section {
   position: relative;
   min-height: 100vh;
-  width: 100%;
+  width: 100% !important;
   overflow: hidden;
   color: white;
   display: flex;
@@ -21,7 +21,7 @@
 
 .hero-image {
   position: absolute;
-  top: 30% !important;
+  top: 25% !important;
   bottom: 0;
   /* anchor to bottom */
   right: 6%;
@@ -334,7 +334,8 @@
   top: 0;
   right: 0;
   bottom: 0;
-  width: 40%;
+  width: 25%;
+  max-width: 350px;
   pointer-events: none;
   overflow: hidden;
   z-index: 1;
@@ -346,13 +347,15 @@
   background: radial-gradient(circle, rgba(156, 77, 255, 0.3), transparent 70%);
   filter: blur(20px);
   animation: floatOrb 12s infinite ease-in-out;
+   right: 0 !important;
+  max-width: 100%;
 }
 
 .orb-1 {
   width: 300px;
   height: 300px;
   top: 15%;
-  right: 10%;
+ 
   background: radial-gradient(circle, rgba(59, 228, 240, 0.4), transparent);
   animation-delay: 0s;
 }
@@ -361,7 +364,7 @@
   width: 200px;
   height: 200px;
   bottom: 20%;
-  right: 25%;
+
   background: radial-gradient(circle, rgba(200, 59, 255, 0.35), transparent);
   animation-delay: -4s;
 }
@@ -370,7 +373,7 @@
   width: 250px;
   height: 250px;
   top: 50%;
-  right: 5%;
+
   background: radial-gradient(circle, rgba(100, 150, 255, 0.3), transparent);
   animation-delay: -8s;
 }
@@ -413,7 +416,7 @@
 /* ===== MISSION SECTION ===== */
 .mission-section {
   position: relative;
-  width: 100vw;
+  width: 100% !important;
   height: 100vh;
   overflow: hidden;
   display: flex;
@@ -557,4 +560,119 @@
   max-width: 650px;
   margin-left: auto;
   margin-right: auto;
+}
+/* ==== RANK SECTION ==== */
+.rank-section {
+  padding: 120px 0;
+  width: 100%;
+  background: #050008;
+  color: white;
+  text-align: center;
+}
+
+.rank-title {
+  font-size: 80px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  letter-spacing: -1px;
+  background: linear-gradient(to right, #fff, #cfcfcf);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+}
+
+.rank-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px;
+  padding: 0 5%;
+}
+
+/* LEFT IMAGE */
+.rank-image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.rank-image {
+  max-width: 1850px !important;
+  width: 80%;
+  filter: drop-shadow(0 0 25px rgba(120, 60, 255, 0.5));
+}
+
+/* RIGHT CONTENT */
+.rank-content {
+  flex: 1;
+  text-align: left;
+}
+
+/* Individual Groups */
+.rank-group {
+  margin-bottom: 50px;
+}
+
+.rank-heading {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  margin-bottom: 1px;
+  color: white;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+}
+
+/* Items */
+.rank-group ul {
+  list-style: none;
+  padding: 0;
+}
+
+.rank-group ul li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.9);
+}
+
+/* Icon next to text */
+.rank-group ul li img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+.rank-wrapper {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  align-items: center;
+  width: 100%;
+  padding: 0 5%;
+}
+
+/* LEFT SIDE IMAGE */
+.rank-image {
+  width: 100%;
+  height: auto;
+}
+
+/* RIGHT SIDE: distribute content vertically equal */
+
+/* Each ERA group wrapper aligns perfectly with arrow */
+.rank-group-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+/* ERA content */
+.rank-group {
+  margin-left: 30px;
+}
+
+.rank-heading {
+  margin-bottom: 12px;
+  font-size: 22px;
+  letter-spacing: 2px;
 }
