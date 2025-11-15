@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Images from "../assets/Images/Image";
 import "./Home.css";
 
 export default function Home() {
+  useEffect(()=>{
+    document.title="Home ! GOAI"
+  })
    const plans = [
     {
       image:Images.orbit1,
@@ -94,7 +97,7 @@ export default function Home() {
     <p className="mission-text">
   GO Ai exists to merge financial education, trading technology, and human
   potential into a unified ecosystem of empowerment. Our mission is to make
-  advanced wealth-building tools accessible to everyone—combining intelligent
+  advanced wealth-building tools accessible to everyone combining intelligent
   automation, real-time analytics, and the strength of community.  
   <br /><br />
   We believe financial growth should not depend on luck or background, but on
