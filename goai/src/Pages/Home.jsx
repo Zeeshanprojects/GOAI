@@ -89,20 +89,24 @@ export default function Home() {
         <img src={Images.heroimage} alt="heroimage" className="hero-image" />
       </section>
 
-      <section className="mission-section">
-        <div className="background-effects"></div>
+    <section className="mission-section">
+  <div className="mission-overlay"></div>
 
-        <div className="mission-content">
-          <h1 className="title">Mission</h1>
-          <p>
-            GO Ai exists to merge financial education, trading technology, and
-            human potential into a single ecosystem of empowerment. We engineer
-            prosperity through community, automation, and data-driven precision.
-            We are building the next generation of digital wealth creators, a
-            network where ambition meets algorithm.
-          </p>
-        </div>
-      </section>
+  <div className="mission-content">
+    <h1 className="mission-title">Our Mission</h1>
+
+    <div className="mission-divider"></div>
+
+    <p className="mission-text">
+      GO Ai exists to merge financial education, trading technology, and human
+      potential into a single ecosystem of empowerment. We engineer prosperity
+      through community, automation, and data-driven precision. We are building
+      the next generation of digital wealth creators—where ambition meets
+      algorithm.
+    </p>
+  </div>
+</section>
+
 <section className="pricing-section">
   
   {/* Heading + Description */}

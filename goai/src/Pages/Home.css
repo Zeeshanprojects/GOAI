@@ -11,30 +11,109 @@
 
 
   /* Darker background with purple focus */
-  background: 
-    radial-gradient(
-      circle at 50% 80%,
+  background:
+    radial-gradient(circle at 50% 80%,
       rgba(120, 40, 200, 0.25) 0%,
-      transparent 45%
-    ),
+      transparent 45%),
     linear-gradient(135deg, #0a0a0a 0%, #000000 100%);
   background-attachment: fixed;
 }
+
 .hero-image {
   position: absolute;
   top: 30% !important;
-  bottom: 0;          /* anchor to bottom */
-  right: 6%;          /* keep some margin from right */
-  max-width: 35%;     /* responsive size */
-  z-index: 0;         /* behind text */
+  bottom: 0;
+  /* anchor to bottom */
+  right: 6%;
+  /* keep some margin from right */
+  max-width: 35%;
+  /* responsive size */
+  z-index: 0;
+  /* behind text */
   pointer-events: none;
   filter: drop-shadow(0 0 40px rgba(140, 77, 255, 0.7));
   transition: transform 0.5s ease, filter 0.5s ease;
 }
 
 .hero-image:hover {
-  transform: scale(1.05) rotate(1.5deg); /* subtle hover animation */
+  transform: scale(1.05) rotate(1.5deg);
+  /* subtle hover animation */
   filter: drop-shadow(0 0 60px rgba(156, 77, 255, 0.9));
+}
+
+/* ===== Mission Section ===== */
+.mission-section {
+  position: relative;
+  padding: 120px 40px;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+
+  background: radial-gradient(circle at 50% 20%,
+      rgba(140, 77, 255, 0.25),
+      rgba(0, 0, 0, 1)),
+    linear-gradient(135deg, #0b0114 0%, #07000e 100%);
+}
+
+/* Subtle animated glow in background */
+.mission-overlay {
+  position: absolute;
+  top: -20%;
+  left: -20%;
+  width: 140%;
+  height: 140%;
+  background: conic-gradient(from 0deg,
+      rgba(140, 77, 255, 0.12),
+      rgba(0, 200, 255, 0.08),
+      rgba(0, 0, 0, 0.4));
+  animation: rotateGlow 18s linear infinite;
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+/* Heading */
+.mission-title {
+  font-size: 50px !important;
+  font-weight: 800;
+  letter-spacing: -1px;
+  background: linear-gradient(to right, #ffffff, #d8d8d8);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+  margin-bottom: 15px;
+}
+
+/* Glow divider line */
+.mission-divider {
+  width: 120px;
+  height: 4px;
+  margin: 0 auto 30px;
+  background: linear-gradient(90deg,
+      rgba(150, 0, 255, 1),
+      rgba(0, 200, 255, 1));
+  border-radius: 4px;
+  box-shadow: 0 0 15px rgba(140, 77, 255, 0.6);
+}
+
+/* Paragraph */
+.mission-text {
+  max-width: 750px;
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 1.7;
+  opacity: 0.85;
+  text-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+}
+
+/* Animated glowing background rotation */
+@keyframes rotateGlow {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Optional: make image responsive for smaller screens */
@@ -47,7 +126,8 @@
 
 @media (max-width: 768px) {
   .hero-image {
-    display: none; /* hide on mobile for performance */
+    display: none;
+    /* hide on mobile for performance */
   }
 }
 
@@ -57,21 +137,15 @@
   inset: 0;
 
   /* Minimal blue, focus on purple and black */
-  background-image: radial-gradient(
-      circle at 25% 25%,
+  background-image: radial-gradient(circle at 25% 25%,
       rgba(180, 80, 255, 0.08) 2px,
-      transparent 2px
-    ),
-    radial-gradient(
-      circle at 75% 75%,
+      transparent 2px),
+    radial-gradient(circle at 75% 75%,
       rgba(130, 40, 200, 0.08) 2px,
-      transparent 2px
-    ),
-    radial-gradient(
-      circle at 50% 50%,
+      transparent 2px),
+    radial-gradient(circle at 50% 50%,
       rgba(50, 100, 255, 0.02) 2px,
-      transparent 2px
-    );
+      transparent 2px);
   background-size: 80px 80px;
 
   animation: float 25s infinite linear;
@@ -83,9 +157,11 @@
   0% {
     background-position: 0 0, 0 0, 0 0;
   }
+
   50% {
     background-position: 100px 50px, -50px 100px, 50px -50px;
   }
+
   100% {
     background-position: 0 0, 0 0, 0 0;
   }
@@ -95,6 +171,7 @@
   0% {
     transform: translate(0, 0);
   }
+
   100% {
     transform: translate(30px, -30px);
   }
@@ -119,7 +196,7 @@
 
 /* ===== TYPOGRAPHY ===== */
 .text-content h1 {
-    font-family: "SF Pro Bold" !important;
+  font-family: "SF Pro Bold" !important;
   font-size: 79px;
   font-weight: 600 !important;
   line-height: 1.05;
@@ -136,7 +213,7 @@
 
 /* ===== STATS ===== */
 .stats {
-    font-family: "Specter Trial" !important;
+  font-family: "Specter Trial" !important;
   display: flex;
   gap: clamp(1.5rem, 4vw, 3rem);
   margin-bottom: 2.5rem;
@@ -150,6 +227,7 @@
   opacity: 0;
   transform: translateY(20px);
 }
+
 .stat-item strong {
   display: block;
   font-size: 40px;
@@ -239,10 +317,12 @@
 }
 
 @keyframes pulse {
+
   0%,
   100% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.05);
   }
@@ -296,10 +376,12 @@
 }
 
 @keyframes floatOrb {
+
   0%,
   100% {
     transform: translateY(0) rotate(0deg);
   }
+
   50% {
     transform: translateY(-30px) rotate(5deg);
   }
@@ -323,9 +405,11 @@
   }
 
   .floating-orbs {
-    display: none; /* Hide orbs on mobile for performance */
+    display: none;
+    /* Hide orbs on mobile for performance */
   }
 }
+
 /* ===== MISSION SECTION ===== */
 .mission-section {
   position: relative;
@@ -362,7 +446,7 @@
 }
 
 .mission-content p {
-  font-size:20px; 
+  font-size: 20px;
   line-height: 1.8;
   color: rgba(255, 255, 255, 0.85);
 }
@@ -371,7 +455,7 @@
 .mission-section .background-effects {
   position: absolute;
   inset: 0;
-  background-image: 
+  background-image:
     radial-gradient(circle at 25% 25%, rgba(180, 80, 255, 0.08) 2px, transparent 2px),
     radial-gradient(circle at 75% 75%, rgba(130, 40, 200, 0.08) 2px, transparent 2px),
     radial-gradient(circle at 50% 50%, rgba(50, 100, 255, 0.02) 2px, transparent 2px);
@@ -380,6 +464,7 @@
   opacity: 0.5;
   z-index: 1;
 }
+
 .pricing-section {
   padding: 80px 0;
   background: #0c0218;
@@ -438,10 +523,8 @@
   border-radius: 50px;
   font-size: 18px;
   color: white;
-  background: linear-gradient(
-    rgba(255, 255, 255, 0.2),
-    rgba(255, 255, 255, 0.05)
-  );
+  background: linear-gradient(rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.05));
   border: 1px solid rgba(255, 255, 255, 0.3);
   cursor: pointer;
   text-shadow: 0 0 6px white;
@@ -453,6 +536,7 @@
   box-shadow: 0 0 25px rgba(255, 255, 255, 0.7);
   transform: translateY(-3px);
 }
+
 .title {
   font-size: 60px;
   font-weight: 900;
