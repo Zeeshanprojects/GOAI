@@ -1,11 +1,19 @@
 import React, { useEffect } from "react";
 import Images from "../assets/Images/Image";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./Home.css";
 
 export default function Home() {
   useEffect(() => {
     document.title = "Home ! GOAI";
-  });
+    AOS.init({
+      duration: 1200,
+      offset: 100,
+      easing: "ease-in-out",
+      once: true,
+    });
+  },[]);
   const plans = [
     {
       image: Images.orbit1,
@@ -52,7 +60,7 @@ export default function Home() {
         <div className="background-effects"></div>
 
         <div className="content-wrapper">
-          <div className="text-content">
+          <div className="text-content" data-aos="fade-up">
             <h1>
               Built for the new era of
               <br />
@@ -84,7 +92,7 @@ export default function Home() {
         {/* Floating orbs */}
 
         {/* Hero Image */}
-        <img src={Images.heroimage} alt="heroimage" className="hero-image" />
+        <img src={Images.heroimage} alt="heroimage" className="hero-image"data-aos="fade-up" />
       </section>
 
       <section className="mission-section">
