@@ -566,6 +566,20 @@
   padding: 0 5%;
 }
 }
+@media (max-width:575px) {
+  .rank-image {
+  width: 115% !important;
+  margin-left: 50px;
+  height: auto;
+}
+.rank-wrapper {
+  display: grid;
+  grid-template-columns: 40% 80%;
+  align-items: center;
+  width: 100%;
+  padding: 0 5%;
+}
+}
 /* RIGHT SIDE: distribute content vertically equal */
 
 /* Each ERA group wrapper aligns perfectly with arrow */
