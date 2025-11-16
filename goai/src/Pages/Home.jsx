@@ -98,7 +98,7 @@ export default function Home() {
       <section className="mission-section">
         <div className="mission-overlay"></div>
 
-        <div className="mission-content">
+        <div className="mission-content "data-aos="fade-up">
           <h1 className="title">Mission</h1>
           <p className="mission-text">
             GO Ai exists to merge financial education, trading technology, and
@@ -122,13 +122,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="pricing-section">
+      <section className="pricing-section ">
         {/* Heading + Description */}
-        <div className="pricing-header">
+        <div className="pricing-header" data-aos="fade-up">
           <h1 className="title">Membership</h1>
         </div>
 
-        <div className="pricing-wrapper mt-5">
+        <div className="pricing-wrapper mt-5" data-aos="fade-up">
           {plans.map((plan, index) => (
             <div key={index} className="pricing-card">
               <img src={plan.image} className="orb-img" alt="" />
@@ -149,8 +149,8 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <section className="rank-section">
-        <h1 className="title">Ranks</h1>
+      <section className="rank-section" >
+        <h1 className="title"data-aos="fade-up">Ranks</h1>
 
         <div className="rank-wrapper">
           {/* LEFT SIDE PYRAMID IMAGE */}
@@ -158,12 +158,12 @@ export default function Home() {
             <img
               src={Images.ranks}
               alt="Ranks Pyramid"
-              className="rank-image"
+              className="rank-image"data-aos="fade-up"
             />
           </div>
 
           {/* RIGHT SIDE TEXT CONTENT */}
-          <div className="rank-content">
+          <div className="rank-content" data-aos="fade-up">
             <div className="rank-group-wrapper">
               <div className="rank-group">
                 <h2 className="rank-heading">TRANSCEND ERA</h2>
