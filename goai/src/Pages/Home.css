@@ -513,6 +513,7 @@
 }
 
 .rank-heading {
+  font-family: "gamingfont";
   font-size: 26px;
   font-weight: 800;
   letter-spacing: 3px;
@@ -588,7 +589,6 @@
   letter-spacing: 2px;
 }
 @media (max-width: 992px) {
-
   /* stack both columns */
   .rank-wrapper {
     display: flex;
@@ -608,7 +608,7 @@
 
   .rank-image {
     width: 85% !important;
-    margin-left: 0;     /* remove desktop margin */
+    margin-left: 0; /* remove desktop margin */
     margin-top: 20px;
   }
 
