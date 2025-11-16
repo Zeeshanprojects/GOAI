@@ -23,19 +23,20 @@
 }
 .hero-image {
   position: absolute;
-  top: 25% !important;
-  bottom: 0;
+  top: 25%;
   right: 6%;
   max-width: 35%;
-  z-index: 0;
   pointer-events: none;
   filter: drop-shadow(0 0 40px rgba(140, 77, 255, 0.7));
-  transition: transform 0.5s ease, filter 0.5s ease;
+  animation: floatHero 4s ease-in-out infinite;
 }
 
+@keyframes floatHero {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-30px); }
+  100% { transform: translateY(0px); }
+}
 
-
-/* ===== Mission Section ===== */
 .mission-section {
   position: relative;
   padding: 120px 40px;
