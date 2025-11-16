@@ -18,7 +18,7 @@
     linear-gradient(135deg, #0a0a0a 0%, #000000 100%);
   background-attachment: fixed;
 }
-.text-content h1{
+.text-content h1 {
   font-family: "SF Pro Regular" !important;
 }
 .hero-image {
@@ -32,9 +32,15 @@
 }
 
 @keyframes floatHero {
-  0%   { transform: translateY(0px); }
-  50%  { transform: translateY(-30px); }
-  100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .mission-section {
@@ -110,7 +116,6 @@
 
 /* ===== TYPOGRAPHY ===== */
 .text-content h1 {
-
   font-size: 79px;
   font-weight: 600 !important;
   line-height: 1.05;
@@ -395,9 +400,9 @@
   flex-direction: column;
   justify-content: flex-start;
 }
-@media (min-width:1024px) and (max-width:1299px) {
-  .pricing-card{
- width: 270px;
+@media (min-width: 1024px) and (max-width: 1299px) {
+  .pricing-card {
+    width: 270px;
   }
 }
 .orb-img {
@@ -552,34 +557,21 @@
   margin-left: 120px;
   height: auto;
 }
-@media (min-width:1024px) and  (max-width:1299px) {
+@media (min-width: 1024px) and (max-width: 1299px) {
   .rank-image {
-  width: 120% !important;
-  margin-left: 120px;
-  height: auto;
+    width: 120% !important;
+    margin-left: 120px;
+    height: auto;
+  }
+  .rank-wrapper {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    width: 100%;
+    padding: 0 5%;
+  }
 }
-.rank-wrapper {
-  display: grid;
-  grid-template-columns: 60% 40%;
-  align-items: center;
-  width: 100%;
-  padding: 0 5%;
-}
-}
-@media (max-width:575px) {
-  .rank-image {
-  width: 115% !important;
-  margin-left: 50px;
-  height: auto;
-}
-.rank-wrapper {
-  display: grid;
-  grid-template-columns: 40% 80%;
-  align-items: center;
-  width: 100%;
-  padding: 0 5%;
-}
-}
+
 /* RIGHT SIDE: distribute content vertically equal */
 
 /* Each ERA group wrapper aligns perfectly with arrow */
@@ -594,4 +586,72 @@
   margin-bottom: 12px;
   font-size: 18px;
   letter-spacing: 2px;
+}
+@media (max-width: 992px) {
+
+  /* stack both columns */
+  .rank-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    text-align: center;
+    gap: 30px;
+  }
+
+  /* image centered on small screens */
+  .rank-image-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .rank-image {
+    width: 85% !important;
+    margin-left: 0;     /* remove desktop margin */
+    margin-top: 20px;
+  }
+
+  /* content centered instead of left-aligned */
+  .rank-content {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* remove arrow alignment spacing */
+  .rank-group-wrapper {
+    justify-content: center;
+  }
+
+  /* make lists center aligned */
+  .rank-group ul li {
+    justify-content: center;
+  }
+
+  /* reduce spacing for mobile */
+  .rank-group {
+    margin-bottom: 30px;
+  }
+
+  .rank-heading {
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+}
+
+/* EXTRA-small screens */
+@media (max-width: 576px) {
+  .rank-image {
+    width: 95% !important;
+  }
+
+  .rank-heading {
+    font-size: 20px;
+  }
+
+  .rank-group ul li img {
+    width: 22px;
+    height: 22px;
+  }
 }
