@@ -242,7 +242,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-        {/* ==================== COMMUNITY SECTION ==================== */}
+      {/* ==================== COMMUNITY SECTION ==================== */}
       <section className="community-section">
         <h1 className="title" data-aos="fade-up">
           Community
@@ -265,8 +265,7 @@ export default function Home() {
             <p>15,000+ active individuals building their future.</p>
           </div>
 
-
-           <div className="community-box">
+          <div className="community-box">
             <div className="orb-icon-wrapper">
               <img src={Images.orbit3} className="orb-img" alt="orbit-logo" />
               <i className="fa-solid fa-globe community-icon"></i>
@@ -275,7 +274,7 @@ export default function Home() {
             <h3>Global Network</h3>
             <p>Connected across continents with one shared vision.</p>
           </div>
-           <div className="community-box">
+          <div className="community-box">
             <div className="orb-icon-wrapper">
               <img src={Images.orbit3} className="orb-img" alt="orbit-logo" />
               <i className="fa-solid fa-calendar community-icon"></i>
@@ -284,7 +283,7 @@ export default function Home() {
             <h3>Daily Sessions</h3>
             <p>Consistent guidance, training & live updates.</p>
           </div>
-           <div className="community-box">
+          <div className="community-box">
             <div className="orb-icon-wrapper">
               <img src={Images.orbit3} className="orb-img" alt="orbit-logo" />
               <i className="fa-solid fa-medal community-icon"></i>
@@ -327,8 +326,96 @@ export default function Home() {
           ability to think smarter, move faster, and unlock limitless potential.
         </p>
       </section>
+      {/* ==================== FAQ SECTION ==================== */}
+      <section className="faq-section" data-aos="fade-up">
+        <h1 className="title">Frequently Asked Questions</h1>
 
-    
+        <div className="faq-container">
+          {/* FAQ ITEM 1 */}
+          <div className="faq-item">
+            <button
+              className="faq-question"
+              data-bs-toggle="collapse"
+              data-bs-target="#faq1"
+            >
+              What is GOAI and how does it work?
+              <i className="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div id="faq1" className="collapse faq-answer">
+              GOAI is a wealth-tech ecosystem combining AI, automation, tools,
+              and education to help individuals make smarter financial
+              decisions. Members access analytics, mentorship, and software
+              built for scalable growth.
+            </div>
+          </div>
+
+          {/* FAQ ITEM 2 */}
+          <div className="faq-item">
+            <button
+              className="faq-question"
+              data-bs-toggle="collapse"
+              data-bs-target="#faq2"
+            >
+              What do I get with a membership?
+              <i className="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div id="faq2" className="collapse faq-answer">
+              Membership includes platform access, premium education, alerts,
+              smart tools, mentorship sessions, community support and rank-based
+              benefits.
+            </div>
+          </div>
+
+          {/* FAQ ITEM 3 */}
+          <div className="faq-item">
+            <button
+              className="faq-question"
+              data-bs-toggle="collapse"
+              data-bs-target="#faq3"
+            >
+              Are the tools beginner-friendly?
+              <i className="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div id="faq3" className="collapse faq-answer">
+              Yes. Every tool and feature is designed for both beginners and
+              advanced users, with clear guidance, tutorials, and live support.
+            </div>
+          </div>
+
+          {/* FAQ ITEM 4 */}
+          <div className="faq-item">
+            <button
+              className="faq-question"
+              data-bs-toggle="collapse"
+              data-bs-target="#faq4"
+            >
+              How does the ranking system work?
+              <i className="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div id="faq4" className="collapse faq-answer">
+              Ranks represent progress and recognition within the community. As
+              members grow, contribute, and unlock achievements, they advance to
+              higher tiers with new rewards.
+            </div>
+          </div>
+
+          {/* FAQ ITEM 5 */}
+          <div className="faq-item">
+            <button
+              className="faq-question"
+              data-bs-toggle="collapse"
+              data-bs-target="#faq5"
+            >
+              Can I upgrade my membership anytime?
+              <i className="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div id="faq5" className="collapse faq-answer">
+              Yes. You can upgrade to a higher membership plan instantly and
+              unlock additional features, automations, and exclusive benefits.
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
