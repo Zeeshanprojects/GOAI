@@ -7,7 +7,7 @@ export default function Header() {
    <nav className="navbar navbar-expand-lg navbar-light bg-light">
   <div className="container-fluid">
     <a className="navbar-brand" href="#">
-      <img src={Images.logo} alt='logo' className='logo'/>
+      <img src={Images.logo} alt='logo' className='logo' fetchPriority='high'/>
     </a>
     <button
       className="navbar-toggler"

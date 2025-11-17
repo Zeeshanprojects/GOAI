@@ -45,7 +45,7 @@
 
 .mission-section {
   position: relative;
-  padding: 120px 40px;
+height: 100%;
   color: white;
   text-align: center;
   overflow: hidden;
@@ -334,7 +334,7 @@
 .mission-section {
   position: relative;
   width: 100% !important;
-  height: 100vh;
+  height: 100vh !important;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -367,7 +367,7 @@
 }
 
 .pricing-section {
-  padding: 80px 0;
+  padding: 30px 0;
 
   background: radial-gradient(
       circle at 50% 20%,
@@ -640,6 +640,9 @@
 }
 
 @media (max-width: 576px) {
+.mission-section{
+height: auto !important  ;
+}
   .rank-image {
     width: 95% !important;
   }
