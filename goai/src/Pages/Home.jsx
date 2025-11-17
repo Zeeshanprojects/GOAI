@@ -327,10 +327,10 @@ export default function Home() {
         </p>
       </section>
       {/* ==================== FAQ SECTION ==================== */}
-      <section className="faq-section" data-aos="fade-up">
-        <h1 className="title">Frequently Asked Questions</h1>
+      <section className="faq-section" >
+        <h1 className="title" data-aos="fade-up" >Frequently Asked Questions</h1>
 
-        <div className="faq-container">
+        <div className="faq-container mt-5" data-aos="fade-up">
           {/* FAQ ITEM 1 */}
           <div className="faq-item">
             <button

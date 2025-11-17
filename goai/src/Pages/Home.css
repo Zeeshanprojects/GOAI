@@ -759,9 +759,9 @@ height: auto !important  ;
 /* ===== FAQ SECTION ===== */
 .faq-section {
   padding: 80px 6%;
-  background: radial-gradient(circle at 50% 20%, rgba(140,77,255,0.25), #000),
-              linear-gradient(135deg, #0b0114, #07000e);
-  color: white;
+  background: radial-gradient(circle at 50% 20%, rgba(140, 77, 255, 0.2), #000),
+              linear-gradient(135deg, #0b0114 0%, #07000e 100%);
+
 
 }
 
