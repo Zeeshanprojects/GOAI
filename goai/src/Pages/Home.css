@@ -9,14 +9,12 @@
   align-items: center;
   justify-content: center;
 
-  /* Darker background with purple focus */
-  background: radial-gradient(
-      circle at 50% 80%,
-      rgba(120, 40, 200, 0.25) 0%,
-      transparent 45%
+    background: radial-gradient(
+      circle at 50% 20%,
+      rgba(140, 77, 255, 0.25),
+      rgba(0, 0, 0, 1)
     ),
-    linear-gradient(135deg, #0a0a0a 0%, #000000 100%);
-  background-attachment: fixed;
+    linear-gradient(135deg, #0b0114 0%, #07000e 100%);
 }
 .text-content h1 {
   font-family: "SF Pro Regular" !important;
@@ -654,3 +652,107 @@ height: auto !important  ;
     height: 22px;
   }
 }
+
+/* ========= GLOBAL SECTION STYLE (MATCH EXISTING THEME) ========= */
+.vision-section,
+.ecosystem-section,
+.why-section,
+.community-section {
+  padding: 70px 5%;
+  text-align: center;
+  color: white;
+  background: radial-gradient(circle at 50% 20%, rgba(140, 77, 255, 0.2), #000),
+              linear-gradient(135deg, #0b0114 0%, #07000e 100%);
+}
+
+/* ================================================================ */
+/* ======================== VISION SECTION ========================= */
+/* ================================================================ */
+.vision-text {
+  max-width: 900px;
+  margin: 20px auto;
+  font-size: 20px;
+  opacity: 0.85;
+  line-height: 1.7;
+}
+/* ================================================================ */
+/* ========================== COMMUNITY ============================ */
+/* ================================================================ */
+.community-text {
+  max-width: 850px;
+  margin: 10px auto 50px auto;
+  font-size: 19px;
+  opacity: 0.85;
+}
+
+.community-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Updated box design */
+.community-box {
+  padding: 35px 25px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.15);
+  backdrop-filter: blur(14px);
+  text-align: center;
+  transition: 0.3s ease;
+  color: white;
+  box-shadow: 0 0 18px rgba(150, 50, 255, 0.2);
+}
+.community-icon {
+  font-size: 45px;
+  margin-bottom: 18px;
+  color: #9382C7; /* you can change to any color */
+  transition: 0.3s ease;
+}
+.community-box h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+/* Wrapper to position icon inside orbit */
+.orb-icon-wrapper {
+  position: relative;
+  width: 110px;      /* same as orb-img */
+  height: 110px;     /* same as orb-img */
+  margin: 0 auto 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Orbit image */
+.orb-img {
+  width: 110px;
+  height: 110px;
+  filter: drop-shadow(0 0 15px rgba(200, 0, 255, 0.6));
+}
+
+/* Icon inside the circle */
+.community-icon {
+  position: absolute;
+  font-size: 42px;
+  color: e8d0ff;  /* You can change color freely */
+
+  transition: 0.3s ease;
+}
+
+/* Hover glow effect */
+.community-box:hover .community-icon {
+  transform: scale(1.12);
+  color: #e8d0ff;
+  text-shadow: 0 0 25px rgba(200, 120, 255, 1);
+}
+
+.community-box p {
+  font-size: 15px;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+

@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import Images from "../assets/Images/Image";
 import AOS from "aos";
@@ -14,7 +13,7 @@ export default function Home() {
       easing: "ease-in-out",
       once: true,
     });
-  },[]);
+  }, []);
   const plans = [
     {
       image: Images.orbit1,
@@ -93,13 +92,18 @@ export default function Home() {
         {/* Floating orbs */}
 
         {/* Hero Image */}
-        <img src={Images.heroimage} alt="heroimage" className="hero-image"data-aos="fade-up" />
+        <img
+          src={Images.heroimage}
+          alt="heroimage"
+          className="hero-image"
+          data-aos="fade-up"
+        />
       </section>
 
       <section className="mission-section">
         <div className="mission-overlay"></div>
 
-        <div className="mission-content "data-aos="fade-up">
+        <div className="mission-content " data-aos="fade-up">
           <h1 className="title">Mission</h1>
           <p className="mission-text">
             GO Ai exists to merge financial education, trading technology, and
@@ -132,7 +136,7 @@ export default function Home() {
         <div className="pricing-wrapper mt-5" data-aos="fade-up">
           {plans.map((plan, index) => (
             <div key={index} className="pricing-card">
-              <img src={plan.image} className="orb-img" alt="" />
+              <img src={plan.image} className="orb-img" alt="orbit-logo" />
 
               <h3>{plan.title}</h3>
 
@@ -150,8 +154,10 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <section className="rank-section" >
-        <h1 className="title"data-aos="fade-up">Ranks</h1>
+      <section className="rank-section">
+        <h1 className="title" data-aos="fade-up">
+          Ranks
+        </h1>
 
         <div className="rank-wrapper">
           {/* LEFT SIDE PYRAMID IMAGE */}
@@ -159,7 +165,8 @@ export default function Home() {
             <img
               src={Images.ranks}
               alt="Ranks Pyramid"
-              className="rank-image"data-aos="fade-up"
+              className="rank-image"
+              data-aos="fade-up"
             />
           </div>
 
@@ -235,6 +242,93 @@ export default function Home() {
           </div>
         </div>
       </section>
+        {/* ==================== COMMUNITY SECTION ==================== */}
+      <section className="community-section">
+        <h1 className="title" data-aos="fade-up">
+          Community
+        </h1>
+        <p className="community-text" data-aos="fade-up">
+          GO Ai is more than a platform — it’s a movement of innovators,
+          dreamers, builders and achievers. Together, we create opportunities,
+          share knowledge, and lift each other to new heights of wealth and
+          leadership.
+        </p>
+
+        <div className="community-grid" data-aos="fade-up">
+          <div className="community-box">
+            <div className="orb-icon-wrapper">
+              <img src={Images.orbit3} className="orb-img" alt="orbit-logo" />
+              <i className="fa-solid fa-users community-icon"></i>
+            </div>
+
+            <h3>Members</h3>
+            <p>15,000+ active individuals building their future.</p>
+          </div>
+
+
+           <div className="community-box">
+            <div className="orb-icon-wrapper">
+              <img src={Images.orbit3} className="orb-img" alt="orbit-logo" />
+              <i className="fa-solid fa-globe community-icon"></i>
+            </div>
+
+            <h3>Global Network</h3>
+            <p>Connected across continents with one shared vision.</p>
+          </div>
+           <div className="community-box">
+            <div className="orb-icon-wrapper">
+              <img src={Images.orbit3} className="orb-img" alt="orbit-logo" />
+              <i className="fa-solid fa-calendar community-icon"></i>
+            </div>
+
+            <h3>Daily Sessions</h3>
+            <p>Consistent guidance, training & live updates.</p>
+          </div>
+           <div className="community-box">
+            <div className="orb-icon-wrapper">
+              <img src={Images.orbit3} className="orb-img" alt="orbit-logo" />
+              <i className="fa-solid fa-medal community-icon"></i>
+            </div>
+
+            <h3>Elite Leadership</h3>
+            <p>Led by top mentors and experienced achievers</p>
+          </div>
+        </div>
+      </section>
+      {/* ==================== VISION SECTION ==================== */}
+      <section className="vision-section">
+        <h1 className="title" data-aos="fade-up">
+          Vision
+        </h1>
+        <p className="vision-text" data-aos="fade-up">
+          GO Ai is building the world’s most intelligent and unified wealth
+          ecosystem—an environment where automation, precision, and human
+          potential merge into a single force. Our vision is to create tools
+          that operate at institutional speed, providing individuals with
+          capabilities once reserved for large financial entities.
+          <br />
+          <br />
+          We aim to redefine what is possible in digital wealth creation by
+          empowering every member with access to intelligent technology,
+          real-time analytics, and high-level decision automation. Our systems
+          are designed to simplify complexity, eliminate guesswork, and enhance
+          accuracy, ensuring that growth becomes predictable rather than
+          uncertain.
+          <br />
+          <br />
+          In the future, we see a world where opportunity is not limited by
+          experience, geography, or background. Instead, it is expanded by
+          scalable tools, educational empowerment, and a global network of
+          achievers working together toward financial independence.
+          <br />
+          <br />
+          GO Ai is not just innovating for today—we are building the foundation
+          for the next era of wealth creation, where every individual has the
+          ability to think smarter, move faster, and unlock limitless potential.
+        </p>
+      </section>
+
+    
     </>
   );
 }
