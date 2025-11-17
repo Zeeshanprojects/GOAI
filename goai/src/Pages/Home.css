@@ -608,18 +608,17 @@
 
   .rank-image {
     width: 85% !important;
-    margin-left: 0; /* remove desktop margin */
+    margin-left: 0; 
     margin-top: 20px;
   }
 
-  /* content centered instead of left-aligned */
   .rank-content {
     margin-left: 0;
     width: 100%;
     text-align: center;
   }
 
-  /* remove arrow alignment spacing */
+
   .rank-group-wrapper {
     justify-content: center;
   }
@@ -640,16 +639,13 @@
   }
 }
 
-/* EXTRA-small screens */
 @media (max-width: 576px) {
   .rank-image {
     width: 95% !important;
   }
-
   .rank-heading {
     font-size: 20px;
   }
-
   .rank-group ul li img {
     width: 22px;
     height: 22px;
