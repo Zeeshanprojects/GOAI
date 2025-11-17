@@ -1,23 +1,28 @@
 @font-face {
   font-family: "SF Pro Regular";
   src: url("./SFPRODISPLAYREGULAR.OTF") format("truetype");
+  font-display: swap !important;
 }
 
 @font-face {
   font-family: "SF Pro Medium";
   src: url("./SFPRODISPLAYMEDIUM.OTF") format("truetype");
+    font-display: swap !important;
 }
 
 @font-face {
   font-family: "SF Pro Bold";
   src: url("./SFPRODISPLAYBOLD.OTF") format("truetype");
+    font-display: swap !important;
 }
 
 @font-face {
   font-family: "SF Pro SemiBold Italic";
   src: url("./SFPRODISPLAYSEMIBOLDITALIC.OTF") format("truetype");
+    font-display: swap !important;
 }
 @font-face{
 font-family: "gamingfont";
- src:url("./Spectre-Demo.otf")format("truetype")
+ src:url("./Spectre-Demo.otf")format("truetype");
+ font-display:swap !important
 }
