@@ -296,7 +296,7 @@ export default function Home() {
         </div>
       </section>
       {/* ==================== VISION SECTION ==================== */}
-      <section className="vision-section">
+      <section className="vision-section mt-0">
         <h1 className="title" data-aos="fade-up">
           Vision
         </h1>

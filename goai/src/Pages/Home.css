@@ -655,9 +655,9 @@ height: auto !important  ;
 
 /* ========= GLOBAL SECTION STYLE (MATCH EXISTING THEME) ========= */
 .vision-section,
-.ecosystem-section,
-.why-section,
+
 .community-section {
+  
   padding: 70px 5%;
   text-align: center;
   color: white;
