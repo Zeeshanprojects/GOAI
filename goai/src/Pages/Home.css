@@ -9,12 +9,9 @@
   align-items: center;
   justify-content: center;
 
-    background: radial-gradient(
-      circle at 50% 20%,
-      rgba(140, 77, 255, 0.25),
-      rgba(0, 0, 0, 1)
-    ),
-    linear-gradient(135deg, #0b0114 0%, #07000e 100%);
+ 
+   background: radial-gradient(circle at 50% 20%, #001),
+              linear-gradient(135deg, #0b0114, #07000e);
 }
 .text-content h1 {
   font-family: "SF Pro Regular" !important;
@@ -48,18 +45,12 @@ height: 100%;
   text-align: center;
   overflow: hidden;
 
-  background: radial-gradient(
-      circle at 50% 20%,
-      rgba(140, 77, 255, 0.25),
-      rgba(0, 0, 0, 1)
-    ),
-    linear-gradient(135deg, #0b0114 0%, #07000e 100%);
 }
 
 /* Subtle animated glow in background */
 .mission-overlay {
   position: absolute;
-  top: -20%;
+  
   left: -20%;
   width: 140%;
   height: 140%;
@@ -117,7 +108,7 @@ height: 100%;
   font-size: 79px;
   font-weight: 600 !important;
   line-height: 1.05;
-  margin: 0 0 2rem;
+
   letter-spacing: -1.5px;
 }
 
@@ -131,9 +122,10 @@ height: 100%;
 /* ===== STATS ===== */
 .stats {
   font-family: "gamingfont" !important;
+  margin-top:30px;
   display: flex;
   gap: clamp(1.5rem, 4vw, 3rem);
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
   flex-wrap: wrap;
 }
 
@@ -343,12 +335,8 @@ height: 100%;
   z-index: 1;
 
   /* Same dark/purple background as hero */
-  background: radial-gradient(
-      circle at 50% 20%,
-      rgba(140, 77, 255, 0.25),
-      rgba(0, 0, 0, 1)
-    ),
-    linear-gradient(135deg, #0b0114 0%, #07000e 100%);
+  background: radial-gradient(circle at 50% 20%, #001),
+              linear-gradient(135deg, #0b0114, #07000e);
 }
 
 /* Mission Content Styling */
@@ -367,12 +355,8 @@ height: 100%;
 .pricing-section {
   padding: 30px 0;
 
-  background: radial-gradient(
-      circle at 50% 20%,
-      rgba(140, 77, 255, 0.25),
-      rgba(0, 0, 0, 1)
-    ),
-    linear-gradient(135deg, #0b0114 0%, #07000e 100%);
+ background: radial-gradient(circle at 50% 20%, #001),
+              linear-gradient(135deg, #0b0114, #07000e);
 }
 
 .pricing-wrapper {
@@ -478,12 +462,8 @@ height: 100%;
   color: white;
   text-align: center;
 
-  background: radial-gradient(
-      circle at 50% 20%,
-      rgba(140, 77, 255, 0.25),
-      rgba(0, 0, 0, 1)
-    ),
-    linear-gradient(135deg, #0b0114 0%, #07000e 100%);
+  background: radial-gradient(circle at 50% 20%, #001),
+              linear-gradient(135deg, #0b0114, #07000e);
 }
 .rank-wrapper {
   display: flex;
@@ -661,8 +641,8 @@ height: auto !important  ;
   padding: 70px 5%;
   text-align: center;
   color: white;
-  background: radial-gradient(circle at 50% 20%, rgba(140, 77, 255, 0.2), #000),
-              linear-gradient(135deg, #0b0114 0%, #07000e 100%);
+  background: radial-gradient(circle at 50% 20%, #001),
+              linear-gradient(135deg, #0b0114, #07000e);
 }
 
 /* ================================================================ */
@@ -759,9 +739,9 @@ height: auto !important  ;
 /* ===== FAQ SECTION ===== */
 .faq-section {
   padding: 80px 6%;
-  background: radial-gradient(circle at 50% 20%, rgba(140, 77, 255, 0.2), #000),
-              linear-gradient(135deg, #0b0114 0%, #07000e 100%);
-
+background: radial-gradient(circle at 50% 20%, #001),
+              linear-gradient(135deg, #0b0114, #07000e);
+  color: white;
 
 }
 
