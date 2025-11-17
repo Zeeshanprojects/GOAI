@@ -1,6 +1,6 @@
 const Images = {
   logo: new URL("./goai-logo.webp", import.meta.url).href,
-  heroimage: new URL("./hero-image.png", import.meta.url).href,
+  heroimage: new URL("./hero-image.webp", import.meta.url).href,
   orbit1: new URL("./orbit1.webp", import.meta.url).href,
   orbit2: new URL("./orbit2.webp", import.meta.url).href,
   orbit3: new URL("./orbit3.webp", import.meta.url).href,
@@ -17,6 +17,6 @@ const Images = {
   smallicon9: new URL("./smallicon9.webp", import.meta.url).href,
   smallicon10: new URL("./smallicon10.webp", import.meta.url).href,
   smallicon11: new URL("./smallicon11.webp", import.meta.url).href,
-  smallicon12: new URL("./smallicon12.webp", import.meta.url).href
+  smallicon12: new URL("./smallicon12.webp", import.meta.url).href,
 };
 export default Images;
