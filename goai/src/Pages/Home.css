@@ -35,7 +35,7 @@
 }
 
 .mission-section {
-  position: relative;
+  position: relativ-sectione;
   height: 100%;
   color: white;
   text-align: center;
@@ -326,7 +326,7 @@
   justify-content: center;
   color: white;
   text-align: center;
-  padding: 0 5%;
+
   z-index: 1;
 }
 
@@ -663,7 +663,7 @@
 }
 
 .faq-section {
-
+ padding: 80px 5%;
 
   color: white;
 }
@@ -1062,7 +1062,7 @@
 /* ==================== TESTIMONIALS SECTION ==================== */
 
 .testimonials-section {
- 
+ padding: 20px 5%;
   text-align: center;
   color: white;
 }
@@ -1087,12 +1087,6 @@
   height: 100%;
 }
 
-.testimonial-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 25px rgba(150, 50, 255, 0.35);
-}
-
-/* Stars */
 .testimonial-stars {
   color: #ffdf3d;
   font-size: 18px;
