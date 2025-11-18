@@ -13,26 +13,8 @@ export default function Home() {
       easing: "ease-in-out",
       once: true,
     });
-      let index = 0;
-  const slides = document.querySelector(".slides");
-  const totalSlides = document.querySelectorAll(".slide").length;
 
-  const nextSlide = () => {
-    index = (index + 1) % totalSlides;
-    slides.style.transform = `translateX(-${index * 100}%)`;
-  };
 
-  const prevSlide = () => {
-    index = (index - 1 + totalSlides) % totalSlides;
-    slides.style.transform = `translateX(-${index * 100}%)`;
-  };
-
-  const autoSlide = setInterval(nextSlide, 3500);
-
-  document.querySelector(".next-btn").onclick = nextSlide;
-  document.querySelector(".prev-btn").onclick = prevSlide;
-
-  return () => clearInterval(autoSlide);
   }, []);
   const plans = [
     {
