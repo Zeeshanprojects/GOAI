@@ -8,10 +8,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
- 
-   background: radial-gradient(circle at 50% 20%, #001),
-              linear-gradient(135deg, #0b0114, #07000e);
+background: var(--goai-bg);
+  background-size: cover;
+  background-repeat: no-repeat;
+    
 }
 .text-content h1 {
   font-family: "SF Pro Regular" !important;
@@ -333,10 +333,11 @@ height: 100%;
   text-align: center;
   padding: 0 5%;
   z-index: 1;
+background: var(--goai-bg);
+  background-size: cover;
+  background-repeat: no-repeat;
 
-  /* Same dark/purple background as hero */
-  background: radial-gradient(circle at 50% 20%, #001),
-              linear-gradient(135deg, #0b0114, #07000e);
+
 }
 
 /* Mission Content Styling */
@@ -354,9 +355,10 @@ height: 100%;
 
 .pricing-section {
   padding: 30px 0;
-
- background: radial-gradient(circle at 50% 20%, #001),
-              linear-gradient(135deg, #0b0114, #07000e);
+background: var(--goai-bg);
+  background-size: cover;
+  background-repeat: no-repeat;
+          
 }
 
 .pricing-wrapper {
@@ -461,9 +463,9 @@ height: 100%;
   width: 100%;
   color: white;
   text-align: center;
-
-  background: radial-gradient(circle at 50% 20%, #001),
-              linear-gradient(135deg, #0b0114, #07000e);
+background: var(--goai-bg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .rank-wrapper {
   display: flex;
@@ -550,10 +552,6 @@ height: 100%;
     padding: 0 5%;
   }
 }
-
-/* RIGHT SIDE: distribute content vertically equal */
-
-/* Each ERA group wrapper aligns perfectly with arrow */
 .rank-group-wrapper {
   display: flex;
   align-items: center;
@@ -641,8 +639,11 @@ height: auto !important  ;
   padding: 70px 5%;
   text-align: center;
   color: white;
-  background: radial-gradient(circle at 50% 20%, #001),
-              linear-gradient(135deg, #0b0114, #07000e);
+background: var(--goai-bg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
 }
 
 /* ================================================================ */
@@ -739,8 +740,12 @@ height: auto !important  ;
 /* ===== FAQ SECTION ===== */
 .faq-section {
   padding: 80px 6%;
-background: radial-gradient(circle at 50% 20%, #001),
-              linear-gradient(135deg, #0b0114, #07000e);
+background: var(--goai-bg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+
   color: white;
 
 }
