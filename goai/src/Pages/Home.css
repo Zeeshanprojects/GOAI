@@ -612,7 +612,7 @@
 /* ========= GLOBAL SECTION STYLE (MATCH EXISTING THEME) ========= */
 .vision-section,
 .community-section {
-  padding: 70px 5%;
+
   text-align: center;
   color: white;
 }
@@ -663,7 +663,7 @@
 }
 
 .faq-section {
-  padding: 80px 6%;
+
 
   color: white;
 }
@@ -1062,7 +1062,7 @@
 /* ==================== TESTIMONIALS SECTION ==================== */
 
 .testimonials-section {
-  padding: 80px 5%;
+ 
   text-align: center;
   color: white;
 }
