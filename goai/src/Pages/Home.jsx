@@ -3,6 +3,11 @@ import Images from "../assets/Images/Image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Home.css";
+// at the top of Home.jsx (replace your current Swiper imports)
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules"; // modules
+import "swiper/css";
+import "swiper/css/pagination";
 
 export default function Home() {
   useEffect(() => {
@@ -457,6 +462,56 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* ==================== TESTIMONIALS (SWIPER) ==================== */}
+{/* ==================== TESTIMONIALS (SWIPER) ==================== */}
+<section className="testimonials-section" data-aos="fade-up">
+  <div className="container">
+
+    <h1 className="title">Testimonials</h1>
+    <p className="testimonials-sub">
+      Hear from the GO Ai members transforming their financial future.
+    </p>
+
+    <Swiper
+      modules={[Autoplay]}
+      spaceBetween={30}
+      slidesPerView={3}
+      loop={true}
+      autoplay={{ delay: 2500, disableOnInteraction: false }}
+      pagination={{ clickable: true }}
+      breakpoints={{
+        320: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+      }}
+      className="testimonial-swiper"
+    >
+      {[
+        { name: "Ahsan R.", role: "Entrepreneur", text: "GO Ai transformed my trading mindset completely." },
+        { name: "Nimra S.", role: "Data Analyst", text: "The AI insights feel like having a professional advisor." },
+        { name: "Saad M.", role: "Trader", text: "Automation gave me peace of mind and consistent results." },
+        { name: "Haris I.", role: "Investor", text: "Real-time dashboards changed how I evaluate markets." },
+        { name: "Maira K.", role: "Student", text: "Education + tools = best combination for growth." },
+        { name: "Bilal U.", role: "Crypto Trader", text: "The alert system is incredibly accurate."},
+        { name: "Khadija Z.", role: "Marketer", text: "Community support keeps me motivated."},
+        { name: "Zain A.", role: "Engineer", text: "Smoothest ecosystem I've ever seen."},
+        { name: "Ali R.", role: "Freelancer", text: "This platform helped me diversify smartly."},
+        { name: "Hamza T.", role: "Developer", text: "Precision tracking tools are next-level."},
+      ].map((t, i) => (
+        <SwiperSlide key={i}>
+          <div className="testimonial-card h-100">
+            <div className="stars">⭐⭐⭐⭐⭐</div>
+            <p className="t-text">“{t.text}”</p>
+            <h3 className="t-name">{t.name}</h3>
+            <p className="t-role">{t.role}</p>
+          </div>
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  </div>
+</section>
+
+
     </>
   );
 }
