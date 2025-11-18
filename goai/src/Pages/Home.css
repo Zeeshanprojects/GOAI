@@ -35,7 +35,7 @@
 }
 
 .mission-section {
-  position: relativ-sectione;
+
   height: 100%;
   color: white;
   text-align: center;
@@ -1066,6 +1066,10 @@
   text-align: center;
   color: white;
 }
+.swiper-slide {
+  height: auto !important;
+  display: flex;
+}
 
 .testimonials-sub {
   max-width: 700px;
@@ -1076,6 +1080,7 @@
 
 /* Card Styling */
 .testimonial-card {
+  height: 100% !important;
   background: rgba(255,255,255,0.06);
   border: 1px solid rgba(255,255,255,0.12);
   padding: 30px;
@@ -1096,6 +1101,7 @@
 
 /* Text */
 .testimonial-text {
+    
   font-size: 15px;
   opacity: 0.9;
   line-height: 1.6;
