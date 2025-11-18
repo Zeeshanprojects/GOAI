@@ -13,6 +13,26 @@ export default function Home() {
       easing: "ease-in-out",
       once: true,
     });
+      let index = 0;
+  const slides = document.querySelector(".slides");
+  const totalSlides = document.querySelectorAll(".slide").length;
+
+  const nextSlide = () => {
+    index = (index + 1) % totalSlides;
+    slides.style.transform = `translateX(-${index * 100}%)`;
+  };
+
+  const prevSlide = () => {
+    index = (index - 1 + totalSlides) % totalSlides;
+    slides.style.transform = `translateX(-${index * 100}%)`;
+  };
+
+  const autoSlide = setInterval(nextSlide, 3500);
+
+  document.querySelector(".next-btn").onclick = nextSlide;
+  document.querySelector(".prev-btn").onclick = prevSlide;
+
+  return () => clearInterval(autoSlide);
   }, []);
   const plans = [
     {
@@ -242,58 +262,95 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* ==================== COMMUNITY SECTION ==================== */}
-      <section className="community-section">
-        <h1 className="title" data-aos="fade-up">
-          Community
-        </h1>
-        <p className="community-text" data-aos="fade-up">
-          GO Ai is more than a platform — it’s a movement of innovators,
-          dreamers, builders and achievers. Together, we create opportunities,
-          share knowledge, and lift each other to new heights of wealth and
-          leadership.
-        </p>
 
-        <div className="community-grid" data-aos="fade-up">
-          <div className="community-box">
-            <div className="orb-icon-wrapper">
-              <img src={Images.orbit3} className="orb-img" alt="orbit-logo" />
-              <i className="fa-solid fa-users community-icon"></i>
-            </div>
+       {/* ==================== AI ECOSYSTEM SECTION ==================== */}
+      <section
+        className="ecosystem-section"
+        data-aos="fade-up"
+        aria-labelledby="ecosystem-title"
+      >
+        <div className="container">
+          <h1 id="ecosystem-title" className="title">
+            AI Ecosystem
+          </h1>
+          <div className="eco-grid" data-aos="fade-up">
+            <article className="eco-card" aria-hidden="false">
+              <div className="eco-icon-wrap">
+                <i
+                  className="fa-solid fa-robot eco-icon"
+                  aria-hidden="true"
+                ></i>
+              </div>
+              <h3 className="eco-h">AI Trading Engine</h3>
+              <p className="eco-p">
+                High-frequency inference, pattern recognition and automated
+                order execution tuned for precision and risk control.
+              </p>
+            </article>
 
-            <h3>Members</h3>
-            <p>15,000+ active individuals building their future.</p>
-          </div>
+            <article className="eco-card">
+              <div className="eco-icon-wrap">
+                <i className="fa-solid fa-chart-line eco-icon"></i>
+              </div>
+              <h3 className="eco-h">Real-time Analytics</h3>
+              <p className="eco-p">
+                Live dashboards, performance metrics and signal quality
+                indicators so you always see the truth behind the data.
+              </p>
+            </article>
 
-          <div className="community-box">
-            <div className="orb-icon-wrapper">
-              <img src={Images.orbit3} className="orb-img" alt="orbit-logo" />
-              <i className="fa-solid fa-globe community-icon"></i>
-            </div>
+            <article className="eco-card">
+              <div className="eco-icon-wrap">
+                <i className="fa-solid fa-bell-concierge eco-icon"></i>
+              </div>
+              <h3 className="eco-h">Smart Alerts</h3>
+              <p className="eco-p">
+                Personalized, threshold-based alerts that notify you only when
+                actionable and high probability signals are present.
+              </p>
+            </article>
 
-            <h3>Global Network</h3>
-            <p>Connected across continents with one shared vision.</p>
-          </div>
-          <div className="community-box">
-            <div className="orb-icon-wrapper">
-              <img src={Images.orbit3} className="orb-img" alt="orbit-logo" />
-              <i className="fa-solid fa-calendar community-icon"></i>
-            </div>
+            <article className="eco-card">
+              <div className="eco-icon-wrap">
+                <i className="fa-solid fa-cogs eco-icon"></i>
+              </div>
+              <h3 className="eco-h">Automation Studio</h3>
+              <p className="eco-p">
+                Create and schedule rules, strategies and automations —
+                backtest, simulate, then deploy with one click.
+              </p>
+            </article>
 
-            <h3>Daily Sessions</h3>
-            <p>Consistent guidance, training & live updates.</p>
-          </div>
-          <div className="community-box">
-            <div className="orb-icon-wrapper">
-              <img src={Images.orbit3} className="orb-img" alt="orbit-logo" />
-              <i className="fa-solid fa-medal community-icon"></i>
-            </div>
+            <article className="eco-card">
+              <div className="eco-icon-wrap">
+                <i className="fa-solid fa-chalkboard-user eco-icon"></i>
+              </div>
+              <h3 className="eco-h">Education Hub</h3>
+              <p className="eco-p">
+                On-demand courses, live workshops, and mentorship tracks
+                designed to accelerate skill and confidence.
+              </p>
+            </article>
 
-            <h3>Elite Leadership</h3>
-            <p>Led by top mentors and experienced achievers</p>
+            <article className="eco-card">
+              <div className="eco-icon-wrap">
+                <i className="fa-solid fa-users-gear eco-icon"></i>
+              </div>
+              <h3 className="eco-h">Community & Labs</h3>
+              <p className="eco-p">
+                Collaborative labs, idea exchange, and community-built
+                strategies — iterate faster with the network.
+              </p>
+            </article>
           </div>
         </div>
+
+        {/* decorative orbs — optional, consistent with theme */}
+        <div className="ecosystem-orb orb-eco-1"></div>
+        <div className="ecosystem-orb orb-eco-2"></div>
       </section>
+      {/* ==================== COMMUNITY SECTION ==================== */}
+    
       {/* ==================== VISION SECTION ==================== */}
       <section className="vision-section mt-0">
         <h1 className="title" data-aos="fade-up">
@@ -327,8 +384,10 @@ export default function Home() {
         </p>
       </section>
       {/* ==================== FAQ SECTION ==================== */}
-      <section className="faq-section" >
-        <h1 className="title" data-aos="fade-up" >Frequently Asked Questions</h1>
+      <section className="faq-section">
+        <h1 className="title" data-aos="fade-up">
+          Frequently Asked Questions
+        </h1>
 
         <div className="faq-container mt-5" data-aos="fade-up">
           {/* FAQ ITEM 1 */}
