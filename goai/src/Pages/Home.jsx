@@ -20,14 +20,7 @@ export default function Home() {
     });
   }, []);
   const plans = [
-    {
-      image: Images.orbit1,
-      title: "Go Concept",
-      price: "$199",
-      fee: "Initial Fee",
-      features: ["Basic"],
-      orb: "/orb1.png",
-    },
+  
     {
       image: Images.orbit2,
       title: "Go Connect",
@@ -94,12 +87,12 @@ export default function Home() {
           </div>
         </div>
       </section>
-   <section className="mission-section">
+   <section className="mission-section" data-aos="fade-up">
   <div className="mission-bg">
     <img src={Images.missionbackground} className="mission-image" />
   </div>
 
-  <div className="mission-content" data-aos="fade-up">
+  <div className="mission-content">
     <h1 className="title">Mission</h1>
     <p>
       GO Ai exists to merge financial education, trading technology, and human 
