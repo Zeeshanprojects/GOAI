@@ -2,6 +2,7 @@
 .banner-circle{
   height: 650px !important;
 transform: translate(-300px);
+filter: drop-shadow(0 0 100px rgba(140, 100, 255, 0.8));
 }
 .content-wrapper {
   
