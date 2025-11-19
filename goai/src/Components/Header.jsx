@@ -32,11 +32,7 @@ export default function Header() {
         Vision
           </a>
         </li>
-            <li className="nav-item">
-          <a className="nav-link " aria-current="page" href="#">
-            Technology
-          </a>
-        </li>
+          
           <li className="nav-item">
           <a className="nav-link " aria-current="page" href="#">
             Platform

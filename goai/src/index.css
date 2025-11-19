@@ -5,10 +5,14 @@
 }
 :root {
   --goai-bg:
-    radial-gradient(circle at 80% 20%, rgba(156, 77, 255, 0.35) 0%, transparent 50%),
-  
-    radial-gradient(circle at 60% 50%, rgba(200, 59, 255, 0.25) 0%, transparent 55%),
-    linear-gradient(135deg, #0d0114 0%, #050008 100%);
+    /* Soft magenta light on right side */
+    radial-gradient(circle at 80% 60%, rgba(143, 58, 110, 0.30) 0%, transparent 55%),
+
+    /* Slight purple haze from top-left */
+    radial-gradient(circle at 20% 20%, rgba(124, 92, 147, 0.25) 0%, transparent 60%),
+
+    /* Deep navy / midnight base */
+    linear-gradient(135deg, #0A1A38 0%, #050008 100%);
 }
 
 
