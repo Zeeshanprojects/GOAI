@@ -4,21 +4,12 @@
   box-sizing: border-box;
 }
 :root {
-  --goai-bg:
-     /* Soft magenta light on right side */
-    radial-gradient(circle at 20% 20%, rgba(124, 92, 147, 0.25) 0%, transparent 60%),
-   /* Slight purple haze from top-left */
-    radial-gradient(circle at 80% 60%, rgba(143, 58, 110, 0.30) 0%, transparent 55%),
- 
-
-   
-
-    /* Deep navy / midnight base */
-    linear-gradient(135deg, #0A1A38 0%, #050008 100%);
+  --goai-bg: #000106 !important;
 }
 
 
 html,body{
+  background: var(--goai-bg) !important;
   overflow-x: hidden !important;
     background: var(--goai-bg);
   background-size: cover;

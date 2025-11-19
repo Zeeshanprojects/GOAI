@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import Images from "../assets/Images/Image";
 export default function Footer() {
   return (
     <>
@@ -18,10 +19,7 @@ export default function Footer() {
     
       >
        
-        {/* Left */}
-        {/* Right */}
-      
-        {/* Right */}
+
       </section>
       {/* Section: Social media */}
       {/* Section: Links  */}
@@ -32,12 +30,9 @@ export default function Footer() {
             {/* Grid column */}
             <div className="col-md-3 col-lg-6 col-xl-6 mx-auto mb-4">
               {/* Content */}
-              <h6 className="text-uppercase fw-bold">GOAI</h6>
-              <hr
-                className="mb-4 mt-0 d-inline-block mx-auto"
-                style={{ width: 60, backgroundColor: "#7c4dff", height: 2 }}
-              />
-              <p>
+        <img src={Images.logo} alt="logo" height={50} width={100}/>
+             
+              <p className="mt-3">
                 GO Ai exists to merge financial education, trading technology, and human potential 
     into a single ecosystem of empowerment...
               </p>
@@ -123,9 +118,9 @@ export default function Footer() {
         className="text-center p-3"
         style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
       >
-        © 2025
+        © 2025&nbsp;
         <a className="text-white" href="https://mdbootstrap.com/">
-       GO AI
+       GOAI
         </a>
       </div>
       {/* Copyright */}

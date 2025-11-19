@@ -4,6 +4,7 @@ const Images = {
   bannercircle:new URL ("./banner-circle.webp",import.meta.url).href,
   heroimage: new URL("./hero-image.webp", import.meta.url).href,
     missionimage: new URL("./mission-image.webp", import.meta.url).href,
+    missionbackground:new URL("./mission-background.webp",import.meta.url).href,
   orbit1: new URL("./orbit1.png", import.meta.url).href,
   orbit2: new URL("./orbit2.png", import.meta.url).href,
   orbit3: new URL("./orbit3.png", import.meta.url).href,
