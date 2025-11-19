@@ -64,7 +64,7 @@ export default function Home() {
       <section className="hero-section container-fluid">
         <div className="background-effects"></div>
 
-        <div className="content-wrapper">
+        <div className="content-wrapper" data-aos="fade-up">
           <img src={Images.bannercircle} className="banner-circle" />
           <div className="text-content" data-aos="fade-up">
             <h1>
@@ -93,11 +93,26 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        {/* Floating orbs */}
-
-        {/* Hero Image */}
       </section>
+<section className="mission-section">
+
+  <div className="pricing-header" data-aos="fade-up">
+    <h1 className="title" >Mission</h1>
+  </div>
+
+  <div className="mission-content" data-aos="fade-up">
+
+    <img src={Images.heroimage} className="hero-image" />
+
+    <p>
+      GO Ai exists to merge financial education, trading technology, and human potential 
+      into a single ecosystem of empowerment. We engineer prosperity through community, 
+      automation, and data-driven precision. We are building the next generation of 
+      digital wealth creators, a network where ambition meets algorithm.
+    </p>
+
+  </div>
+</section>
 
       <section className="pricing-section ">
         {/* Heading + Description */}

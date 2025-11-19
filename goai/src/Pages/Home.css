@@ -1,29 +1,33 @@
 /* ===== HERO SECTION ===== */
 .banner-circle{
   height: 650px !important;
-transform: translate(-50px);
-}
+  
+ filter: drop-shadow(0 0 100px rgba(140, 100, 255, 1));
 
+transform: translate(-360px);
+}
 
 .content-wrapper {
   width: 100% !important;
-
   padding: 0 5%;
   display: flex;
   margin-top: 150px;
   align-items: center;
   z-index: 2;
 }
-/* Wrapper to control spacing & alignment */
+.content-wrapper h1,button{
+  margin-left: -300px;
+}
 .orbit-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;      /* move everything to RIGHT */
+  align-items: flex-end;      
   margin-top: 40px;           /* spacing below the button */
-  padding-right: 40px;        /* right padding for aesthetics */
+ 
+    margin-left: 200px;      /* right padding for aesthetics */
 }
 
-/* Orbit images in a row */
+
 .orbits {
   display: flex;
   gap: 15px;                  /* spacing between images */
@@ -35,7 +39,6 @@ transform: translate(-50px);
   object-fit: contain;
 
 }
-
 .orbit-title {
   color: #ffffff;
 
@@ -64,25 +67,7 @@ transform: translate(-50px);
 .text-content h1 {
   font-family: "SF Pro Regular" !important;
 }
-.hero-image {
-  position: absolute;
-  top: 5%;                /* move sphere higher */
-  left: 50%;
-  transform: translateX(-50%);
-  max-width: 380px;
-  pointer-events: none;
-  filter: drop-shadow(0 0 40px rgba(140, 77, 255, 0.7));
-  z-index: 2;
-}
 
-.mission-section {
-  position: relative;
-  width: 100%;
-  padding-top: 120px; /* spacing above sphere */
-  padding-bottom: 120px;
-  text-align: center;
-  overflow: hidden;
-}
 
 /* SPHERE IMAGE — centered properly */
 
@@ -102,37 +87,31 @@ align-items: center;
   z-index: 2;
 }
 
-/* TEXT GROUP */
-.mission-content {
-  text-align: center;
-  z-index: 3;
+.mission-section {
   position: relative;
-}
-
-/* Mission Heading */
-.title {
-  font-size: 6rem;                 /* slightly bigger */
-  font-weight: 700;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: white;
-  margin-bottom: 15px;
+  text-align: center;
 }
 
-/* Subtitle */
-.mission-content h5 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #b9cfff;
-  margin-bottom: 30px;
+/* Mission Content */
+.mission-content {
+  max-width: 900px;
+  z-index: 2;
 }
 
-/* Paragraph */
-.mission-text {
-  max-width: 850px;
-  margin: 0 auto;
-  color: rgba(255,255,255,0.85);
-  font-size: 1.15rem;
-  line-height: 1.7;
+.mission-content p {
+  font-size: 20px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: 20px;
 }
+
 
 .text-content {
   max-width: 800px;
@@ -321,33 +300,7 @@ align-items: center;
   }
 }
 
-/* ===== MISSION SECTION ===== */
-.mission-section {
-  position: relative;
-  width: 100% !important;
-  height: 100vh !important;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
 
-  z-index: 1;
-}
-
-/* Mission Content Styling */
-.mission-content {
-  max-width: 900px;
-  z-index: 2;
-}
-
-.mission-content p {
-  font-size: 20px;
-  line-height: 1.8;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.85);
-}
 
 .pricing-section {
   padding: 30px 0;
