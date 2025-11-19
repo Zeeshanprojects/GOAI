@@ -64,7 +64,7 @@ export default function Home() {
       <section className="hero-section container-fluid">
         <div className="background-effects"></div>
 
-        <div className="content-wrapper" data-aos="fade-up">
+        <div className="content-wrapper content" data-aos="fade-up">
           <img src={Images.bannercircle} className="banner-circle" />
           <div className="text-content" data-aos="fade-up">
             <h1>

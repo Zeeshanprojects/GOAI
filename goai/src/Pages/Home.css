@@ -1,12 +1,8 @@
 /* ===== HERO SECTION ===== */
 .banner-circle{
   height: 650px !important;
-  
- filter: drop-shadow(0 0 100px rgba(140, 100, 255, 1));
-
-transform: translate(-360px);
+transform: translate(-300px);
 }
-
 .content-wrapper {
   width: 100% !important;
   padding: 0 5%;
@@ -15,8 +11,9 @@ transform: translate(-360px);
   align-items: center;
   z-index: 2;
 }
-.content-wrapper h1,button{
+.content h1, .neon-btn{
   margin-left: -300px;
+ 
 }
 .orbit-wrapper {
   display: flex;
