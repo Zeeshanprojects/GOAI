@@ -18,8 +18,6 @@ export default function Home() {
       easing: "ease-in-out",
       once: true,
     });
-
-
   }, []);
   const plans = [
     {
@@ -33,7 +31,7 @@ export default function Home() {
     {
       image: Images.orbit2,
       title: "Go Connect",
-      price: "$349",
+      price: "$350",
       fee: "Initial Fee",
       features: ["More Education", "More Alerts"],
       orb: "/orb2.png",
@@ -41,7 +39,7 @@ export default function Home() {
     {
       image: Images.orbit3,
       title: "Go Create",
-      price: "$999",
+      price: "$1000",
       fee: "Initial Fee",
       features: ["More Education", "More Alerts", "More Softwares"],
       orb: "/orb3.png",
@@ -49,7 +47,7 @@ export default function Home() {
     {
       image: Images.orbit4,
       title: "Go Complete",
-      price: "$1,699",
+      price: "$1700",
       fee: "Initial Fee",
       features: [
         "More Education",
@@ -63,31 +61,17 @@ export default function Home() {
   ];
   return (
     <>
-      <section className="hero-section">
+      <section className="hero-section container-fluid">
         <div className="background-effects"></div>
 
         <div className="content-wrapper">
+          <img src={Images.bannercircle} className="banner-circle" />
           <div className="text-content" data-aos="fade-up">
             <h1>
               Built for the new era of
               <br />
               wealth
             </h1>
-
-            <div className="stats">
-              <div className="stat-item">
-                <strong>10+</strong>
-                <span>YEARS</span>
-              </div>
-              <div className="stat-item">
-                <strong>50+</strong>
-                <span>PRODUCTS</span>
-              </div>
-              <div className="stat-item">
-                <strong>15000+</strong>
-                <span>MEMBERS</span>
-              </div>
-            </div>
 
             <button className="neon-btn">
               <span>Join Now</span>
@@ -99,39 +83,6 @@ export default function Home() {
         {/* Floating orbs */}
 
         {/* Hero Image */}
-        <img
-          src={Images.heroimage}
-          alt="heroimage"
-          className="hero-image"
-          data-aos="fade-up"
-        />
-      </section>
-
-      <section className="mission-section">
-        <div className="mission-overlay"></div>
-
-        <div className="mission-content " data-aos="fade-up">
-          <h1 className="title">Mission</h1>
-          <p className="mission-text">
-            GO Ai exists to merge financial education, trading technology, and
-            human potential into a unified ecosystem of empowerment. Our mission
-            is to make advanced wealth-building tools accessible to everyone
-            combining intelligent automation, real-time analytics, and the
-            strength of community.
-            <br />
-            <br />
-            We believe financial growth should not depend on luck or background,
-            but on knowledge, precision, and scalable systems. By connecting
-            people with cutting-edge tools, mentorship, and AI-driven
-            strategies, we enable individuals to think smarter, move faster, and
-            create opportunities that once seemed out of reach.
-            <br />
-            <br />
-            GO Ai is building the next generation of digital wealth creators—a
-            global network where ambition meets algorithm, and where every
-            member has the power to transform information into impact.
-          </p>
-        </div>
       </section>
 
       <section className="pricing-section ">
@@ -250,7 +201,7 @@ export default function Home() {
         </div>
       </section>
 
-       {/* ==================== AI ECOSYSTEM SECTION ==================== */}
+      {/* ==================== AI ECOSYSTEM SECTION ==================== */}
       <section
         className="ecosystem-section"
         data-aos="fade-up"
@@ -337,7 +288,7 @@ export default function Home() {
         <div className="ecosystem-orb orb-eco-2"></div>
       </section>
       {/* ==================== COMMUNITY SECTION ==================== */}
-    
+
       {/* ==================== VISION SECTION ==================== */}
       <section className="vision-section mt-0">
         <h1 className="title" data-aos="fade-up">
@@ -463,55 +414,92 @@ export default function Home() {
         </div>
       </section>
       {/* ==================== TESTIMONIALS (SWIPER) ==================== */}
-{/* ==================== TESTIMONIALS (SWIPER) ==================== */}
-<section className="testimonials-section" data-aos="fade-up">
-  <div className="container">
+      {/* ==================== TESTIMONIALS (SWIPER) ==================== */}
+      <section className="testimonials-section" data-aos="fade-up">
+        <div className="container">
+          <h1 className="title">Testimonials</h1>
+          <p className="testimonials-sub">
+            Hear from the GO Ai members transforming their financial future.
+          </p>
 
-    <h1 className="title">Testimonials</h1>
-    <p className="testimonials-sub">
-      Hear from the GO Ai members transforming their financial future.
-    </p>
-
-    <Swiper
-      modules={[Autoplay]}
-      spaceBetween={30}
-      slidesPerView={3}
-      loop={true}
-      autoplay={{ delay: 2500, disableOnInteraction: false }}
-      pagination={{ clickable: true }}
-      breakpoints={{
-        320: { slidesPerView: 1 },
-        768: { slidesPerView: 2 },
-        1024: { slidesPerView: 3 },
-      }}
-      className="testimonial-swiper"
-    >
-      {[
-        { name: "Ahsan R.", role: "Entrepreneur", text: "GO Ai transformed my trading mindset completely." },
-        { name: "Nimra S.", role: "Data Analyst", text: "The AI insights feel like having a professional advisor." },
-        { name: "Saad M.", role: "Trader", text: "Automation gave me peace of mind and consistent results." },
-        { name: "Haris I.", role: "Investor", text: "Real-time dashboards changed how I evaluate markets." },
-        { name: "Maira K.", role: "Student", text: "Education + tools = best combination for growth." },
-        { name: "Bilal U.", role: "Crypto Trader", text: "The alert system is incredibly accurate."},
-        { name: "Khadija Z.", role: "Marketer", text: "Community support keeps me motivated."},
-        { name: "Zain A.", role: "Engineer", text: "Smoothest ecosystem I've ever seen."},
-        { name: "Ali R.", role: "Freelancer", text: "This platform helped me diversify smartly."},
-        { name: "Hamza T.", role: "Developer", text: "Precision tracking tools are next-level."},
-      ].map((t, i) => (
-        <SwiperSlide key={i}>
-          <div className="testimonial-card h-100">
-            <div className="stars">⭐⭐⭐⭐⭐</div>
-            <p className="t-text">“{t.text}”</p>
-            <h3 className="t-name">{t.name}</h3>
-            <p className="t-role">{t.role}</p>
-          </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
-  </div>
-</section>
-
-
+          <Swiper
+            modules={[Autoplay]}
+            spaceBetween={30}
+            slidesPerView={3}
+            loop={true}
+            autoplay={{ delay: 2500, disableOnInteraction: false }}
+            pagination={{ clickable: true }}
+            breakpoints={{
+              320: { slidesPerView: 1 },
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+            }}
+            className="testimonial-swiper"
+          >
+            {[
+              {
+                name: "Ahsan R.",
+                role: "Entrepreneur",
+                text: "GO Ai transformed my trading mindset completely.",
+              },
+              {
+                name: "Nimra S.",
+                role: "Data Analyst",
+                text: "The AI insights feel like having a professional advisor.",
+              },
+              {
+                name: "Saad M.",
+                role: "Trader",
+                text: "Automation gave me peace of mind and consistent results.",
+              },
+              {
+                name: "Haris I.",
+                role: "Investor",
+                text: "Real-time dashboards changed how I evaluate markets.",
+              },
+              {
+                name: "Maira K.",
+                role: "Student",
+                text: "Education + tools = best combination for growth.",
+              },
+              {
+                name: "Bilal U.",
+                role: "Crypto Trader",
+                text: "The alert system is incredibly accurate.",
+              },
+              {
+                name: "Khadija Z.",
+                role: "Marketer",
+                text: "Community support keeps me motivated.",
+              },
+              {
+                name: "Zain A.",
+                role: "Engineer",
+                text: "Smoothest ecosystem I've ever seen.",
+              },
+              {
+                name: "Ali R.",
+                role: "Freelancer",
+                text: "This platform helped me diversify smartly.",
+              },
+              {
+                name: "Hamza T.",
+                role: "Developer",
+                text: "Precision tracking tools are next-level.",
+              },
+            ].map((t, i) => (
+              <SwiperSlide key={i}>
+                <div className="testimonial-card h-100">
+                  <div className="stars">⭐⭐⭐⭐⭐</div>
+                  <p className="t-text">“{t.text}”</p>
+                  <h3 className="t-name">{t.name}</h3>
+                  <p className="t-role">{t.role}</p>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+      </section>
     </>
   );
 }

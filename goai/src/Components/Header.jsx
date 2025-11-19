@@ -43,6 +43,11 @@ export default function Header() {
             Membership
           </a>
         </li>
+        <li className="nav-item">
+          <a className="nav-link " aria-current="page" href="#">
+            Contact
+          </a>
+        </li>
           <li className="nav-item">
           <a className="nav-link " aria-current="page" href="#">
             Login

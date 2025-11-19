@@ -1,6 +1,7 @@
 
 const Images = {
   logo: new URL("./goai-logo.png", import.meta.url).href,
+  bannercircle:new URL ("./banner-circle.webp",import.meta.url).href,
   heroimage: new URL("./hero-image.webp", import.meta.url).href,
   orbit1: new URL("./orbit1.png", import.meta.url).href,
   orbit2: new URL("./orbit2.png", import.meta.url).href,

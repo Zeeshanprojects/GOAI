@@ -1,4 +1,15 @@
 /* ===== HERO SECTION ===== */
+.banner-circle{
+  height: 600px !important;
+}
+.content-wrapper {
+  width: 100% !important;
+  padding: 0 5%;
+  display: flex;
+  margin-top: 150px;
+  align-items: center;
+  z-index: 2;
+}
 .hero-section {
   position: relative;
   min-height: 100vh;
@@ -14,80 +25,72 @@
 }
 .hero-image {
   position: absolute;
-  top: 25%;
-  right: 6%;
-  max-width: 35%;
+  top: 5%;                /* move sphere higher */
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 380px;
   pointer-events: none;
   filter: drop-shadow(0 0 40px rgba(140, 77, 255, 0.7));
-  animation: floatHero 4s ease-in-out infinite;
-}
-
-@keyframes floatHero {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-30px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+  z-index: 2;
 }
 
 .mission-section {
-
-  height: 100%;
-  color: white;
+  position: relative;
+  width: 100%;
+  padding-top: 120px; /* spacing above sphere */
+  padding-bottom: 120px;
   text-align: center;
   overflow: hidden;
 }
 
-/* Subtle animated glow in background */
-.mission-overlay {
-  position: absolute;
+/* SPHERE IMAGE — centered properly */
 
-  left: -20%;
-  width: 140%;
-  height: 140%;
 
-  opacity: 0.25;
-  pointer-events: none;
+/* BIGGER CENTERED SPHERE */
+.hero-image {
+  width: 520px;                    /* 🔥 Bigger size */
+  max-width: 90%;
+display: flex;
+justify-content: center;
+align-items: center;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 40px;             /* Space between sphere & heading */
+
+  filter: drop-shadow(0 0 50px rgba(140, 77, 255, 0.9));
+  z-index: 2;
+}
+
+/* TEXT GROUP */
+.mission-content {
+  text-align: center;
+  z-index: 3;
+  position: relative;
+}
+
+/* Mission Heading */
+.title {
+  font-size: 6rem;                 /* slightly bigger */
+  font-weight: 700;
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* Subtitle */
+.mission-content h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #b9cfff;
+  margin-bottom: 30px;
 }
 
 /* Paragraph */
 .mission-text {
-  max-width: 750px;
+  max-width: 850px;
   margin: 0 auto;
-  font-size: 20px;
+  color: rgba(255,255,255,0.85);
+  font-size: 1.15rem;
   line-height: 1.7;
-  opacity: 0.85;
-  text-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
-}
-
-/* Optional: make image responsive for smaller screens */
-@media (max-width: 1024px) {
-  .hero-image {
-    max-width: 50%;
-    right: 2%;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero-image {
-    display: none;
-    /* hide on mobile for performance */
-  }
-}
-
-/* Subtle animated background dots */
-
-.content-wrapper {
-  width: 100% !important;
-  padding: 0 5%;
-  display: flex;
-  margin-top: 150px;
-  align-items: center;
-  z-index: 2;
 }
 
 .text-content {
@@ -112,44 +115,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-}
-
-/* ===== STATS ===== */
-.stats {
-  font-family: "gamingfont" !important;
-  margin-top: 30px;
-  display: flex;
-  gap: clamp(1.5rem, 4vw, 3rem);
-  margin-bottom: 1rem;
-  flex-wrap: wrap;
-}
-
-.stat-item {
-  text-align: center;
-  animation: floatUp 1.2s ease-out forwards;
-  opacity: 0;
-  transform: translateY(20px);
-}
-
-.stat-item strong {
-  display: block;
-  font-size: 30px;
-
-  background: linear-gradient(120deg, #ffffff, #cccccc);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  line-height: 1;
-}
-
-.stat-item span {
-  display: block;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: rgba(255, 255, 255, 0.7);
-  margin-top: 0.5rem;
-  font-weight: 600;
 }
 
 @keyframes floatUp {
