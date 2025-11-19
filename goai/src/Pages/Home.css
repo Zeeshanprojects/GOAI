@@ -1,11 +1,9 @@
-
-.banner-circle{
+.banner-circle {
   height: 650px !important;
-transform: translate(-300px);
-filter: drop-shadow(0 0 100px rgba(140, 100, 255, 0.8));
+  transform: translate(-300px);
+  filter: drop-shadow(0 0 100px rgba(140, 100, 255, 0.8));
 }
 .content-wrapper {
-  
   width: 100% !important;
   padding: 0 5%;
   display: flex;
@@ -13,33 +11,42 @@ filter: drop-shadow(0 0 100px rgba(140, 100, 255, 0.8));
   align-items: center;
   z-index: 2;
 }
-.content h1, .neon-btn{
+.content h1,
+.neon-btn {
   margin-left: -300px;
 }
 .orbit-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;      
-  margin-top: 40px;           /* spacing below the button */
- 
-    margin-left: 200px;      /* right padding for aesthetics */
+  align-items: flex-end;
+  margin-top: 40px; /* spacing below the button */
+
+  margin-left: 200px; /* right padding for aesthetics */
 }
-@media (min-width:992px) and (max-width:1299px) {
- .orbit-wrapper{
-  margin-left: 40px !important;
- } 
+
+@media (min-width: 992px) and (max-width: 1299px) {
+  .orbit-wrapper {
+    margin-left: 40px !important;
+  }
+  .orbits img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+  .orbit-title {
+    font-size: 0.6rem !important;
+  }
 }
 
 .orbits {
   display: flex;
-  gap: 15px;                  /* spacing between images */
+  gap: 15px;
 }
 
 .orbits img {
   width: 75px;
   height: 75px;
   object-fit: contain;
-
 }
 .orbit-title {
   color: #ffffff;
@@ -52,8 +59,13 @@ filter: drop-shadow(0 0 100px rgba(140, 100, 255, 0.8));
 
 /* Soft floating animation (optional) */
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
 }
 
 .hero-section {
@@ -71,20 +83,17 @@ filter: drop-shadow(0 0 100px rgba(140, 100, 255, 0.8));
 }
 
 .hero-image {
-width: 100% !important;
-height: 100vh !important;
-display: flex;
-justify-content: center;
-align-items: center;
+  width: 100% !important;
+  height: 100vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   display: block;
   margin: 0 auto;
-            /* Space between sphere & heading */
+  /* Space between sphere & heading */
 
   z-index: 2;
 }
-
-
-
 
 .text-content {
   max-width: 800px;
@@ -120,7 +129,7 @@ align-items: center;
 /* ===== NEON BUTTON ===== */
 
 .neon-btn {
-  font-family: "Spectron" !important; 
+  font-family: "Spectron" !important;
   position: relative;
   margin-top: 1rem;
   padding: 16px 48px;
@@ -181,7 +190,7 @@ align-items: center;
   inset: 0;
 
   width: 100% !important;
-  height: 100!important;
+  height: 100 !important;
   object-fit: cover;
   filter: brightness(0.85);
   z-index: 1;
@@ -206,9 +215,8 @@ align-items: center;
 .mission-content p {
   font-size: 1.2rem;
   line-height: 1.7;
-  color: rgba(255,255,255,0.85);
+  color: rgba(255, 255, 255, 0.85);
 }
-
 
 .neon-btn:hover .btn-glow {
   opacity: 0.7;
@@ -308,8 +316,6 @@ align-items: center;
     /* Hide orbs on mobile for performance */
   }
 }
-
-
 
 .pricing-section {
   padding: 30px 0;
@@ -580,7 +586,6 @@ align-items: center;
 /* ========= GLOBAL SECTION STYLE (MATCH EXISTING THEME) ========= */
 .vision-section,
 .community-section {
-
   text-align: center;
   color: white;
 }
@@ -631,7 +636,7 @@ align-items: center;
 }
 
 .faq-section {
- padding: 80px 5%;
+  padding: 80px 5%;
 
   color: white;
 }
@@ -921,7 +926,6 @@ align-items: center;
 } /* Cyber Blue */
 /* TESTIMONIAL SLIDER MAIN */
 
-
 @media (max-width: 576px) {
   .slide {
     padding: 35px 25px;
@@ -1030,7 +1034,7 @@ align-items: center;
 /* ==================== TESTIMONIALS SECTION ==================== */
 
 .testimonials-section {
- padding: 20px 5%;
+  padding: 20px 5%;
   text-align: center;
   color: white;
 }
@@ -1049,8 +1053,8 @@ align-items: center;
 /* Card Styling */
 .testimonial-card {
   height: 100% !important;
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   padding: 30px;
   border-radius: 20px;
   backdrop-filter: blur(12px);
@@ -1061,15 +1065,17 @@ align-items: center;
 }
 
 .testimonial-stars {
-  color: #ffdf3d;
   font-size: 18px;
   margin-bottom: 12px;
   letter-spacing: 2px;
 }
+.stars {
+  font-size: 30px;
+  filter: hue-rotate(260deg) brightness(1.5);
+}
 
 /* Text */
 .testimonial-text {
-    
   font-size: 15px;
   opacity: 0.9;
   line-height: 1.6;
