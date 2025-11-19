@@ -38,9 +38,8 @@ export default function Footer() {
                 style={{ width: 60, backgroundColor: "#7c4dff", height: 2 }}
               />
               <p>
-                Here you can use rows and columns to organize your footer
-                content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
+                GO Ai exists to merge financial education, trading technology, and human potential 
+    into a single ecosystem of empowerment...
               </p>
                 <div>
           <a href="" className="text-white me-4">
@@ -89,7 +88,7 @@ export default function Footer() {
              
               <p>
                 <a href="#!" className="text-white">
-                  Help
+                  Contact
                 </a>
               </p>
             </div>
@@ -106,14 +105,12 @@ export default function Footer() {
                 <i className="fas fa-home mr-3" /> New York, NY 10012, US
               </p>
               <p>
-                <i className="fas fa-envelope mr-3" /> info@example.com
+                <i className="fas fa-envelope mr-3" /> info@goai.com
               </p>
               <p>
                 <i className="fas fa-phone mr-3" /> + 01 234 567 88
               </p>
-              <p>
-                <i className="fas fa-print mr-3" /> + 01 234 567 89
-              </p>
+             
             </div>
             {/* Grid column */}
           </div>

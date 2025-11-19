@@ -94,27 +94,28 @@ export default function Home() {
           </div>
         </div>
       </section>
-<section className="mission-section">
+      <section className="mission-section">
+        <div className="mission-content" data-aos="fade-up">
+          <div className="hero-wrap">
+            <img src={Images.heroimage} className="hero-image" />
+           
+          </div>
 
- 
+          <div className="pricing-header" data-aos="fade-up">
+            <h1 className="title">Mission</h1>
+          </div>
 
-  <div className="mission-content" data-aos="fade-up">
+          <p>
+            GO Ai exists to merge financial education, trading technology, and
+            human potential into a single ecosystem of empowerment. We engineer
+            prosperity through community, automation, and data-driven precision.
+            We are building the next generation of digital wealth creators, a
+            network where ambition meets algorithm.
+          </p>
+        </div>
+      </section>
 
-    <img src={Images.heroimage} className="hero-image" />
- <div className="pricing-header" data-aos="fade-up">
-    <h1 className="title" >Mission</h1>
-  </div>
-    <p>
-      GO Ai exists to merge financial education, trading technology, and human potential 
-      into a single ecosystem of empowerment. We engineer prosperity through community, 
-      automation, and data-driven precision. We are building the next generation of 
-      digital wealth creators, a network where ambition meets algorithm.
-    </p>
-
-  </div>
-</section>
-
-      <section className="pricing-section ">
+      <section className="pricing-section mt-5">
         {/* Heading + Description */}
         <div className="pricing-header" data-aos="fade-up">
           <h1 className="title">Membership</h1>
