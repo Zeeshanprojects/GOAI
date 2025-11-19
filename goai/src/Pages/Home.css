@@ -1,18 +1,59 @@
 /* ===== HERO SECTION ===== */
 .banner-circle{
-  height: 600px !important;
+  height: 650px !important;
+transform: translate(-50px);
 }
+
+
 .content-wrapper {
   width: 100% !important;
+
   padding: 0 5%;
   display: flex;
   margin-top: 150px;
   align-items: center;
   z-index: 2;
 }
+/* Wrapper to control spacing & alignment */
+.orbit-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;      /* move everything to RIGHT */
+  margin-top: 40px;           /* spacing below the button */
+  padding-right: 40px;        /* right padding for aesthetics */
+}
+
+/* Orbit images in a row */
+.orbits {
+  display: flex;
+  gap: 15px;                  /* spacing between images */
+}
+
+.orbits img {
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+
+}
+
+.orbit-title {
+  color: #ffffff;
+
+  font-size: 1rem;
+  letter-spacing: 1px;
+  opacity: 0.8;
+  text-align: right;
+}
+
+/* Soft floating animation (optional) */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
 .hero-section {
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
   width: 100% !important;
   overflow: hidden;
   color: white;

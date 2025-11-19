@@ -75,8 +75,22 @@ export default function Home() {
 
             <button className="neon-btn">
               <span>Join Now</span>
+
               <div className="btn-glow"></div>
             </button>
+            <div className="orbit-wrapper">
+              <div className="orbits">
+                <img src={Images.orbit1} alt="" />
+                <img src={Images.orbit2} alt="" />
+                <img src={Images.orbit3} alt="" />
+                <img src={Images.orbit4} alt="" />
+                <p className="orbit-title text-uppercase">
+                  Unlock the
+                  <br /> Future of
+                  <br /> Finance
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
