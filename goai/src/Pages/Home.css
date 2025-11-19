@@ -1,4 +1,4 @@
-/* ===== HERO SECTION ===== */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 .banner-circle{
   height: 650px !important;
 transform: translate(-300px);
@@ -142,8 +142,9 @@ align-items: center;
 }
 
 /* ===== NEON BUTTON ===== */
+
 .neon-btn {
-  font-family: "gamingfont" !important;
+  font-family: "Orbitron", sans-serif !important; 
   position: relative;
   margin-top: 1rem;
   padding: 16px 48px;
@@ -354,7 +355,7 @@ align-items: center;
 }
 
 .select-btn {
-  font-family: "gamingfont" !important;
+  font-family: "Orbitron", sans-serif !important;
   margin-top: auto;
   padding: 12px 0;
   width: 100%;

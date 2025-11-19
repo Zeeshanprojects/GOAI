@@ -5,10 +5,11 @@
 }
 :root {
   --goai-bg:
-   /* Slight purple haze from top-left */
+     /* Soft magenta light on right side */
     radial-gradient(circle at 20% 20%, rgba(124, 92, 147, 0.25) 0%, transparent 60%),
-    /* Soft magenta light on right side */
+   /* Slight purple haze from top-left */
     radial-gradient(circle at 80% 60%, rgba(143, 58, 110, 0.30) 0%, transparent 55%),
+ 
 
    
 

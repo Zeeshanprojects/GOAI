@@ -21,8 +21,3 @@
   src: url("./SFPRODISPLAYSEMIBOLDITALIC.OTF") format("truetype");
     font-display: swap !important;
 }
-@font-face{
-font-family: "gamingfont";
- src:url("./Reguler.ttf")format("truetype");
- font-display:swap !important
-}
