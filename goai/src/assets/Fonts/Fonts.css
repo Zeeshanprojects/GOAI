@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: "SFPro-Regular";
   src: url("./SFPRODISPLAYREGULAR.OTF") format("opentype");
   font-weight: 400;
@@ -12,27 +12,27 @@
   font-weight: 500;
   font-style: normal;
     font-display: swap !important;
-}
+} */
 
 @font-face {
   font-family: "SFPro-Bold";
-  src: url("./SFPRODISPLAYBOLD.OTF") format("opentype");
+  src: url("./SFPRODISPLAYBOLD.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap !important;
 }
 
-@font-face {
+/* @font-face {
   font-family: "SFPro-SemiBoldItalic";
   src: url("./SFPRODISPLAYSEMIBOLDITALIC.OTF") format("opentype");
   font-weight: 600;
   font-style: italic;
    font-display: swap !important;
-}
+} */
 
 @font-face {
   font-family: "Spectron";
-  src: url("../Fonts/Spectron-Regular.otf") format("opentype");
+  src: url("./Spectron-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
     font-display: swap !important;
