@@ -58,7 +58,7 @@ export default function Home() {
         <div className="background-effects"></div>
 
         <div className="content-wrapper content" data-aos="fade-up">
-          <img src={Images.bannercircle} className="banner-circle" />
+          <img src={Images.bannercircle} className="banner-circle" fetchPriority="high"/>
           <div className="text-content" data-aos="fade-up">
             <h1>
               Built for the new era of
