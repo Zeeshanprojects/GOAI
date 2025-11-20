@@ -510,7 +510,8 @@ export default function Home() {
             ].map((t, i) => (
               <SwiperSlide key={i}>
                 <div className="testimonial-card h-100">
-                  <div className="stars">⭐⭐⭐⭐⭐</div>
+                 <div class="stars">★★★★★</div>
+
                   <p className="t-text">“{t.text}”</p>
                   <h3 className="t-name">{t.name}</h3>
                   <p className="t-role">{t.role}</p>

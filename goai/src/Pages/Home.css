@@ -383,7 +383,7 @@
 
 .pricing-card {
   width: 300px;
-  height: 520px;
+  height: 550px;
   padding: 25px;
   border-radius: 25px;
   background: rgba(255, 255, 255, 0.05);
@@ -441,6 +441,9 @@
   text-shadow: 0 0 6px white;
   letter-spacing: 3px;
   transition: 0.3s;
+ 
+  margin-top: auto;     /* Push button to bottom */
+
 }
 
 .select-btn:hover {
@@ -1124,10 +1127,9 @@
 }
 .stars {
   font-size: 30px;
-  filter: hue-rotate(260deg) brightness(1.5);
+  color: #9C4DFF;
 }
 
-/* Text */
 .testimonial-text {
   font-size: 15px;
   opacity: 0.9;
@@ -1150,7 +1152,7 @@
 
 /* Swiper Pagination Dots */
 .swiper-pagination-bullet {
-  background: #9c4dff;
+  background: #3BE4F0;
   opacity: 0.65;
 }
 
