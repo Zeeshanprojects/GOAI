@@ -57,7 +57,7 @@ height: 50px !important;
     color: white !important;
     margin: 10px 0;
     font-size: 18px;
-    text-align: center;
+    text-align: start;
   }
 
   .navbar-collapse .nav-link:hover {

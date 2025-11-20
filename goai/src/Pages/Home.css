@@ -23,7 +23,10 @@
 
   margin-left: 200px; /* right padding for aesthetics */
 }
-@media (max-width: 992px) {
+@media (max-width: 575px) {
+ .title{
+  font-size:60px !important;
+ }
   .content-wrapper,
   .text-content {
     text-align: center !important;
@@ -51,8 +54,39 @@
     display: none !important;
   }
 }
+@media (min-width: 575px)and (max-width:992px) {
+  .content-wrapper,
+  .text-content {
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
 
-@media (min-width: 992px) and (max-width: 1299px) {
+  .content h1 {
+    font-size: 50px !important;
+    margin-left: 0 !important;   /* Remove negative margin */
+  }
+
+  .neon-btn {
+    margin-left: 0 !important;   /* Center the button */
+  }
+
+  .orbit-wrapper {
+    margin-left: 0 !important;
+  }
+
+  .banner-circle {
+    display: none !important;
+  }
+  .orbit-title{
+    display: none !important;
+  }
+   .orbit-wrapper {
+    margin-left: 0 !important;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1299px) {
   .orbit-wrapper {
     margin-left: 40px !important;
   }
