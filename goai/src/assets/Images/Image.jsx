@@ -1,10 +1,9 @@
-
 const Images = {
   logo: new URL("./goai-logo.png", import.meta.url).href,
-  bannercircle:new URL ("./banner-circle.webp",import.meta.url).href,
+  bannercircle: new URL("./banner-circle.webp", import.meta.url).href,
   heroimage: new URL("./hero-image.webp", import.meta.url).href,
-    missionimage: new URL("./mission-image.webp", import.meta.url).href,
-    missionbackground:new URL("./mission-background.webp",import.meta.url).href,
+  missionimage: new URL("./mission-image.webp", import.meta.url).href,
+  missionbackground: new URL("./mission-background.webp", import.meta.url).href,
   orbit1: new URL("./orbit1.png", import.meta.url).href,
   orbit2: new URL("./orbit2.png", import.meta.url).href,
   orbit3: new URL("./orbit3.png", import.meta.url).href,
@@ -22,5 +21,9 @@ const Images = {
   smallicon10: new URL("./smallicon10.png", import.meta.url).href,
   smallicon11: new URL("./smallicon11.png", import.meta.url).href,
   smallicon12: new URL("./smallicon12.png", import.meta.url).href,
+  // Ecosystem1: new URL("./IMG1.webp", import.meta.url).href,
+  // Ecosystem2: new URL("./IMG2.webp", import.meta.url).href,
+  // Ecosystem3: new URL("./IMG3.webp", import.meta.url).href,
+  // Ecosystem4: new URL("./IMG4.webp", import.meta.url).href,
 };
 export default Images;

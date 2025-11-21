@@ -5,14 +5,14 @@
   font-style: normal;
   font-display: swap !important;
 }
-
+*/
 @font-face {
   font-family: "SFPro-Medium";
   src: url("./SFPRODISPLAYMEDIUM.OTF") format("opentype");
   font-weight: 500;
   font-style: normal;
     font-display: swap !important;
-} */
+}  
 
 @font-face {
   font-family: "SFPro-Bold";

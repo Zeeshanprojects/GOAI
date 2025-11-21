@@ -23,10 +23,16 @@
 
   margin-left: 200px; /* right padding for aesthetics */
 }
+.text-content h1 {
+  font-family: "SFPro-bold" !important;
+  font-size: 80px !important;
+}
+
 @media (max-width: 575px) {
- .title{
-  font-size:60px !important;
- }
+  .title {
+    font-size: 60px !important;
+  }
+
   .content-wrapper,
   .text-content {
     text-align: center !important;
@@ -35,12 +41,14 @@
   }
 
   .content h1 {
-    font-size: 35px !important;
-    margin-left: 0 !important;   /* Remove negative margin */
+    font-family: "SFPro-bold" !important;
+    font-size: 80px !important;
+
+    margin-left: 0 !important; /* Remove negative margin */
   }
 
   .neon-btn {
-    margin-left: 0 !important;   /* Center the button */
+    margin-left: 0 !important; /* Center the button */
   }
 
   .orbit-wrapper {
@@ -50,43 +58,49 @@
   .banner-circle {
     display: none !important;
   }
-  .orbit-title{
+  .orbit-title {
     display: none !important;
   }
 }
-@media (min-width: 575px)and (max-width:992px) {
+@media (min-width: 575px) and (max-width: 992px) {
   .content-wrapper,
   .text-content {
+    font-family: "SFPro-bold" !important;
     text-align: center !important;
     align-items: center !important;
     justify-content: center !important;
   }
 
   .content h1 {
-    font-size: 50px !important;
-    margin-left: 0 !important;   /* Remove negative margin */
+    font-family: "SFPro-bold" !important;
+    font-size: 80px !important;
+
+    margin-left: 0 !important; /* Remove negative margin */
   }
 
   .neon-btn {
-    margin-left: 0 !important;   /* Center the button */
+    margin-left: 0 !important; /* Center the button */
   }
 
   .orbit-wrapper {
     margin-left: 0 !important;
+    display: flex !important; /* ADD THIS */
+    justify-content: center !important; /* Center itself */
+    width: 100% !important; /* Make it expand */
   }
 
   .banner-circle {
     display: none !important;
   }
-  .orbit-title{
+  .orbit-title {
     display: none !important;
-  }
-   .orbit-wrapper {
-    margin-left: 0 !important;
   }
 }
 
 @media (min-width: 993px) and (max-width: 1299px) {
+  .text-content h1 {
+    font-family: "SFPro-bold" !important;
+  }
   .orbit-wrapper {
     margin-left: 40px !important;
   }
@@ -103,12 +117,13 @@
 .orbits {
   display: flex;
   gap: 15px;
+
 }
 
 .orbits img {
-  width: 75px;
-  height: 75px;
-  object-fit: contain;
+  width: 75px !important;
+  height: 75px !important;
+  object-fit: cover !important;
 }
 .orbit-title {
   color: #ffffff;
@@ -139,9 +154,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.text-content h1 {
-  font-family: "SFPro-Bold" !important;
 }
 
 .hero-image {
@@ -285,15 +297,14 @@
   opacity: 0.7;
 }
 @media (max-width: 992px) {
-
   .mission-section {
-    height: auto !important;       /* Auto height for mobile */
-    padding: 60px 20px;            /* Add spacing */
+    height: auto !important; /* Auto height for mobile */
+    padding: 60px 20px; /* Add spacing */
   }
 
   .mission-section img {
     height: 100% !important;
-    min-height: 400px;             /* Ensure background shows properly */
+    min-height: 400px; /* Ensure background shows properly */
     object-fit: cover;
   }
 
@@ -303,11 +314,11 @@
   }
 
   .mission-content .title {
-    font-size: 3rem;               /* Reduce title size */
+    font-size: 3rem; /* Reduce title size */
   }
 
   .mission-content p {
-    font-size: 1rem;               /* Reduce paragraph font size */
+    font-size: 1rem; /* Reduce paragraph font size */
     line-height: 1.6;
   }
 }
@@ -439,19 +450,16 @@
     width: 270px;
   }
 }
-.orb-img {
-  width: 110px;
-  margin: 0 auto;
-  margin-bottom: 25px;
-  filter: drop-shadow(0 0 15px rgba(200, 0, 255, 0.6));
-}
+
 
 .price {
+    font-family: "SFPro-bold";
   font-size: 40px;
   margin: 5px 0;
 }
 
 .fee-text {
+   
   margin-bottom: 25px;
   opacity: 0.8;
 }
@@ -478,9 +486,8 @@
   text-shadow: 0 0 6px white;
   letter-spacing: 3px;
   transition: 0.3s;
- 
-  margin-top: auto;     /* Push button to bottom */
 
+  margin-top: auto; /* Push button to bottom */
 }
 
 .select-btn:hover {
@@ -510,7 +517,6 @@
   margin-left: auto;
   margin-right: auto;
 }
-
 
 /* ========= GLOBAL SECTION STYLE (MATCH EXISTING THEME) ========= */
 .vision-section,
@@ -549,21 +555,21 @@
 /* Wrapper to position icon inside orbit */
 .orb-icon-wrapper {
   position: relative;
-  width: 110px; /* same as orb-img */
-  height: 110px; /* same as orb-img */
+  border-radius: 50% !important;    
   margin: 0 auto 20px auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-/* Orbit image */
 .orb-img {
   width: 110px;
   height: 110px;
+  margin: 0 auto;
+  object-fit: contain;        /* or cover, but contain is safer for circles */
+  object-position: center;
+      /* forces perfect circle even if image is rectangular */
   filter: drop-shadow(0 0 15px rgba(200, 0, 255, 0.6));
 }
-
 .faq-section {
   padding: 80px 5%;
 
@@ -676,7 +682,7 @@
 /* Grid of cards */
 .eco-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(420px, 2fr));
   gap: 28px;
   align-items: stretch;
   margin-top: 24px;
@@ -1000,7 +1006,7 @@
 }
 .stars {
   font-size: 30px;
-  color: #9C4DFF;
+  color: #9c4dff;
 }
 
 .testimonial-text {
@@ -1025,7 +1031,7 @@
 
 /* Swiper Pagination Dots */
 .swiper-pagination-bullet {
-  background: #3BE4F0;
+  background: #3be4f0;
   opacity: 0.65;
 }
 

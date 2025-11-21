@@ -22,7 +22,7 @@ export default function Home() {
   const plans = [
   
     {
-      image: Images.orbit2,
+      image: Images.orbit1,
       title: "Go Connect",
       price: "$350",
       fee: "Initial Fee",
@@ -30,7 +30,7 @@ export default function Home() {
       orb: "/orb2.png",
     },
     {
-      image: Images.orbit3,
+      image: Images.orbit2,
       title: "Go Create",
       price: "$1000",
       fee: "Initial Fee",
@@ -38,7 +38,7 @@ export default function Home() {
       orb: "/orb3.png",
     },
     {
-      image: Images.orbit4,
+      image: Images.orbit3,
       title: "Go Complete",
       price: "$1700",
       fee: "Initial Fee",
@@ -148,15 +148,11 @@ export default function Home() {
           <div className="eco-grid" data-aos="fade-up">
             <article className="eco-card" aria-hidden="false">
               <div className="eco-icon-wrap">
-                <i
-                  className="fa-solid fa-robot eco-icon"
-                  aria-hidden="true"
-                ></i>
+               <img src={Images.Ecosystem1} alt="ecosystem" height={100} width={100}/>
               </div>
-              <h3 className="eco-h">AI Trading Engine</h3>
+              <h3 className="eco-h">GO OS</h3>
               <p className="eco-p">
-                High-frequency inference, pattern recognition and automated
-                order execution tuned for precision and risk control.
+             Get the Core Operating System of the entire AI Trading Plane, powered by high-frequency inference, advanced pattern recognition, and automated order execution engineered for precision, risk control, and consistent performance
               </p>
             </article>
 
@@ -164,10 +160,9 @@ export default function Home() {
               <div className="eco-icon-wrap">
                 <i className="fa-solid fa-chart-line eco-icon"></i>
               </div>
-              <h3 className="eco-h">Real-time Analytics</h3>
+              <h3 className="eco-h">GO Insights</h3>
               <p className="eco-p">
-                Live dashboards, performance metrics and signal quality
-                indicators so you always see the truth behind the data.
+          Get personalized, threshold-based alerts that trigger only when the market shows high-probability, actionable opportunities,complete with trade alerts, exact entry/exit points, and clear bias guidance so you never second-guess your next move.
               </p>
             </article>
 
@@ -175,10 +170,9 @@ export default function Home() {
               <div className="eco-icon-wrap">
                 <i className="fa-solid fa-bell-concierge eco-icon"></i>
               </div>
-              <h3 className="eco-h">Smart Alerts</h3>
+              <h3 className="eco-h">GO Lab</h3>
               <p className="eco-p">
-                Personalized, threshold-based alerts that notify you only when
-                actionable and high probability signals are present.
+              Get a constantly evolving suite of tools, indicators, strategies, and automation, all designed, tested, and optimized to be simple, powerful, and ready to deploy. Everything you need to build, refine, and execute high-performance trading systems with confidence.
               </p>
             </article>
 
@@ -186,34 +180,15 @@ export default function Home() {
               <div className="eco-icon-wrap">
                 <i className="fa-solid fa-cogs eco-icon"></i>
               </div>
-              <h3 className="eco-h">Automation Studio</h3>
+              <h3 className="eco-h">GO Library</h3>
               <p className="eco-p">
-                Create and schedule rules, strategies and automations —
-                backtest, simulate, then deploy with one click.
+                Get on-demand courses, live workshops, and mentorship tracks designed to fast-track your skill and confidence, all delivered by expert coaches inside a complete education portal loaded with courses, mastery paths, and step-by-step tutorials.
               </p>
             </article>
 
-            <article className="eco-card">
-              <div className="eco-icon-wrap">
-                <i className="fa-solid fa-chalkboard-user eco-icon"></i>
-              </div>
-              <h3 className="eco-h">Education Hub</h3>
-              <p className="eco-p">
-                On-demand courses, live workshops, and mentorship tracks
-                designed to accelerate skill and confidence.
-              </p>
-            </article>
+          
 
-            <article className="eco-card">
-              <div className="eco-icon-wrap">
-                <i className="fa-solid fa-users-gear eco-icon"></i>
-              </div>
-              <h3 className="eco-h">Community & Labs</h3>
-              <p className="eco-p">
-                Collaborative labs, idea exchange, and community-built
-                strategies — iterate faster with the network.
-              </p>
-            </article>
+           
           </div>
         </div>
 
