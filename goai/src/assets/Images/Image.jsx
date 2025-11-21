@@ -21,9 +21,12 @@ const Images = {
   smallicon10: new URL("./smallicon10.png", import.meta.url).href,
   smallicon11: new URL("./smallicon11.png", import.meta.url).href,
   smallicon12: new URL("./smallicon12.png", import.meta.url).href,
-  // Ecosystem1: new URL("./IMG1.webp", import.meta.url).href,
-  // Ecosystem2: new URL("./IMG2.webp", import.meta.url).href,
-  // Ecosystem3: new URL("./IMG3.webp", import.meta.url).href,
-  // Ecosystem4: new URL("./IMG4.webp", import.meta.url).href,
+  Ecosystem1: new URL("./IMG1.png", import.meta.url).href,
+  Ecosystem2: new URL("./IMG2.png", import.meta.url).href,
+  Ecosystem3: new URL("./IMG3.png", import.meta.url).href,
+  Ecosystem4: new URL("./IMG4.png", import.meta.url).href,
+  icon1:new URL("./icon1.png",import.meta.url).href,
+    icon2:new URL("./icon2.png",import.meta.url).href,
+      icon3:new URL("./icon3.png",import.meta.url).href,
 };
 export default Images;

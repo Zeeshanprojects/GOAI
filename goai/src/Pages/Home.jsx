@@ -14,13 +14,12 @@ export default function Home() {
     document.title = "Home ! GOAI";
     AOS.init({
       duration: 1200,
-      offset: 100,
+      offset: 120,
       easing: "ease-in-out",
       once: true,
     });
   }, []);
   const plans = [
-  
     {
       image: Images.orbit1,
       title: "Go Connect",
@@ -32,7 +31,7 @@ export default function Home() {
     {
       image: Images.orbit2,
       title: "Go Create",
-      price: "$1000",
+      price: "$1200",
       fee: "Initial Fee",
       features: ["More Education", "More Alerts", "More Softwares"],
       orb: "/orb3.png",
@@ -58,7 +57,11 @@ export default function Home() {
         <div className="background-effects"></div>
 
         <div className="content-wrapper content" data-aos="fade-up">
-          <img src={Images.bannercircle} className="banner-circle" fetchPriority="high"/>
+          <img
+            src={Images.bannercircle}
+            className="banner-circle"
+            fetchPriority="high"
+          />
           <div className="text-content" data-aos="fade-up">
             <h1>
               Built for the new era of
@@ -87,24 +90,23 @@ export default function Home() {
           </div>
         </div>
       </section>
-   <section className="mission-section" data-aos="fade-up">
-  <div className="mission-bg">
-    <img src={Images.missionbackground} className="mission-image" />
-  </div>
+      <section className="mission-section" data-aos="fade-up">
+        <div className="mission-bg">
+          <img src={Images.missionbackground} className="mission-image" />
+        </div>
 
-  <div className="mission-content">
-    <h1 className="title">Mission</h1>
-    <h6>To reinvent wealth through intelligence.</h6>
-    <p>
-      GO Ai exists to merge financial education, trading technology, and human 
-      potential into a single ecosystem of empowerment. We engineer prosperity 
-      through community, automation, and data-driven precision. We are building 
-      the next generation of digital wealth creators, a network where ambition 
-      meets algorithm.
-    </p>
-  </div>
-</section>
-
+        <div className="mission-content">
+          <h1 className="title">Mission</h1>
+          <h6>To reinvent wealth through intelligence.</h6>
+          <p>
+            GO Ai exists to merge financial education, trading technology, and
+            human potential into a single ecosystem of empowerment. We engineer
+            prosperity through community, automation, and data-driven precision.
+            We are building the next generation of digital wealth creators, a
+            network where ambition meets algorithm.
+          </p>
+        </div>
+      </section>
 
       <section className="pricing-section mt-5">
         {/* Heading + Description */}
@@ -117,7 +119,7 @@ export default function Home() {
             <div key={index} className="pricing-card">
               <img src={plan.image} className="orb-img" alt="orbit-logo" />
 
-              <h3>{plan.title}</h3>
+              <h3 className="mt-3">{plan.title}</h3>
 
               <h2 className="price">{plan.price}</h2>
               <p className="fee-text">{plan.fee}</p>
@@ -133,9 +135,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-     
-
-      {/* ==================== AI ECOSYSTEM SECTION ==================== */}
       <section
         className="ecosystem-section"
         data-aos="fade-up"
@@ -146,49 +145,76 @@ export default function Home() {
             AI Ecosystem
           </h1>
           <div className="eco-grid" data-aos="fade-up">
-            <article className="eco-card" aria-hidden="false">
-              <div className="eco-icon-wrap">
-               <img src={Images.Ecosystem1} alt="ecosystem" height={100} width={100}/>
+            <article className="eco-card h-100" aria-hidden="false">
+              <div className="">
+                <img
+                  src={Images.Ecosystem1}
+                  alt="ecosystem"
+                  height={120}
+                  width={120}
+                />
               </div>
               <h3 className="eco-h">GO OS</h3>
               <p className="eco-p">
-             Get the Core Operating System of the entire AI Trading Plane, powered by high-frequency inference, advanced pattern recognition, and automated order execution engineered for precision, risk control, and consistent performance
+                Get the Core Operating System of the entire AI Trading Plane,
+                powered by high-frequency inference, advanced pattern
+                recognition, and automated order execution engineered for
+                precision, risk control, and consistent performance globally
               </p>
             </article>
 
             <article className="eco-card">
-              <div className="eco-icon-wrap">
-                <i className="fa-solid fa-chart-line eco-icon"></i>
-              </div>
+              <img
+                src={Images.Ecosystem2}
+                alt="ecosystem"
+                height={120}
+                width={120}
+              />
               <h3 className="eco-h">GO Insights</h3>
+            
               <p className="eco-p">
-          Get personalized, threshold-based alerts that trigger only when the market shows high-probability, actionable opportunities,complete with trade alerts, exact entry/exit points, and clear bias guidance so you never second-guess your next move.
+                Get personalized, threshold-based alerts that trigger only when
+                the market shows high-probability, actionable
+                opportunities,complete with trade alerts, exact entry/exit
+                points, and clear bias guidance so you never second-guess your
+                next move.
               </p>
             </article>
 
             <article className="eco-card">
-              <div className="eco-icon-wrap">
-                <i className="fa-solid fa-bell-concierge eco-icon"></i>
-              </div>
+              <img
+                src={Images.Ecosystem3}
+                alt="ecosystem"
+                height={120}
+                width={120}
+              />
+
               <h3 className="eco-h">GO Lab</h3>
               <p className="eco-p">
-              Get a constantly evolving suite of tools, indicators, strategies, and automation, all designed, tested, and optimized to be simple, powerful, and ready to deploy. Everything you need to build, refine, and execute high-performance trading systems with confidence.
+                Get a constantly evolving suite of tools, indicators,
+                strategies, and automation, all designed, tested, and optimized
+                to be simple, powerful, and ready to deploy. Everything you need
+                to build, refine, and execute high-performance trading systems
+                with confidence.
               </p>
             </article>
 
             <article className="eco-card">
-              <div className="eco-icon-wrap">
-                <i className="fa-solid fa-cogs eco-icon"></i>
-              </div>
+              <img
+                src={Images.Ecosystem4}
+                alt="ecosystem"
+                height={120}
+                width={120}
+              />
+
               <h3 className="eco-h">GO Library</h3>
               <p className="eco-p">
-                Get on-demand courses, live workshops, and mentorship tracks designed to fast-track your skill and confidence, all delivered by expert coaches inside a complete education portal loaded with courses, mastery paths, and step-by-step tutorials.
+                Get on-demand courses, live workshops, and mentorship tracks
+                designed to fast-track your skill and confidence, all delivered
+                by expert coaches inside a complete education portal loaded with
+                courses, mastery paths, and step-by-step tutorials.
               </p>
             </article>
-
-          
-
-           
           </div>
         </div>
 
@@ -398,8 +424,8 @@ export default function Home() {
               },
             ].map((t, i) => (
               <SwiperSlide key={i}>
-                <div className="testimonial-card h-100">
-                 <div class="stars">★★★★★</div>
+                <div className="testimonial-card h-120">
+                  <div class="stars">★★★★★</div>
 
                   <p className="t-text">“{t.text}”</p>
                   <h3 className="t-name">{t.name}</h3>

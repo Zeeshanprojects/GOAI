@@ -687,7 +687,11 @@
   align-items: stretch;
   margin-top: 24px;
 }
-
+@media (max-width:768px) {
+  .eco-grid{
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+  }
+}
 /* Card */
 .eco-card {
   background: rgba(255, 255, 255, 0.04);
@@ -746,7 +750,7 @@
 .eco-p {
   font-size: 14.5px;
   color: rgba(255, 255, 255, 0.85);
-  line-height: 1.6;
+  line-height: 1.5;
   margin-top: auto; /* ensures description sits under heading, pushes CTA down uniformly */
 }
 
