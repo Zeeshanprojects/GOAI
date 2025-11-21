@@ -5,7 +5,7 @@ export default function Header() {
   return (
    <>
    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-  <div className="container-fluid">
+  <div className="container-fluid ps-5 pe-5">
     <a className="navbar-brand" href="#">
       <img src={Images.logo} alt='logo' className='logo' fetchPriority='high'/>
     </a>
