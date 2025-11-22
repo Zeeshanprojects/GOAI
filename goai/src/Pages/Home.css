@@ -33,120 +33,6 @@
   font-size: 1rem;
 }
 
-@media (max-width: 575px) {
-  .title {
-    font-size: 60px !important;
-  }
-
-  .content-wrapper,
-  .text-content {
-    text-align: center !important;
-    align-items: center !important;
-    justify-content: center !important;
-  }
-
-  .content h1 {
-    font-family: "SFPro-bold" !important;
-    font-size: 80px !important;
-margin-top: -50px !important;
-    margin-left: 0 !important; /* Remove negative margin */
-  }
-
-  .neon-btn {
-    margin-left: 0 !important; /* Center the button */
-  }
-
-  .orbit-wrapper {
-    margin-left: 0 !important;
-  }
-
-  .banner-circle {
-    display: none !important;
-  }
-  .orbit-title {
-    display: none !important;
-  }
-}
-@media (min-width: 575px) and (max-width: 992px) {
-  .content-wrapper,
-  .text-content {
-    font-family: "SFPro-bold" !important;
-    text-align: center !important;
-    align-items: center !important;
-    justify-content: center !important;
-  }
-
-  .content h1 {
-    font-family: "SFPro-bold" !important;
-    font-size: 80px !important;
-
-    margin-left: 0 !important; /* Remove negative margin */
-  }
-
-  .neon-btn {
-    margin-left: 0 !important; /* Center the button */
-  }
-
-  .orbit-wrapper {
-    margin-left:-80px !important;
-    display: flex !important; /* ADD THIS */
-    justify-content: center !important; /* Center itself */
-    width: 100% !important; /* Make it expand */
-  }
-
-  .banner-circle {
-    display: none !important;
-  }
-  .orbit-title {
-    display: none !important;
-  }
-}
-
-@media (min-width: 993px) and (max-width: 1299px) {
-  .text-content h1 {
-    font-family: "SFPro-bold" !important;
-  }
-  .orbit-wrapper {
-    margin-left: 1px !important;
-  }
-  .orbits img {
-    width: 30px !important;
-    height: 30px !important;
-    object-fit: contain;
-  }
-  .orbit-title {
-    color: #ffffff;
-    text-align: start !important;
-    font-size: 0.9rem;
-    width: 100%;
-  }
-  .text-content h1 {
-    font-family: "SFPro-bold" !important;
-    font-size: 75px !important;
-  }
-}
-
-.orbits {
-  display: flex;
-  gap: 15px;
-}
-
-.orbits img {
-  width: 75px !important;
-  height: 75px !important;
-  object-fit: cover !important;
-}
-
-/* Soft floating animation (optional) */
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-5px);
-  }
-}
 
 .hero-section {
   position: relative;
@@ -1077,4 +963,127 @@ color: #4A3790 !important;
 .swiper-pagination-bullet-active {
   background: #ffffff;
   opacity: 1;
+}
+
+@media (max-width: 575px) {
+  .title {
+    font-size: 60px !important;
+  }
+
+  .content-wrapper,
+  .text-content {
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .content h1 {
+    font-family: "SFPro-bold" !important;
+    font-size: 80px !important;
+margin-top: -50px !important;
+    margin-left: 0 !important; /* Remove negative margin */
+  }
+
+  .neon-btn {
+    margin-left: 0 !important; /* Center the button */
+  }
+
+  .orbit-wrapper {
+    margin-left: 0 !important;
+  }
+
+  .banner-circle {
+    display: none !important;
+  }
+  .orbit-title {
+    display: none !important;
+  }
+}
+@media (min-width: 575px) and (max-width: 992px) {
+  .content-wrapper,
+  .text-content {
+    font-family: "SFPro-bold" !important;
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .content h1 {
+    font-family: "SFPro-bold" !important;
+    font-size: 80px !important;
+
+    margin-left: 0 !important; /* Remove negative margin */
+  }
+
+  .neon-btn {
+    margin-left: 0 !important; /* Center the button */
+  }
+
+  .orbit-wrapper {
+    margin-left:-80px !important;
+    display: flex !important; /* ADD THIS */
+    justify-content: center !important; /* Center itself */
+    width: 100% !important; /* Make it expand */
+  }
+
+  .banner-circle {
+    display: none !important;
+  }
+  .orbit-title {
+    display: none !important;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1299px) {
+  .text-content h1 {
+    font-family: "SFPro-bold" !important;
+  }
+  .orbit-wrapper {
+    margin-left: 1px !important;
+  }
+  .orbits img {
+    width: 30px !important;
+    height: 30px !important;
+    object-fit: contain;
+  }
+  .orbit-title {
+    color: #ffffff;
+    text-align: start !important;
+    font-size: 0.9rem;
+    width: 100%;
+  }
+  .text-content h1 {
+    font-family: "SFPro-bold" !important;
+    font-size: 70px !important;
+  }
+}
+@media (min-width:1600px) and (max-width:1980px) {
+  .text-content h1 {
+    font-family: "SFPro-bold" !important;
+    font-size: 110px !important;
+  }
+   .orbit-wrapper {
+    margin-right: -220px !important;
+  }
+}
+.orbits {
+  display: flex;
+  gap: 15px;
+}
+
+.orbits img {
+  width: 75px !important;
+  height: 75px !important;
+  object-fit: cover !important;
+}
+
+/* Soft floating animation (optional) */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
 }
