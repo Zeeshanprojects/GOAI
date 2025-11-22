@@ -58,6 +58,7 @@ export default function Home() {
 
         <div className="content-wrapper content" data-aos="fade-up">
           <img
+          rel="preload"
             src={Images.bannercircle}
             className="banner-circle"
             fetchPriority="high"
@@ -181,14 +182,14 @@ export default function Home() {
             </article>
 
             <article className="eco-card">
-             <img
-  src={Images.Ecosystem3}
-  alt="ecosystem"
-  className="eco-icon-fix"
-  height={120}
-  width={120}
-/>
-                          <h3 className="eco-h">GO Lab</h3>
+              <img
+                src={Images.Ecosystem3}
+                alt="ecosystem"
+                className="eco-icon-fix"
+                height={120}
+                width={120}
+              />
+              <h3 className="eco-h">GO Lab</h3>
               <p className="eco-p">
                 Get a constantly evolving suite of tools, indicators,
                 strategies, and automation, all designed, tested, and optimized
