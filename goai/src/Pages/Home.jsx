@@ -120,7 +120,7 @@ export default function Home() {
             <div key={index} className="pricing-card">
               <img src={plan.image} className="orb-img" alt="orbit-logo" />
 
-              <h3 className="mt-3">{plan.title}</h3>
+              <h3 className="mt-3 price-heading">{plan.title}</h3>
 
               <h2 className="price">{plan.price}</h2>
               <p className="fee-text">{plan.fee}</p>
@@ -269,7 +269,7 @@ export default function Home() {
               data-bs-target="#faq1"
             >
               What is GOAI and how does it work?
-              <i className="fa-solid fa-chevron-down faq-icon"></i>
+              <i className="fa-solid fa-chevron-down faq-icon mt-2"></i>
             </button>
             <div id="faq1" className="collapse faq-answer">
               GOAI is a wealth-tech ecosystem combining AI, automation, tools,

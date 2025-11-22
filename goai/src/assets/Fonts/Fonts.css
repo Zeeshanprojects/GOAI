@@ -6,13 +6,13 @@
   font-display: swap !important;
 }
 */
-/* @font-face {
+@font-face {
   font-family: "SFPro-Medium";
-  src: url("./SFPRODISPLAYMEDIUM.OTF") format("opentype");
+  src: url("./SFPRODISPLAYMEDIUM.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
     font-display: swap !important;
-}   */
+}  
 
 @font-face {
   font-family: "SFPro-Bold";
