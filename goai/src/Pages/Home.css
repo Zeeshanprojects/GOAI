@@ -333,7 +333,6 @@ text-align: start !important;
   }
 }
 
-/* ===== FLOATING ORBS (DECORATIVE) ===== */
 .floating-orbs {
   position: absolute;
   top: 0;
@@ -689,6 +688,7 @@ text-align: start !important;
   align-items: stretch;
   margin-top: 24px;
 }
+
 @media (max-width:768px) {
   .eco-grid{
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
@@ -758,7 +758,6 @@ text-align: start !important;
   margin-top: auto; /* ensures description sits under heading, pushes CTA down uniformly */
 }
 
-/* CTA area */
 .ecosystem-cta {
   margin-top: 36px;
   display: flex;
@@ -766,7 +765,9 @@ text-align: start !important;
   justify-content: center;
   align-items: center;
 }
-
+.eco-icon-fix {
+  transform: scale(0.75); /* reduce visual size by 15% */
+}
 .neon-btn.small {
   padding: 10px 28px;
   font-size: 14px;

@@ -146,14 +146,13 @@ export default function Home() {
           </h1>
           <div className="eco-grid" data-aos="fade-up">
             <article className="eco-card h-100" aria-hidden="false">
-              <div className="">
-                <img
-                  src={Images.Ecosystem1}
-                  alt="ecosystem"
-                  height={120}
-                  width={120}
-                />
-              </div>
+              <img
+                src={Images.Ecosystem1}
+                alt="ecosystem"
+                height={120}
+                width={120}
+              />
+
               <h3 className="eco-h">GO OS</h3>
               <p className="eco-p">
                 Get the Core Operating System of the entire AI Trading Plane,
@@ -171,7 +170,7 @@ export default function Home() {
                 width={120}
               />
               <h3 className="eco-h">GO Insights</h3>
-            
+
               <p className="eco-p">
                 Get personalized, threshold-based alerts that trigger only when
                 the market shows high-probability, actionable
@@ -182,14 +181,14 @@ export default function Home() {
             </article>
 
             <article className="eco-card">
-              <img
-                src={Images.Ecosystem3}
-                alt="ecosystem"
-                height={120}
-                width={120}
-              />
-
-              <h3 className="eco-h">GO Lab</h3>
+             <img
+  src={Images.Ecosystem3}
+  alt="ecosystem"
+  className="eco-icon-fix"
+  height={120}
+  width={120}
+/>
+                          <h3 className="eco-h">GO Lab</h3>
               <p className="eco-p">
                 Get a constantly evolving suite of tools, indicators,
                 strategies, and automation, all designed, tested, and optimized
@@ -222,9 +221,7 @@ export default function Home() {
         <div className="ecosystem-orb orb-eco-1"></div>
         <div className="ecosystem-orb orb-eco-2"></div>
       </section>
-      {/* ==================== COMMUNITY SECTION ==================== */}
 
-      {/* ==================== VISION SECTION ==================== */}
       <section className="vision-section mt-0">
         <h1 className="title" data-aos="fade-up">
           Vision
