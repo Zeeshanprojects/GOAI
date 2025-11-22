@@ -1,7 +1,7 @@
 .banner-circle {
   height: 650px !important;
   transform: translate(-300px);
-  filter: drop-shadow(0 0 130px rgba(140, 100, 255, 0.8));
+
 }
 .content-wrapper {
   width: 100% !important;
@@ -56,6 +56,31 @@
   /* Space between sphere & heading */
 
   z-index: 2;
+}
+.hero-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -200px;
+  width: 700px;
+  height: 700px;
+
+  background: radial-gradient(
+    circle at 30% 10%,      /* glow from top-left of sphere */
+    rgba(140, 100, 255, 0.8) 0%,
+    rgba(140, 100, 255, 0.4) 40%,
+    rgba(140, 100, 255, 0.1) 60%,
+    rgba(140, 100, 255, 0) 10%
+  );
+
+  filter: blur(120px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 3; /* Text stays on top */
 }
 
 .text-content {
