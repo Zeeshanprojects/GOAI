@@ -524,20 +524,14 @@ text-align: start !important;
   text-align: center;
   color: white;
 }
-
-/* ================================================================ */
-/* ======================== VISION SECTION ========================= */
-/* ================================================================ */
 .vision-text {
-  max-width: 900px;
+  text-align: center;
+  width: 800px;        /* smaller width = better balanced wrapping */
   margin: 20px auto;
   font-size: 20px;
   opacity: 0.85;
   line-height: 1.7;
 }
-/* ================================================================ */
-/* ========================== COMMUNITY ============================ */
-/* ================================================================ */
 .community-text {
   max-width: 850px;
   margin: 10px auto 50px auto;
