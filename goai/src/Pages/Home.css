@@ -237,12 +237,12 @@ text-align: start !important;
   z-index: 2;
 }
 
-.neon-btn:hover{
-background: linear-gradient(45deg, #2D2156) !important;
-
+.neon-btn:hover {
+  background: linear-gradient(45deg, #2D2156, rgba(255, 255, 255, 0.15)) !important;
   border-color: rgb(115, 30, 200);
-   transition: opacity 0.4s ease; /* deeper neon */
+  transition: opacity 0.4s ease;
 }
+
 
 .neon-btn:hover::before {
   opacity: 0.15;
