@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 
 export default function Home() {
   useEffect(() => {
-    document.title = "Home ! GOAI";
+    document.title = "Home | GOAI";
     AOS.init({
       duration: 1200,
       offset: 120,
@@ -287,7 +287,7 @@ export default function Home() {
               data-bs-target="#faq2"
             >
               What do I get with a membership?
-              <i className="fa-solid fa-chevron-down faq-icon"></i>
+              <i className="fa-solid fa-chevron-down faq-icon mt-2"></i>
             </button>
             <div id="faq2" className="collapse faq-answer">
               Membership includes platform access, premium education, alerts,
@@ -304,7 +304,7 @@ export default function Home() {
               data-bs-target="#faq3"
             >
               Are the tools beginner-friendly?
-              <i className="fa-solid fa-chevron-down faq-icon"></i>
+              <i className="fa-solid fa-chevron-down faq-icon mt-2"></i>
             </button>
             <div id="faq3" className="collapse faq-answer">
               Yes. Every tool and feature is designed for both beginners and
@@ -320,7 +320,7 @@ export default function Home() {
               data-bs-target="#faq4"
             >
               How does the ranking system work?
-              <i className="fa-solid fa-chevron-down faq-icon"></i>
+              <i className="fa-solid fa-chevron-down faq-icon mt-2"></i>
             </button>
             <div id="faq4" className="collapse faq-answer">
               Ranks represent progress and recognition within the community. As
@@ -337,7 +337,7 @@ export default function Home() {
               data-bs-target="#faq5"
             >
               Can I upgrade my membership anytime?
-              <i className="fa-solid fa-chevron-down faq-icon"></i>
+              <i className="fa-solid fa-chevron-down faq-icon mt-2 "></i>
             </button>
             <div id="faq5" className="collapse faq-answer">
               Yes. You can upgrade to a higher membership plan instantly and

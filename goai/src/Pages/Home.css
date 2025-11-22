@@ -48,7 +48,7 @@
   .content h1 {
     font-family: "SFPro-bold" !important;
     font-size: 80px !important;
-
+margin-top: -50px !important;
     margin-left: 0 !important; /* Remove negative margin */
   }
 
@@ -88,7 +88,7 @@
   }
 
   .orbit-wrapper {
-    margin-left: 0 !important;
+    margin-left:-80px !important;
     display: flex !important; /* ADD THIS */
     justify-content: center !important; /* Center itself */
     width: 100% !important; /* Make it expand */
@@ -540,11 +540,23 @@ box-shadow:
 }
 .vision-text {
   text-align: center;
-  width: 800px; /* smaller width = better balanced wrapping */
+  width: 100%;
+  max-width: 800px; 
   margin: 20px auto;
   font-size: 20px;
   opacity: 0.85;
   line-height: 1.7;
+}
+@media (max-width:575px) {
+  .vision-text {
+    text-align: center;
+    width: 100%;         
+    max-width: 340px;     
+    margin: 20px auto;
+    font-size: 18px;    
+    line-height: 1.6;     
+    opacity: 0.85;
+  }
 }
 .community-text {
   max-width: 850px;
