@@ -27,6 +27,12 @@
   font-family: "SFPro-bold" !important;
   font-size: 80px !important;
 }
+.orbit-title {
+  color: #ffffff;
+text-align: start !important;
+  font-size: 1rem;
+ 
+}
 
 @media (max-width: 575px) {
   .title {
@@ -102,15 +108,20 @@
     font-family: "SFPro-bold" !important;
   }
   .orbit-wrapper {
-    margin-left: 40px !important;
+    margin-left: 1px !important;
   }
   .orbits img {
-    width: 50px;
-    height: 50px;
+    width: 30px !important;
+    height: 30px !important;
     object-fit: contain;
+   
   }
   .orbit-title {
-    font-size: 0.6rem !important;
+  color: #ffffff;
+text-align: start !important;
+  font-size: 0.9rem;
+  width: 100%;
+ 
   }
 }
 
@@ -125,14 +136,7 @@
   height: 75px !important;
   object-fit: cover !important;
 }
-.orbit-title {
-  color: #ffffff;
 
-  font-size: 1rem;
-  letter-spacing: 1px;
-  opacity: 0.8;
-  text-align: right;
-}
 
 /* Soft floating animation (optional) */
 @keyframes float {
