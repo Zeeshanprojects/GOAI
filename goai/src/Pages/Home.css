@@ -66,9 +66,9 @@
   height: 700px;
 
   background: radial-gradient(
-    circle at 30% 10%,      /* glow from top-left of sphere */
+    circle at 50% 10%,      /* glow from top-left of sphere */
     rgba(140, 100, 255, 0.8) 0%,
-    rgba(140, 100, 255, 0.4) 40%,
+    rgba(140, 100, 255, 0.4) 30%,
     rgba(140, 100, 255, 0.1) 60%,
     rgba(140, 100, 255, 0) 10%
   );
