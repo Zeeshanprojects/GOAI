@@ -1,7 +1,6 @@
 .banner-circle {
   height: 650px !important;
   transform: translate(-300px);
-
 }
 .content-wrapper {
   width: 100% !important;
@@ -32,7 +31,6 @@
   text-align: start !important;
   font-size: 1rem;
 }
-
 
 .hero-section {
   position: relative;
@@ -66,8 +64,8 @@
   height: 700px;
 
   background: radial-gradient(
-    circle at 50% 10%,      /* glow from top-left of sphere */
-    rgba(140, 100, 255, 0.8) 0%,
+    circle at 50% 10%,
+    /* glow from top-left of sphere */ rgba(140, 100, 255, 0.8) 0%,
     rgba(140, 100, 255, 0.4) 30%,
     rgba(140, 100, 255, 0.1) 60%,
     rgba(140, 100, 255, 0) 10%
@@ -159,12 +157,8 @@
   width: 100%;
   height: 50px;
 
-  background: linear-gradient(
-    to top,
-    rgba(0,0,0,0) 0%,
-    #000000 100%
-  );
-  
+  background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, #000000 100%);
+
   z-index: 2;
 }
 
@@ -176,7 +170,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .mission-section img {
@@ -223,8 +216,8 @@
 
   background: linear-gradient(
     to bottom,
-    rgba(32, 26, 48, 0),   /* fully transparent */
-    #000000               /* solid black to match next section */
+    rgba(32, 26, 48, 0),
+    /* fully transparent */ #000000 /* solid black to match next section */
   );
 
   z-index: 3;
@@ -353,7 +346,7 @@
 }
 
 .pricing-section {
-  padding-bottom: 30px ;
+  padding-bottom: 30px;
 }
 
 .pricing-wrapper {
@@ -367,13 +360,23 @@
   height: 550px;
   padding: 25px;
   border-radius: 35px;
-  background: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0)),
-    #211a30;
+
+  /* DARK at top → LIGHT at bottom */
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.45) 10%,     /* darkest top */
+      rgba(255, 255, 255, 0.10) 80%, /* subtle light middle */
+      rgba(255, 255, 255, 0.22) 100% /* lightest bottom */
+    ),
+    #1a0c2e;
+
   backdrop-filter: blur(15px);
   border: 2px solid rgba(255, 255, 255, 0.25);
-box-shadow:
-  0 0 15px rgba(255, 255, 255, 0.18),
-  0 0 25px rgba(255, 255, 255, 0.10);
+
+  box-shadow: 
+    0 0 15px rgba(255, 255, 255, 0.18),
+    0 0 25px rgba(255, 255, 255, 0.1);
+
   text-align: center;
   position: relative;
   color: white;
@@ -381,6 +384,7 @@ box-shadow:
   flex-direction: column;
   justify-content: flex-start;
 }
+
 .pricing-card::after {
   content: "";
   position: absolute;
@@ -406,8 +410,8 @@ box-shadow:
   }
 }
 
-.price-heading{
-    font-family: "SFPro-Medium" !important;
+.price-heading {
+  font-family: "SFPro-Medium" !important;
 }
 .price {
   font-family: "SFPro-bold";
@@ -484,20 +488,20 @@ box-shadow:
 .vision-text {
   text-align: center;
   width: 100%;
-  max-width: 800px; 
+  max-width: 800px;
   margin: 20px auto;
   font-size: 20px;
   opacity: 0.85;
   line-height: 1.7;
 }
-@media (max-width:575px) {
+@media (max-width: 575px) {
   .vision-text {
     text-align: center;
-    width: 100%;         
-    max-width: 340px;     
+    width: 100%;
+    max-width: 340px;
     margin: 20px auto;
-    font-size: 18px;    
-    line-height: 1.6;     
+    font-size: 18px;
+    line-height: 1.6;
     opacity: 0.85;
   }
 }
@@ -988,7 +992,7 @@ box-shadow:
 }
 .stars {
   font-size: 30px;
-color: #4A3790 !important;
+  color: #4a3790 !important;
 }
 
 .testimonial-text {
@@ -1037,7 +1041,7 @@ color: #4A3790 !important;
   .content h1 {
     font-family: "SFPro-bold" !important;
     font-size: 80px !important;
-margin-top: -50px !important;
+    margin-top: -50px !important;
     margin-left: 0 !important; /* Remove negative margin */
   }
 
@@ -1077,7 +1081,7 @@ margin-top: -50px !important;
   }
 
   .orbit-wrapper {
-    margin-left:-80px !important;
+    margin-left: -80px !important;
     display: flex !important; /* ADD THIS */
     justify-content: center !important; /* Center itself */
     width: 100% !important; /* Make it expand */
@@ -1114,12 +1118,12 @@ margin-top: -50px !important;
     font-size: 70px !important;
   }
 }
-@media (min-width:1600px) and (max-width:1980px) {
+@media (min-width: 1600px) and (max-width: 1980px) {
   .text-content h1 {
     font-family: "SFPro-bold" !important;
     font-size: 110px !important;
   }
-   .orbit-wrapper {
+  .orbit-wrapper {
     margin-right: -220px !important;
   }
 }
