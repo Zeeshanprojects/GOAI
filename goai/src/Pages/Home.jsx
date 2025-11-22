@@ -21,7 +21,7 @@ export default function Home() {
   }, []);
   const plans = [
     {
-      image: Images.orbit1,
+      image: Images.icon1,
       title: "Go Connect",
       price: "$350",
       fee: "Initial Fee",
@@ -29,7 +29,7 @@ export default function Home() {
       orb: "/orb2.png",
     },
     {
-      image: Images.orbit2,
+      image: Images.icon2,
       title: "Go Create",
       price: "$1200",
       fee: "Initial Fee",
@@ -37,7 +37,7 @@ export default function Home() {
       orb: "/orb3.png",
     },
     {
-      image: Images.orbit3,
+      image: Images.icon3,
       title: "Go Complete",
       price: "$1700",
       fee: "Initial Fee",
