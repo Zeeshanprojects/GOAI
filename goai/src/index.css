@@ -6,8 +6,6 @@
 :root {
   --goai-bg: #000106 !important;
 }
-
-
 html,body{
   background: var(--goai-bg) !important;
   overflow-x: hidden !important;
