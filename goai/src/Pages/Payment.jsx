@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import React from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -15,13 +16,19 @@ export default function Payment() {
       }, []);
   return (
     <>
-      <div className="container mt-5">
-        <div className="row justify-content-center">
+    <div className="space"></div>
+      <div className="container ">
+        <h4 className="text-white">Choose IGenius Membership</h4>
+        <div className="row justify-content-center mt-5">
 
           {/* CHOICE CARD */}
           <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-4" data-aos="fade-up">
             <div className="payment-card">
-              <h5>Choice</h5>
+           <div className="title-row">
+  <h4>Choice</h4>
+  <input type="radio" name="membership" className="radio-right" />
+</div>
+
 <hr/>
               <p className="price">
                 Monthly Membership <br />
@@ -43,7 +50,10 @@ export default function Payment() {
           {/* SELECT CARD */}
           <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-4"data-aos="fade-up">
             <div className="payment-card">
-              <h5>Select</h5>
+             <div className="title-row">
+  <h4>Select</h4>
+  <input type="radio" name="membership" className="radio-right" />
+</div>
 <hr/>
               <p className="price">
                 Monthly Membership <br />
@@ -62,7 +72,10 @@ export default function Payment() {
           {/* PREMIUM CARD */}
           <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-4"data-aos="fade-up">
             <div className="payment-card">
-              <h5>Premium</h5>
+          <div className="title-row">
+  <h4>Premium</h4>
+  <input type="radio" name="membership" className="radio-right" />
+</div>
 <hr/>
               <p className="price">
                 Monthly Membership <br />
@@ -81,7 +94,10 @@ export default function Payment() {
           {/* ELITE CARD */}
           <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-4"data-aos="fade-up">
             <div className="payment-card elite-card">
-              <h5>Elite</h5>
+           <div className="title-row">
+  <h4>Elite</h4>
+  <input type="radio" name="membership" className="radio-right" />
+</div>
 <hr/>
               <p className="price">
                 Monthly Membership <br />
@@ -100,7 +116,7 @@ export default function Payment() {
               </ul>
             </div>
           </div>
-
+  <h4 className="text-white">Add XPLOREpro Membership</h4>
         </div>
       </div>
     </>

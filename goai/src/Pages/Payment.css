@@ -8,17 +8,16 @@
   /* DARK at top → LIGHT at bottom */
   background: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.45) 10%,     /* darkest top */
-      rgba(255, 255, 255, 0.10) 80%, /* subtle light middle */
-      rgba(255, 255, 255, 0.22) 100% /* lightest bottom */
+      rgba(0, 0, 0, 0.45) 10%,
+      rgba(255, 255, 255, 0.1) 80%,
+      rgba(255, 255, 255, 0.22) 100%
     ),
     #1a0c2e;
 
   backdrop-filter: blur(15px);
   border: 2px solid rgba(255, 255, 255, 0.25);
 
-  box-shadow: 
-    0 0 15px rgba(255, 255, 255, 0.18),
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.18),
     0 0 25px rgba(255, 255, 255, 0.1);
 
   text-align: center;
@@ -47,13 +46,50 @@
 
   pointer-events: none;
 }
-.payment-card h5{
-    text-align: start;
+.payment-card h4 {
+  text-align: start;
 }
+.title-row {
+  display: flex;
+  justify-content: space-between; /* Push radio to extreme right */
+  align-items: center;
+  width: 100%;
+}
+
+.title-row h4 {
+  margin: 0;
+  font-size: 20px;
+}
+.radio-right {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ffffff; 
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: auto;
+  position: relative;
+}
+
+/* REMOVE ANY default checked styling */
+.radio-right:checked {
+  background: transparent !important;
+  border: 2px solid #ffffff !important;
+}
+
+/* REMOVE inner dot completely */
+.radio-right:checked::after {
+  content: none !important;
+}
+
+
 .price {
   margin-top: 15px;
   font-size: 14px;
-    text-align: start !important;
+  text-align: start !important;
   line-height: 1.4;
   opacity: 0.9;
 }
@@ -68,7 +104,7 @@
   margin-top: 30px;
   padding-left: 0;
   list-style: none;
-  text-align: left ;
+  text-align: left;
   font-size: 14px;
   line-height: 1.6;
 }
@@ -86,4 +122,3 @@
   color: #38ffb6;
   font-size: 14px;
 }
-
