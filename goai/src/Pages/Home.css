@@ -20,7 +20,7 @@
   align-items: flex-end;
   margin-top: 40px; /* spacing below the button */
 
-  margin-left: 150px; /* right padding for aesthetics */
+  margin-left: 180px; /* right padding for aesthetics */
 }
 .text-content h1 {
   font-family: "SFPro-bold" !important;
@@ -193,17 +193,25 @@
 
 .mission-content .title {
   font-size: 5rem;
-  margin-bottom: 10px;
+  margin-top: 20px !important;   /* pulls title UP */
+  margin-bottom: 20px; 
   font-family: "SFPro-Bold";
 }
-
+.mission-content h6 {
+  margin-top: 10px;
+}
 .mission-content p {
+    margin-top: 220px !important;
   font-size: 1.2rem;
   line-height: 1.7;
-
+  margin-top: 30px;   /* pushes paragraph DOWN */
   color: rgba(255, 255, 255, 0.85);
 }
-
+@media (min-width: 1200px) {
+  .mission-content .title {
+    margin-top: -120px;
+  }
+}
 .neon-btn:hover .btn-glow {
   opacity: 0.7;
 }
@@ -1148,4 +1156,16 @@
   50% {
     transform: translateY(-5px);
   }
+}
+
+@media (min-width: 1000px) and (max-width: 1100px) and (max-height: 768px) {
+.text-content h1{
+  font-size: 55px !important;
+}
+.orbit-wrapper{
+  margin-left: -220px !important;
+}
+.orbit-title{
+  font-size: 15px
+}
 }
