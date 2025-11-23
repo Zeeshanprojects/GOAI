@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Suspense, lazy } from "react";
+import React, { useState, useEffect } from "react";
 import Preloader from "./Components/Preloader";
 
 import "./App.css";
@@ -7,9 +7,8 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Header from "./Components/Header";
 import Home from "./Pages/Home";
 import Footer from "./Components/Footer";
-
-// Lazy Load Payment Page
-const Payment = lazy(() => import("./Pages/Payment"));
+import Payment from "./Pages/Payment";  // <--- NORMAL IMPORT
+  
 
 // Layout Wrapper — hides header/footer on specific pages
 function Layout({ children }) {
@@ -48,16 +47,9 @@ function App() {
           <Layout>
             <Routes>
               <Route path="/" element={<Home />} />
-              
-              {/* Lazy Load Payment */}
-              <Route
-                path="/payment"
-                element={
-                  <Suspense fallback={<div className="lazy-loader">Loading...</div>}>
-                    <Payment />
-                  </Suspense>
-                }
-              />
+
+              {/* Payment loads normally — header/footer hidden */}
+              <Route path="/payment" element={<Payment />} />
             </Routes>
           </Layout>
         </BrowserRouter>

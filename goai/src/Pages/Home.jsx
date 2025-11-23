@@ -3,7 +3,7 @@ import Images from "../assets/Images/Image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Home.css";
-
+import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules"; // modules
 import "swiper/css";
@@ -69,12 +69,12 @@ export default function Home() {
               <br />
               wealth
             </h1>
-
-            <button className="neon-btn">
+<Link to="/payment"> <button className="neon-btn">
               <span>Join Now</span>
 
               <div className="btn-glow"></div>
-            </button>
+            </button></Link>
+           
             <div className="orbit-wrapper">
               <div className="orbits">
                 <img src={Images.orbit1} alt="" />
