@@ -20,7 +20,7 @@
   align-items: flex-end;
   margin-top: 40px; /* spacing below the button */
 
-  margin-left: 180px; /* right padding for aesthetics */
+  margin-left: 150px; /* right padding for aesthetics */
 }
 .text-content h1 {
   font-family: "SFPro-bold" !important;
