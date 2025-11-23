@@ -175,4 +175,12 @@
         justify-content: center;
         align-items: center;
     } 
+    .heading{
+        text-align: center !important;
+    }
+}
+@media  (min-width:1024px) and (max-width:1450px) {
+   .payment-card{
+    width: 260px !important;
+   }
 }

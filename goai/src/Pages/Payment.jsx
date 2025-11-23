@@ -9,10 +9,10 @@ export default function Payment() {
   }, []);
   return (
     <>
-      <div className="space"></div>
+      
       <div className="container ">
-        <h4 className="text-white">Choose IGenius Membership</h4>
-        <div className="row justify-content-center mt-5">
+        <h4 className="text-white mt-4 heading">Choose IGenius Membership</h4>
+        <div className="row justify-content-center mt-3">
           {/* CHOICE CARD */}
           <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-4">
             <div className="payment-card hover-card">
@@ -114,7 +114,7 @@ export default function Payment() {
               </ul>
             </div>
           </div>
-          <h4 className="text-white">Add XPLOREpro Membership</h4>
+          <h4 className="text-white heading">Add XPLOREpro Membership</h4>
         </div>
       </div>
     </>
