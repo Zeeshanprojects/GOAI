@@ -1,0 +1,89 @@
+.payment-card {
+  width: 300px;
+  height: 550px;
+  padding: 25px;
+  padding-top: 100px;
+  border-radius: 10px;
+
+  /* DARK at top → LIGHT at bottom */
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.45) 10%,     /* darkest top */
+      rgba(255, 255, 255, 0.10) 80%, /* subtle light middle */
+      rgba(255, 255, 255, 0.22) 100% /* lightest bottom */
+    ),
+    #1a0c2e;
+
+  backdrop-filter: blur(15px);
+  border: 2px solid rgba(255, 255, 255, 0.25);
+
+  box-shadow: 
+    0 0 15px rgba(255, 255, 255, 0.18),
+    0 0 25px rgba(255, 255, 255, 0.1);
+
+  text-align: center;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.payment-card::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -2px; /* aligns it with the border */
+  transform: translateY(-50%);
+  width: 4px; /* thickness of shine */
+  height: 120px; /* size of shiny area */
+
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+  pointer-events: none;
+}
+.payment-card h5{
+    text-align: start;
+}
+.price {
+  margin-top: 15px;
+  font-size: 14px;
+    text-align: start !important;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+.price strong {
+  font-size: 20px;
+
+  color: #ffffff;
+}
+
+.features {
+  margin-top: 30px;
+  padding-left: 0;
+  list-style: none;
+  text-align: left ;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.features li {
+  margin-bottom: 8px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.features li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #38ffb6;
+  font-size: 14px;
+}
+

@@ -3,7 +3,7 @@ import Images from "../assets/Images/Image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Home.css";
-// at the top of Home.jsx (replace your current Swiper imports)
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules"; // modules
 import "swiper/css";

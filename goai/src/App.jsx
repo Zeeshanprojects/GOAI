@@ -1,12 +1,31 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense, lazy } from "react";
 import Preloader from "./Components/Preloader";
 
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 
 import Header from "./Components/Header";
 import Home from "./Pages/Home";
 import Footer from "./Components/Footer";
+
+// Lazy Load Payment Page
+const Payment = lazy(() => import("./Pages/Payment"));
+
+// Layout Wrapper — hides header/footer on specific pages
+function Layout({ children }) {
+  const location = useLocation();
+  const hideHeaderFooter = location.pathname === "/payment";
+
+  return (
+    <>
+      {!hideHeaderFooter && <Header />}
+
+      {children}
+
+      {!hideHeaderFooter && <Footer />}
+    </>
+  );
+}
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -26,11 +45,21 @@ function App() {
         <Preloader />
       ) : (
         <BrowserRouter>
-          <Header />
-          <Routes>
-            <Route path="/" element={<Home />} />
-          </Routes>
-          <Footer />
+          <Layout>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              
+              {/* Lazy Load Payment */}
+              <Route
+                path="/payment"
+                element={
+                  <Suspense fallback={<div className="lazy-loader">Loading...</div>}>
+                    <Payment />
+                  </Suspense>
+                }
+              />
+            </Routes>
+          </Layout>
         </BrowserRouter>
       )}
     </>
