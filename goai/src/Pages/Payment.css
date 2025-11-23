@@ -168,3 +168,11 @@
   color: #38ffb6;
   font-size: 14px;
 }
+
+@media (max-width:992px) {
+    .col-sm-12 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+}
