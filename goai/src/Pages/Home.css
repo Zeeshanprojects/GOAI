@@ -20,7 +20,7 @@
   align-items: flex-end;
   margin-top: 40px; /* spacing below the button */
 
-  margin-left: 200px; /* right padding for aesthetics */
+  margin-left: 150px; /* right padding for aesthetics */
 }
 .text-content h1 {
   font-family: "SFPro-bold" !important;
@@ -200,6 +200,7 @@
 .mission-content p {
   font-size: 1.2rem;
   line-height: 1.7;
+
   color: rgba(255, 255, 255, 0.85);
 }
 
@@ -1118,13 +1119,13 @@
     font-size: 70px !important;
   }
 }
-@media (min-width: 1600px) and (max-width: 1980px) {
+@media (min-width: 1600px) and (max-width: 2280px) {
   .text-content h1 {
     font-family: "SFPro-bold" !important;
     font-size: 110px !important;
   }
   .orbit-wrapper {
-    margin-right: -220px !important;
+    margin-right: -120px !important;
   }
 }
 .orbits {

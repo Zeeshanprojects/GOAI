@@ -143,13 +143,14 @@ export default function Home() {
       >
         <div className="container">
           <h1 id="ecosystem-title" className="title">
-            AI Ecosystem
+            GO Ecosystem
           </h1>
           <div className="eco-grid" data-aos="fade-up">
             <article className="eco-card h-100" aria-hidden="false">
               <img
-                src={Images.Ecosystem1}
+                src={Images.Ecosystem3}
                 alt="ecosystem"
+                className="eco-icon-fix"
                 height={120}
                 width={120}
               />
@@ -183,9 +184,9 @@ export default function Home() {
 
             <article className="eco-card">
               <img
-                src={Images.Ecosystem3}
+                src={Images.Ecosystem4}
                 alt="ecosystem"
-                className="eco-icon-fix"
+                
                 height={120}
                 width={120}
               />
@@ -201,7 +202,7 @@ export default function Home() {
 
             <article className="eco-card">
               <img
-                src={Images.Ecosystem4}
+                src={Images.Ecosystem1}
                 alt="ecosystem"
                 height={120}
                 width={120}
