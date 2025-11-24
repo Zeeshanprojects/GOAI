@@ -496,62 +496,42 @@
 .modal-btn.next:hover {
   box-shadow: 0 0 18px rgba(123, 86, 209, 0.8);
 }
-
-
-/* Dropdown box */
-.ReactFlagsSelect__options {
-  background-color: #1a0c2e !important;
-  border: 1px solid rgba(255, 255, 255, 0.15) !important;
-  border-radius: 12px !important;
-  padding: 8px 0 !important;
-  box-shadow: 0 0 25px rgba(150, 50, 255, 0.25) !important;
-  color: white !important;
+.modal-two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 15px;
 }
 
-/* Options list */
-.ReactFlagsSelect__option {
-  background: transparent !important;
-  color: white !important;
-  padding: 10px 14px !important;
-}
-
-.ReactFlagsSelect__option:hover {
-  background: #3b215f !important;
-}
-
-/* Search bar container */
-.ReactFlagsSelect__search {
-  background: transparent !important;
-  padding: 0 12px !important;
-}
-
-/* Search input box */
-.ReactFlagsSelect__searchInput {
-  background: #2c1a44 !important;
-  border: 1px solid rgba(255, 255, 255, 0.25) !important;
-  color: white !important;
-  padding: 10px !important;
-  border-radius: 8px !important;
-}
-
-/* Button (selected item) */
-.ReactFlagsSelect__button {
-  background: #2c1a44 !important;
-  border: 1px solid rgba(255, 255, 255, 0.25) !important;
-  color: white !important;
-  padding: 12px 14px !important;
-  border-radius: 10px !important;
-}
-
-/* Scrollbar */
-.ReactFlagsSelect__options::-webkit-scrollbar {
-  width: 7px;
-}
-
-.ReactFlagsSelect__options::-webkit-scrollbar-thumb {
-  background: #6d4bb5;
+.modal-input {
+  width: 100%;
+  padding: 10px;
+  background: #2c1a44;
+  border: 1px solid rgba(255,255,255,0.2);
   border-radius: 8px;
+  color: #fff;
 }
+
+.modal-section-title {
+  color: #fff;
+  font-size: 18px;
+  margin: 20px 0 10px;
+  opacity: 0.9;
+}
+.membership-modal-overlay {
+  display: flex;
+  align-items: center;      /* vertically center */
+  justify-content: center;  /* horizontally center */
+  padding: 40px 0 !important; /* <-- THIS CREATES TOP + BOTTOM SPACE */
+}
+
+.membership-modal {
+  width: 800px;
+  max-width: 95%;
+  margin: 70px auto !important;  /* good breathing space */
+  border-radius: 20px;
+}
+
 
 @media (min-width: 1024px) and (max-width: 1299px) {
   .pricing-card {

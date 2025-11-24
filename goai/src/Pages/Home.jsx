@@ -10,15 +10,32 @@ import "swiper/css";
 import "swiper/css/pagination";
 import Select from "react-select";
 import countryList from "react-select-country-list";
+
+import "flag-icons/css/flag-icons.min.css";
 /* ===================== MODAL COMPONENT ===================== */
 function MembershipModal({ isOpen, onClose, selectedPlan }) {
   const navigate = useNavigate();
 
   const [countryOption, setCountryOption] = useState(null);
   const [languageOption, setLanguageOption] = useState(null);
+  const [showFormModal, setShowFormModal] = useState(false);
 
   // Generate country list once
-  const countryOptions = useMemo(() => countryList().getData(), []);
+  // const countryOptions = useMemo(() => countryList().getData(), []);
+  const countryOptions = useMemo(() => {
+    return countryList()
+      .getData()
+      .map((country) => ({
+        value: country.value,
+        label: (
+          <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+            <span className={`fi fi-${country.value.toLowerCase()}`} />
+            {country.label}
+          </div>
+        ),
+        rawLabel: country.label, // Keep pure name for backend
+      }));
+  }, []);
 
   const languageOptions = [
     { value: "English", label: "English" },
@@ -32,7 +49,7 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
     control: (base) => ({
       ...base,
       backgroundColor: "#2c1a44",
-      borderColor: "rgba(255,255,255,0.2)",
+      borderColor: "hsla(0, 0%, 100%, 0.20)",
       boxShadow: "none",
       minHeight: "44px",
       cursor: "pointer",
@@ -57,73 +74,202 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
     }),
   };
 
+  // Step 1 → Step 2
   const handleNext = () => {
     if (!countryOption || !languageOption) {
       alert("Please select both country and language.");
       return;
     }
+    setShowFormModal(true);
+  };
 
+  // Step 2 → Step 1
+  const handleBack = () => {
+    setShowFormModal(false);
+  };
+
+  // Step 2 → Payment Page
+  const handleContinue = () => {
     navigate("/payment", {
       state: {
         plan: selectedPlan,
-        country: countryOption.label,
+        country: countryOption.rawLabel,
+
         language: languageOption.value,
       },
     });
-
-    onClose();
   };
 
-  if (!isOpen) return null;
-
   return (
-    <div className="membership-modal-overlay">
-      <div className="membership-modal">
-        <h2 className="modal-title">Complete Your Membership</h2>
+    <>
+      {/* ---------------- FIRST MODAL ---------------- */}
+      {isOpen && !showFormModal && (
+        <div className="membership-modal-overlay">
+          <div className="membership-modal">
+            <h2 className="modal-title">Complete Your Membership</h2>
 
-        {selectedPlan && (
-          <p className="modal-plan">
-            Selected Plan: <strong>{selectedPlan.title}</strong>
-          </p>
-        )}
+            {selectedPlan && (
+              <p className="modal-plan">
+                Selected Plan: <strong>{selectedPlan.title}</strong>
+              </p>
+            )}
 
-        {/* Country Field */}
-        <div className="modal-field">
-          <label>Country</label>
-          <Select
-            options={countryOptions}
-            value={countryOption}
-            onChange={setCountryOption}
-            placeholder="Select Country"
-            styles={selectStyles}
-          />
+            <div className="modal-field">
+              <label>Country</label>
+              <Select
+                options={countryOptions}
+                value={countryOption}
+                onChange={setCountryOption}
+                placeholder="Select Country"
+                styles={selectStyles}
+              />
+            </div>
+
+            <div className="modal-field">
+              <label>Language</label>
+              <Select
+                options={languageOptions}
+                value={languageOption}
+                onChange={setLanguageOption}
+                placeholder="Select Language"
+                styles={selectStyles}
+              />
+            </div>
+
+            <div className="modal-actions">
+              <button className="modal-btn cancel" onClick={onClose}>
+                Cancel
+              </button>
+              <button className="modal-btn next" onClick={handleNext}>
+                Next
+              </button>
+            </div>
+          </div>
         </div>
+      )}
 
-        {/* Language Field */}
-        <div className="modal-field">
-          <label>Language</label>
-          <Select
-            options={languageOptions}
-            value={languageOption}
-            onChange={setLanguageOption}
-            placeholder="Select Language"
-            styles={selectStyles}
-          />
-        </div>
+      {/* ---------------- SECOND MODAL ---------------- */}
+      {showFormModal && (
+        <div className="membership-modal-overlay">
+          <div className="membership-modal">
+            <h2 className="modal-title">Your Account Information</h2>
 
-        {/* Actions */}
-        <div className="modal-actions">
-          <button className="modal-btn cancel" onClick={onClose}>
-            Cancel
-          </button>
-          <button className="modal-btn next" onClick={handleNext}>
-            Next
-          </button>
+            {/* Mailing Address */}
+            <h3 className="modal-section-title">Mailing Address</h3>
+
+            <div className="modal-two-columns">
+              <input
+                className="modal-input"
+                type="text"
+                placeholder="Address Line 1"
+              />
+              <input
+                className="modal-input"
+                type="text"
+                placeholder="Address Line 2"
+              />
+            </div>
+
+            <div className="modal-two-columns">
+              <input
+                className="modal-input"
+                type="text"
+                placeholder="Address Line 3"
+              />
+              <input
+                className="modal-input"
+                type="text"
+                placeholder="ZIP Code"
+              />
+            </div>
+
+            <div className="modal-two-columns">
+              <input className="modal-input" type="text" placeholder="City" />
+              <input className="modal-input" type="text" placeholder="State" />
+            </div>
+
+            {/* Contact Info */}
+            <h3 className="modal-section-title">Contact Information</h3>
+
+            <div className="modal-two-columns">
+              <input
+                className="modal-input"
+                type="text"
+                placeholder="Primary Phone Number"
+              />
+              <input
+                className="modal-input"
+                type="text"
+                placeholder="Mobile Number"
+              />
+            </div>
+
+            <div className="modal-two-columns">
+              <input
+                className="modal-input"
+                type="email"
+                placeholder="Email Address"
+              />
+              <input
+                className="modal-input"
+                type="email"
+                placeholder="Confirm Email Address"
+              />
+            </div>
+
+            {/* Account Info */}
+            <h3 className="modal-section-title">Your Account Information</h3>
+
+            <div className="modal-two-columns">
+              <input
+                className="modal-input"
+                type="text"
+                placeholder="Username"
+              />
+              <input
+                className="modal-input"
+                type="text"
+                placeholder="Your Website URL: ignius.biz"
+              />
+            </div>
+
+            <div className="modal-two-columns">
+              <input
+                className="modal-input"
+                type="password"
+                placeholder="Choose Your Password"
+              />
+              <input
+                className="modal-input"
+                type="password"
+                placeholder="Confirm Your Password"
+              />
+            </div>
+
+            <input
+              className="modal-input"
+              type="text"
+              placeholder="Your Enroller: Aws Qasem"
+              style={{ marginTop: "10px" }}
+              disabled
+            />
+
+            <div className="modal-actions">
+              <button className="modal-btn cancel" onClick={handleBack}>
+                Back
+              </button>
+
+              <button className="modal-btn next" onClick={handleContinue}>
+                Continue
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      )}
+    </>
   );
 }
+
 /* ===================== MAIN HOME COMPONENT ===================== */
 
 export default function Home() {
