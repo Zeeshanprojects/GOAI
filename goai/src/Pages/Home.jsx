@@ -8,16 +8,17 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-
-
+import Select from "react-select";
+import countryList from "react-select-country-list";
 /* ===================== MODAL COMPONENT ===================== */
-
-
 function MembershipModal({ isOpen, onClose, selectedPlan }) {
   const navigate = useNavigate();
 
-  const [countryOption, setCountryOption] = useState("");
+  const [countryOption, setCountryOption] = useState(null);
   const [languageOption, setLanguageOption] = useState(null);
+
+  // Generate country list once
+  const countryOptions = useMemo(() => countryList().getData(), []);
 
   const languageOptions = [
     { value: "English", label: "English" },
@@ -27,7 +28,6 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
     { value: "French", label: "French" },
   ];
 
-  // react-select theme (unchanged)
   const selectStyles = {
     control: (base) => ({
       ...base,
@@ -41,10 +41,6 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
       ...base,
       color: "#ffffff",
     }),
-    input: (base) => ({
-      ...base,
-      color: "#ffffff",
-    }),
     menu: (base) => ({
       ...base,
       backgroundColor: "#2c1a44",
@@ -54,7 +50,6 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
       ...base,
       backgroundColor: state.isFocused ? "#3b215f" : "#2c1a44",
       color: "#ffffff",
-      cursor: "pointer",
     }),
     placeholder: (base) => ({
       ...base,
@@ -71,7 +66,7 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
     navigate("/payment", {
       state: {
         plan: selectedPlan,
-        country: countryOption,
+        country: countryOption.label,
         language: languageOption.value,
       },
     });
@@ -95,15 +90,12 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
         {/* Country Field */}
         <div className="modal-field">
           <label>Country</label>
-
-          <ReactFlagsSelect
-            selected={countryOption}
-            onSelect={(code) => setCountryOption(code)}
-            searchable={true}
+          <Select
+            options={countryOptions}
+            value={countryOption}
+            onChange={setCountryOption}
             placeholder="Select Country"
-            className="flag-select"
-            selectButtonClassName="flag-btn"
-            searchPlaceholder="Search country"
+            styles={selectStyles}
           />
         </div>
 
