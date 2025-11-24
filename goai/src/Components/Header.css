@@ -48,8 +48,8 @@ height: 60px !important;
 @media (max-width: 992px) {
 
   /* Make navbar background black when collapsed */
-  .navbar {
-    background: black !important;
+   .navbar{
+    margin-top: 10px;
   }
 
   /* Logo spacing */
