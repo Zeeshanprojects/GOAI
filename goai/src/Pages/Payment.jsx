@@ -109,7 +109,7 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
       {/* FIRST MODAL */}
       {isOpen && !showFormModal && (
         <div className="membership-modal-overlay">
-          <div className="membership-modal">
+          <div className="membership-modal-1">
             <h2 className="modal-title">Complete Your Membership</h2>
 
             {selectedPlan && (
@@ -170,7 +170,7 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
       {/* SECOND MODAL */}
       {showFormModal && (
         <div className="membership-modal-overlay">
-          <div className="membership-modal">
+          <div className="membership-modal-2">
             <h2 className="modal-title">Your Account Information</h2>
 
             <h3 className="modal-section-title">Mailing Address</h3>
