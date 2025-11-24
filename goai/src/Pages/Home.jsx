@@ -41,34 +41,41 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
     { value: "French", label: "French" },
   ];
 
-  const selectStyles = {
-    control: (base) => ({
-      ...base,
-      backgroundColor: "#2c1a44",
-      borderColor: "hsla(0, 0%, 100%, 0.20)",
-      boxShadow: "none",
-      minHeight: "44px",
-      cursor: "pointer",
-    }),
-    singleValue: (base) => ({
-      ...base,
-      color: "#ffffff",
-    }),
-    menu: (base) => ({
-      ...base,
-      backgroundColor: "#2c1a44",
-      zIndex: 9999,
-    }),
-    option: (base, state) => ({
-      ...base,
-      backgroundColor: state.isFocused ? "#3b215f" : "#2c1a44",
-      color: "#ffffff",
-    }),
-    placeholder: (base) => ({
-      ...base,
-      color: "rgba(255,255,255,0.7)",
-    }),
-  };
+const selectStyles = {
+  control: (base) => ({
+    ...base,
+    backgroundColor: "#2c1a44",
+    borderColor: "hsla(0, 0%, 100%, 0.20)",
+    boxShadow: "none",
+    minHeight: "44px",
+    cursor: "pointer",
+  }),
+  singleValue: (base) => ({
+    ...base,
+    color: "#ffffff",
+  }),
+  menu: (base) => ({
+    ...base,
+    backgroundColor: "#2c1a44",
+    zIndex: 9999,
+  }),
+  option: (base, state) => ({
+    ...base,
+    backgroundColor: state.isFocused ? "#3b215f" : "#2c1a44",
+    color: "#ffffff",
+  }),
+  placeholder: (base) => ({
+    ...base,
+    color: "rgba(255,255,255,0.7)",
+  }),
+
+  // ⭐ FIX TEXT COLOR WHILE TYPING
+  input: (base) => ({
+    ...base,
+    color: "#ffffff",   // typing text color
+  }),
+};
+
 
   const filterCountries = (option, rawInput) => {
     if (!rawInput) return true;
@@ -101,6 +108,11 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
       },
     });
   };
+const resetAllFields = () => {
+  setCountryOption(null);
+  setLanguageOption(null);
+  setShowFormModal(false);
+};
 
   return (
     <>
@@ -147,9 +159,16 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
             </div>
 
             <div className="modal-actions">
-              <button className="modal-btn cancel" onClick={onClose}>
-                Cancel
-              </button>
+             <button
+  className="modal-btn cancel"
+  onClick={() => {
+    resetAllFields(); // reset everything
+    onClose();        // close modal
+  }}
+>
+  Cancel
+</button>
+
               <button className="modal-btn next" onClick={handleNext}>
                 Next
               </button>
