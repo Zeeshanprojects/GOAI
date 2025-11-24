@@ -1,15 +1,166 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import Images from "../assets/Images/Image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Home.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules"; // modules
+import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
+// NEW IMPORTS FOR COUNTRY + FLAGS
+import Select from "react-select";
+import countryList from "react-select-country-list";
+import ReactCountryFlag from "react-country-flag";
+
+/* ===================== MODAL COMPONENT ===================== */
+
+function MembershipModal({ isOpen, onClose, selectedPlan }) {
+  const navigate = useNavigate();
+  const [countryOption, setCountryOption] = useState(null);
+  const [languageOption, setLanguageOption] = useState(null);
+  const rawCountries = countryList().getData();
+
+  // All countries from react-select-country-list with flag labels
+const countryOptions = rawCountries.map((country) => ({
+  value: country.value,
+  label: country.label, // for search matching
+  flag: (
+    <ReactCountryFlag
+      svg
+      countryCode={country.value}
+      style={{
+        width: "20px",
+        height: "20px",
+        borderRadius: "50%",
+      }}
+    />
+  ),
+}));
+
+  const languageOptions = [
+    { value: "English", label: "English" },
+    { value: "Urdu", label: "Urdu" },
+    { value: "Arabic", label: "Arabic" },
+    { value: "Spanish", label: "Spanish" },
+    { value: "French", label: "French" },
+  ];
+
+  // Dark theme styles for react-select
+  const selectStyles = {
+    control: (base) => ({
+      ...base,
+      backgroundColor: "#2c1a44",
+      borderColor: "rgba(255,255,255,0.2)",
+      boxShadow: "none",
+      minHeight: "44px",
+      cursor: "pointer",
+    }),
+    singleValue: (base) => ({
+      ...base,
+      color: "#ffffff",
+    }),
+    input: (base) => ({
+      ...base,
+      color: "#ffffff",
+    }),
+    menu: (base) => ({
+      ...base,
+      backgroundColor: "#2c1a44",
+      zIndex: 9999,
+    }),
+    option: (base, state) => ({
+      ...base,
+      backgroundColor: state.isFocused ? "#3b215f" : "#2c1a44",
+      color: "#ffffff",
+      cursor: "pointer",
+    }),
+    placeholder: (base) => ({
+      ...base,
+      color: "rgba(255,255,255,0.7)",
+    }),
+  };
+
+  const handleNext = () => {
+    if (!countryOption || !languageOption) {
+      alert("Please select both country and language.");
+      return;
+    }
+
+    navigate("/payment", {
+      state: {
+        plan: selectedPlan,
+        country: countryOption.value,
+        language: languageOption.value,
+      },
+    });
+
+    onClose();
+  };
+
+  if (!isOpen) return null;
+
+  return (
+    <div className="membership-modal-overlay">
+      <div className="membership-modal">
+        <h2 className="modal-title">Complete Your Membership</h2>
+
+        {selectedPlan && (
+          <p className="modal-plan">
+            Selected Plan: <strong>{selectedPlan.title}</strong>
+          </p>
+        )}
+
+        <div className="modal-field">
+          <label>Country</label>
+         <Select
+  options={countryOptions}
+  value={countryOption}
+  onChange={setCountryOption}
+  placeholder="Select Country"
+  styles={selectStyles}
+  isSearchable={true}
+  getOptionLabel={(option) => (
+    <span style={{ display: "flex", alignItems: "center", gap: 8 }}>
+      {option.flag} {option.label}
+    </span>
+  )}
+  getOptionValue={(option) => option.value}
+/>
+
+        </div>
+
+        <div className="modal-field">
+          <label>Language</label>
+          <Select
+            options={languageOptions}
+            value={languageOption}
+            onChange={setLanguageOption}
+            placeholder="Select Language"
+            styles={selectStyles}
+          />
+        </div>
+
+        <div className="modal-actions">
+          <button className="modal-btn cancel" onClick={onClose}>
+            Cancel
+          </button>
+          <button className="modal-btn next" onClick={handleNext}>
+            Next
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/* ===================== MAIN HOME COMPONENT ===================== */
+
 export default function Home() {
+  const [showModal, setShowModal] = useState(false);
+  const [selectedPlan, setSelectedPlan] = useState(null);
+
   useEffect(() => {
     document.title = "Home | GOAI";
     AOS.init({
@@ -19,6 +170,7 @@ export default function Home() {
       once: true,
     });
   }, []);
+
   const plans = [
     {
       image: Images.icon1,
@@ -51,17 +203,20 @@ export default function Home() {
       orb: "/orb4.png",
     },
   ];
+
   return (
     <>
+      {/* =============== HERO SECTION =============== */}
       <section className="hero-section container-fluid">
         <div className="background-effects"></div>
 
         <div className="content-wrapper content" data-aos="fade-up">
           <img
-          rel="preload"
+            rel="preload"
             src={Images.bannercircle}
             className="banner-circle"
             fetchPriority="high"
+            alt="GOAI Sphere"
           />
           <div className="text-content" data-aos="fade-up">
             <h1>
@@ -69,12 +224,14 @@ export default function Home() {
               <br />
               wealth
             </h1>
-<Link to="/payment"> <button className="neon-btn">
-              <span>Join Now</span>
 
-              <div className="btn-glow"></div>
-            </button></Link>
-           
+            <Link to="/payment">
+              <button className="neon-btn">
+                <span>Join Now</span>
+                <div className="btn-glow"></div>
+              </button>
+            </Link>
+
             <div className="orbit-wrapper">
               <div className="orbits">
                 <img src={Images.orbit1} alt="" />
@@ -91,16 +248,22 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* =============== MISSION SECTION =============== */}
       <section className="mission-section" data-aos="fade-up">
         <div className="mission-bg">
-          <img src={Images.missionbackground} className="mission-image" />
+          <img
+            src={Images.missionbackground}
+            className="mission-image"
+            alt="Mission"
+          />
         </div>
 
         <div className="mission-content">
           <h1 className="title">Mission</h1>
-       
+
           <p>
-               <h6>To reinvent wealth through intelligence.</h6>
+            <h6>To reinvent wealth through intelligence.</h6>
             GO Ai exists to merge financial education, trading technology, and
             human potential into a single ecosystem of empowerment. We engineer
             prosperity through community, automation, and data-driven precision.
@@ -110,8 +273,8 @@ export default function Home() {
         </div>
       </section>
 
+      {/* =============== PRICING / MEMBERSHIP SECTION =============== */}
       <section className="pricing-section mt-5">
-        {/* Heading + Description */}
         <div className="pricing-header" data-aos="fade-up">
           <h1 className="title">Membership</h1>
         </div>
@@ -132,11 +295,28 @@ export default function Home() {
                 ))}
               </div>
 
-              <button className="select-btn">SELECT</button>
+              <button
+                className="select-btn"
+                onClick={() => {
+                  setSelectedPlan(plan);
+                  setShowModal(true);
+                }}
+              >
+                SELECT
+              </button>
             </div>
           ))}
         </div>
       </section>
+
+      {/* =============== MODAL (for SELECT) =============== */}
+      <MembershipModal
+        isOpen={showModal}
+        onClose={() => setShowModal(false)}
+        selectedPlan={selectedPlan}
+      />
+
+      {/* =============== ECOSYSTEM SECTION =============== */}
       <section
         className="ecosystem-section"
         data-aos="fade-up"
@@ -155,7 +335,6 @@ export default function Home() {
                 height={120}
                 width={120}
               />
-
               <h3 className="eco-h">GO OS</h3>
               <p className="eco-p">
                 Get the Core Operating System of the entire AI Trading Plane,
@@ -173,7 +352,6 @@ export default function Home() {
                 width={120}
               />
               <h3 className="eco-h">GO Insights</h3>
-
               <p className="eco-p">
                 Get personalized, threshold-based alerts that trigger only when
                 the market shows high-probability, actionable
@@ -187,7 +365,6 @@ export default function Home() {
               <img
                 src={Images.Ecosystem4}
                 alt="ecosystem"
-                
                 height={120}
                 width={120}
               />
@@ -208,7 +385,6 @@ export default function Home() {
                 height={120}
                 width={120}
               />
-
               <h3 className="eco-h">GO Library</h3>
               <p className="eco-p">
                 Get on-demand courses, live workshops, and mentorship tracks
@@ -220,11 +396,11 @@ export default function Home() {
           </div>
         </div>
 
-        {/* decorative orbs — optional, consistent with theme */}
         <div className="ecosystem-orb orb-eco-1"></div>
         <div className="ecosystem-orb orb-eco-2"></div>
       </section>
 
+      {/* =============== VISION SECTION =============== */}
       <section className="vision-section mt-0">
         <h1 className="title" data-aos="fade-up">
           Vision
@@ -256,14 +432,14 @@ export default function Home() {
           ability to think smarter, move faster, and unlock limitless potential.
         </p>
       </section>
-      {/* ==================== FAQ SECTION ==================== */}
+
+      {/* =============== FAQ SECTION =============== */}
       <section className="faq-section">
         <h1 className="title" data-aos="fade-up">
           Frequently Asked Questions
         </h1>
 
         <div className="faq-container mt-5" data-aos="fade-up">
-          {/* FAQ ITEM 1 */}
           <div className="faq-item">
             <button
               className="faq-question"
@@ -281,7 +457,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* FAQ ITEM 2 */}
           <div className="faq-item">
             <button
               className="faq-question"
@@ -298,7 +473,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* FAQ ITEM 3 */}
           <div className="faq-item">
             <button
               className="faq-question"
@@ -314,7 +488,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* FAQ ITEM 4 */}
           <div className="faq-item">
             <button
               className="faq-question"
@@ -331,7 +504,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* FAQ ITEM 5 */}
           <div className="faq-item">
             <button
               className="faq-question"
@@ -348,8 +520,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* ==================== TESTIMONIALS (SWIPER) ==================== */}
-      {/* ==================== TESTIMONIALS (SWIPER) ==================== */}
+
+      {/* =============== TESTIMONIALS SECTION =============== */}
       <section className="testimonials-section" data-aos="fade-up">
         <div className="container">
           <h1 className="title">Testimonials</h1>
@@ -425,7 +597,7 @@ export default function Home() {
             ].map((t, i) => (
               <SwiperSlide key={i}>
                 <div className="testimonial-card h-120">
-                  <div class="stars">★★★★★</div>
+                  <div className="stars">★★★★★</div>
 
                   <p className="t-text">“{t.text}”</p>
                   <h3 className="t-name">{t.name}</h3>

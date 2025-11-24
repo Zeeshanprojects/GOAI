@@ -1,181 +1,76 @@
-import { useEffect, useState } from "react";
-
+import { useEffect } from "react";
+import Images from "../assets/Images/Image";
 import "aos/dist/aos.css";
 import "./Payment.css";
 
 export default function Payment() {
-  const [selected, setSelected] = useState(null);
+
 
   useEffect(() => {
     document.title = "Payment | GOAI";
   }, []);
-
-  // Function to toggle selection
-  const handleSelect = (plan) => {
-    setSelected(selected === plan ? null : plan);
-  };
+ const plans = [
+    {
+      image: Images.icon1,
+      title: "Go Connect",
+      price: "$350",
+      fee: "Initial Fee",
+      features: ["More Education", "More Alerts"],
+      orb: "/orb2.png",
+    },
+    {
+      image: Images.icon2,
+      title: "Go Create",
+      price: "$1200",
+      fee: "Initial Fee",
+      features: ["More Education", "More Alerts", "More Softwares"],
+      orb: "/orb3.png",
+    },
+    {
+      image: Images.icon3,
+      title: "Go Complete",
+      price: "$1700",
+      fee: "Initial Fee",
+      features: [
+        "More Education",
+        "More Alerts",
+        "More Softwares",
+        "VIP",
+        "Automations",
+      ],
+      orb: "/orb4.png",
+    },
+  ];
 
   return (
-    <>
-      <div className="space"></div>
-
-      <div className="container">
-        <div className="row justify-content-center mt-3">
-
-          {/* CHOICE CARD */}
-          <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-4">
-            <div
-              className={`payment-card hover-card ${selected === "choice" ? "active-card" : ""}`}
-              onClick={() => handleSelect("choice")}
-            >
-              <div className="popular-tag">Most Popular</div>
-
-              <div className="title-row">
-                <h4>Choice</h4>
-
-                <input
-                  type="checkbox"
-                  checked={selected === "choice"}
-                  onChange={() => handleSelect("choice")}
-                  className="radio-right"
-                />
-              </div>
-
-              <hr />
-
-              <p className="payment">
-                Monthly Membership <br />
-                <strong>$99.99 USD</strong>
-                <br />+ $99.99 one-time fee
-              </p>
-
-              <hr />
-
-              <ul className="payment-features">
-                <h6 className="mb-3">Features</h6>
-                <li>University</li>
-                <li>learnLIVE</li>
-                <li>MONEYpro</li>
-                <li>MARKETpro</li>
-                <li>FOREXthrive – includes FX Delta, FX Essentials, and more!</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* SELECT CARD */}
-          <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-4">
-            <div
-              className={`payment-card hover-card ${selected === "select" ? "active-card" : ""}`}
-              onClick={() => handleSelect("select")}
-            >
-              <div className="popular-tag">Most Popular</div>
-
-              <div className="title-row">
-                <h4>Select</h4>
-
-                <input
-                  type="checkbox"
-                  checked={selected === "select"}
-                  onChange={() => handleSelect("select")}
-                  className="radio-right"
-                />
-              </div>
-
-              <hr />
-
-              <p className="payment">
-                Monthly Membership <br />
-                <strong>$99.99 USD</strong>
-                <br />+ $174.99 one-time fee
-              </p>
-
-              <hr />
-
-              <ul className="payment-features">
-            <h6 className="mb-3">Everything in Choice,plus:</h6>
-                <li>CRYPTOcore – includes Crypto Talk, Crypto Surge, and more!</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* PREMIUM CARD */}
-          <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-4">
-            <div
-              className={`payment-card hover-card ${selected === "premium" ? "active-card" : ""}`}
-              onClick={() => handleSelect("premium")}
-            >
-              <div className="popular-tag">Most Popular</div>
-
-              <div className="title-row">
-                <h4>Premium</h4>
-
-                <input
-                  type="checkbox"
-                  checked={selected === "premium"}
-                  onChange={() => handleSelect("premium")}
-                  className="radio-right"
-                />
-              </div>
-
-              <hr />
-
-              <p className="payment">
-                Monthly Membership <br />
-                <strong>$174.99 USD</strong>
-                <br />+ $599.99 one-time fee
-              </p>
-
-              <hr />
-
-              <ul className="payment-features">
-                <h6 className="mb-3">Everything in Select, plus:</h6>
-                <li>EQUITYprime – includes Trend Pro, Options Pro, and more!</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* ELITE CARD */}
-          <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-4">
-            <div
-              className={`payment-card hover-card ${selected === "elite" ? "active-card" : ""}`}
-              onClick={() => handleSelect("elite")}
-            >
-              <div className="popular-tag">Most Popular</div>
-
-              <div className="title-row">
-                <h4>Elite</h4>
-
-                <input
-                  type="checkbox"
-                  checked={selected === "elite"}
-                  onChange={() => handleSelect("elite")}
-                  className="radio-right"
-                />
-              </div>
-
-              <hr />
-
-              <p className="payment">
-                Monthly Membership <br />
-                <strong>$174.99 USD</strong>
-                <br />+ $1499.99 one-time fee
-              </p>
-
-              <hr />
-
-              <ul className="payment-features ">
-                <h6 className="mb-3">Everything in Premium, plus:</h6>
-                <li>ALPHAtrader</li>
-                <li>Elite Advantage</li>
-                <li>CRYPTOelite powered by Endotech</li>
-                <li>Elite exclusive channels</li>
-                <li>Discounts on various products and services</li>
-              </ul>
-            </div>
-          </div>
-
+ <>
+  <section className="pricing-section mt-5">
+        {/* Heading + Description */}
+        <div className="pricing-header" data-aos="fade-up">
+          <h1 className="title">Membership</h1>
         </div>
-      </div>
-    </>
+
+        <div className="pricing-wrapper mt-5" data-aos="fade-up">
+          {plans.map((plan, index) => (
+            <div key={index} className="pricing-card">
+              <img src={plan.image} className="orb-img" alt="orbit-logo" />
+
+              <h3 className="mt-3 price-heading">{plan.title}</h3>
+
+              <h2 className="price">{plan.price}</h2>
+              <p className="fee-text">{plan.fee}</p>
+
+              <div className="features">
+                {plan.features.map((f, i) => (
+                  <p key={i}>{f}</p>
+                ))}
+              </div>
+
+              <button className="select-btn">SELECT</button>
+            </div>
+          ))}
+        </div>
+      </section>
+ </>
   );
 }
