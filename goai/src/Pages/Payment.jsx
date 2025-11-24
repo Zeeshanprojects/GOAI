@@ -214,13 +214,7 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
               <input className="modal-input" type="password" placeholder="Confirm Your Password" />
             </div>
 
-            <input
-              className="modal-input"
-              type="text"
-              placeholder="Your Enroller: Aws Qasem"
-              style={{ marginTop: "10px" }}
-              disabled
-            />
+         
 
             <div className="modal-actions">
               <button className="modal-btn cancel" onClick={handleBack}>
@@ -277,57 +271,18 @@ export default function Payment() {
 
   return (
     <>
-    <section className="payment-info-section" data-aos="fade-up">
-  <div className="payment-info-container">
-    <h1 className="payment-heading">Choose Your GOAI Membership</h1>
-
-    <p className="payment-subtext">
-      Unlock premium access to advanced education, powerful trading tools,
-      automation systems, and exclusive market alerts. Each membership plan 
-      is designed to give you more value, more insights, and more growth potential.
-    </p>
-
-    <div className="payment-features-grid">
-      <div className="payment-feature-box">
-        <h3>📚 Premium Education</h3>
-        <p>
-          Get access to comprehensive trading and financial education designed 
-          for beginners and experts.
-        </p>
-      </div>
-
-      <div className="payment-feature-box">
-        <h3>📈 Market Signals</h3>
-        <p>
-          Receive real-time alerts and high-accuracy market signals to help you 
-          make smart decisions.
-        </p>
-      </div>
-
-      <div className="payment-feature-box">
-        <h3>⚡ Automations</h3>
-        <p>
-          Use intelligent automation tools that make trading faster, easier, 
-          and more efficient.
-        </p>
-      </div>
-
-      <div className="payment-feature-box">
-        <h3>🛠 Software Tools</h3>
-        <p>
-          Unlock access to advanced AI-powered software designed for analysis,
-          insights, and execution.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+<div className="space"></div>
 
       <section className="pricing-section mt-5">
-        <div className="pricing-header" data-aos="fade-up">
-          <h1 className="title">Membership</h1>
+        <div data-aos="fade-up">
+            <div className="pricing-header">
+  <h1 className="title">Your Journey, Your Plan.</h1>
         </div>
-
+ <p className="payment-subtext">
+  Pick the membership built for your goals. More learning, more tools, more power—your choice.
+</p>
+        </div>
+      
         <div className="pricing-wrapper mt-5" data-aos="fade-up">
           {plans.map((plan, index) => (
             <div key={index} className="pricing-card">
