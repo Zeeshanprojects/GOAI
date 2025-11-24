@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 import Select from "react-select";
 import countryList from "react-select-country-list";
 
-// import "flag-icons/css/flag-icons.min.css";
+import "flag-icons/css/flag-icons.min.css";
 /* ===================== MODAL COMPONENT ===================== */
 function MembershipModal({ isOpen, onClose, selectedPlan }) {
   const navigate = useNavigate();
