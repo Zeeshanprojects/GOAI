@@ -9,35 +9,15 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-// NEW IMPORTS FOR COUNTRY + FLAGS
-import Select from "react-select";
-import countryList from "react-select-country-list";
-import ReactCountryFlag from "react-country-flag";
 
 /* ===================== MODAL COMPONENT ===================== */
 
+
 function MembershipModal({ isOpen, onClose, selectedPlan }) {
   const navigate = useNavigate();
-  const [countryOption, setCountryOption] = useState(null);
-  const [languageOption, setLanguageOption] = useState(null);
-  const rawCountries = countryList().getData();
 
-  // All countries from react-select-country-list with flag labels
-const countryOptions = rawCountries.map((country) => ({
-  value: country.value,
-  label: country.label, // for search matching
-  flag: (
-    <ReactCountryFlag
-      svg
-      countryCode={country.value}
-      style={{
-        width: "20px",
-        height: "20px",
-        borderRadius: "50%",
-      }}
-    />
-  ),
-}));
+  const [countryOption, setCountryOption] = useState("");
+  const [languageOption, setLanguageOption] = useState(null);
 
   const languageOptions = [
     { value: "English", label: "English" },
@@ -47,7 +27,7 @@ const countryOptions = rawCountries.map((country) => ({
     { value: "French", label: "French" },
   ];
 
-  // Dark theme styles for react-select
+  // react-select theme (unchanged)
   const selectStyles = {
     control: (base) => ({
       ...base,
@@ -91,7 +71,7 @@ const countryOptions = rawCountries.map((country) => ({
     navigate("/payment", {
       state: {
         plan: selectedPlan,
-        country: countryOption.value,
+        country: countryOption,
         language: languageOption.value,
       },
     });
@@ -112,25 +92,22 @@ const countryOptions = rawCountries.map((country) => ({
           </p>
         )}
 
+        {/* Country Field */}
         <div className="modal-field">
           <label>Country</label>
-         <Select
-  options={countryOptions}
-  value={countryOption}
-  onChange={setCountryOption}
-  placeholder="Select Country"
-  styles={selectStyles}
-  isSearchable={true}
-  getOptionLabel={(option) => (
-    <span style={{ display: "flex", alignItems: "center", gap: 8 }}>
-      {option.flag} {option.label}
-    </span>
-  )}
-  getOptionValue={(option) => option.value}
-/>
 
+          <ReactFlagsSelect
+            selected={countryOption}
+            onSelect={(code) => setCountryOption(code)}
+            searchable={true}
+            placeholder="Select Country"
+            className="flag-select"
+            selectButtonClassName="flag-btn"
+            searchPlaceholder="Search country"
+          />
         </div>
 
+        {/* Language Field */}
         <div className="modal-field">
           <label>Language</label>
           <Select
@@ -142,6 +119,7 @@ const countryOptions = rawCountries.map((country) => ({
           />
         </div>
 
+        {/* Actions */}
         <div className="modal-actions">
           <button className="modal-btn cancel" onClick={onClose}>
             Cancel
@@ -154,7 +132,6 @@ const countryOptions = rawCountries.map((country) => ({
     </div>
   );
 }
-
 /* ===================== MAIN HOME COMPONENT ===================== */
 
 export default function Home() {
