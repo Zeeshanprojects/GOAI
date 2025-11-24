@@ -42,11 +42,13 @@ export default function Header() {
             Platform
           </a>
         </li>
-               <li className="nav-item">
+        <Link to="/payment">
+           <li className="nav-item">
           <a className="nav-link " aria-current="page" href="#">
             Membership
           </a>
-        </li>
+        </li></Link>
+            
         <li className="nav-item">
           <a className="nav-link " aria-current="page" href="#">
             Contact
