@@ -423,8 +423,9 @@
   z-index: 9999;
 }
 
-.membership-modal {
-  width: 420px;
+.membership-modal-1 {
+  width: 800px;
+
   max-width: 95%;
   background: #1a0c2e;
   border-radius: 20px;
@@ -441,7 +442,26 @@
     #1a0c2e;
   color: #ffffff;
 }
+.membership-modal-2 {
+  width: 800px;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  max-width: 95%;
+  background: #1a0c2e;
+  border-radius: 20px;
+  padding: 24px 22px 20px;
 
+  /* DARK at top → LIGHT at bottom */
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.45) 10%,
+      /* darkest top */ rgba(255, 255, 255, 0.1) 80%,
+      /* subtle light middle */ rgba(255, 255, 255, 0.22) 100%
+        /* lightest bottom */
+    ),
+    #1a0c2e;
+  color: #ffffff;
+}
 .modal-title {
   text-align: center;
   font-size: 22px;
