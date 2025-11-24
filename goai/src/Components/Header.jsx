@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Images from '../assets/Images/Image'
 import "./Header.css"
 export default function Header() {
@@ -6,9 +7,10 @@ export default function Header() {
    <>
    <nav className="navbar navbar-expand-lg navbar-light bg-light">
   <div className="container-fluid ps-5 pe-5">
-    <a className="navbar-brand" href="#">
+    <Link to="/"> <a className="navbar-brand" href="#">
       <img src={Images.logo} alt='logo' className='logo' fetchPriority='high'/>
-    </a>
+    </a></Link>
+   
     <button
       className="navbar-toggler"
       type="button"
@@ -23,9 +25,11 @@ export default function Header() {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <a className="nav-link " aria-current="page" href="#">
+          <Link to="/">
+           <a className="nav-link " aria-current="page" href="#">
             Home
-          </a>
+          </a></Link>
+         
         </li>
          <li className="nav-item">
           <a className="nav-link " aria-current="page" href="#">
