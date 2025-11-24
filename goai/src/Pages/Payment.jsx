@@ -52,6 +52,7 @@ export default function Payment() {
               <hr />
 
               <ul className="payment-features">
+                <h6 className="mb-3">Features</h6>
                 <li>University</li>
                 <li>learnLIVE</li>
                 <li>MONEYpro</li>
@@ -91,7 +92,7 @@ export default function Payment() {
               <hr />
 
               <ul className="payment-features">
-                <li>Everything in Choice, plus:</li>
+            <h6 className="mb-3">Everything in Choice,plus:</h6>
                 <li>CRYPTOcore – includes Crypto Talk, Crypto Surge, and more!</li>
               </ul>
             </div>
@@ -127,7 +128,7 @@ export default function Payment() {
               <hr />
 
               <ul className="payment-features">
-                <li>Everything in Select, plus:</li>
+                <h6 className="mb-3">Everything in Select, plus:</h6>
                 <li>EQUITYprime – includes Trend Pro, Options Pro, and more!</li>
               </ul>
             </div>
@@ -162,8 +163,8 @@ export default function Payment() {
 
               <hr />
 
-              <ul className="payment-features">
-                <li>Everything in Premium, plus:</li>
+              <ul className="payment-features ">
+                <h6 className="mb-3">Everything in Premium, plus:</h6>
                 <li>ALPHAtrader</li>
                 <li>Elite Advantage</li>
                 <li>CRYPTOelite powered by Endotech</li>
