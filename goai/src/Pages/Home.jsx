@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 import Select from "react-select";
 import countryList from "react-select-country-list";
 
-import "flag-icons/css/flag-icons.min.css";
+// import "flag-icons/css/flag-icons.min.css";
 /* ===================== MODAL COMPONENT ===================== */
 function MembershipModal({ isOpen, onClose, selectedPlan }) {
   const navigate = useNavigate();
@@ -27,12 +27,8 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
       .getData()
       .map((country) => ({
         value: country.value,
-        label: (
-          <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-            <span className={`fi fi-${country.value.toLowerCase()}`} />
-            {country.label}
-          </div>
-        ),
+        label: country.label,
+        flagClass: `fi fi-${country.value.toLowerCase()}`,
         rawLabel: country.label, // Keep pure name for backend
       }));
   }, []);
@@ -72,6 +68,12 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
       ...base,
       color: "rgba(255,255,255,0.7)",
     }),
+  };
+
+  const filterCountries = (option, rawInput) => {
+    if (!rawInput) return true;
+    const input = rawInput.trim().toLowerCase();
+    return option.data.rawLabel.toLowerCase().startsWith(input);
   };
 
   // Step 1 → Step 2
@@ -121,6 +123,14 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
                 value={countryOption}
                 onChange={setCountryOption}
                 placeholder="Select Country"
+                isSearchable
+                filterOption={filterCountries}
+                formatOptionLabel={(option) => (
+                  <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                    <span className={option.flagClass} />
+                    {option.label}
+                  </div>
+                )}
                 styles={selectStyles}
               />
             </div>
