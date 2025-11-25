@@ -168,78 +168,7 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
         </div>
       )}
 
-      {/* SECOND MODAL */}
-      {showFormModal && (
-        <div className="membership-modal-overlay">
-          <div className="membership-modal-2">
-            <h2 className="modal-title">Your Account Information</h2>
-
-            <h3 className="modal-section-title">Mailing Address</h3>
-
-            <div className="modal-two-columns">
-              <input className="modal-input" type="text" placeholder="Address Line 1" />
-              <input className="modal-input" type="text" placeholder="Address Line 2" />
-            </div>
-
-            <div className="modal-two-columns">
-              <input className="modal-input" type="text" placeholder="Address Line 3" />
-              <input className="modal-input" type="text" placeholder="ZIP Code" />
-            </div>
-
-            <div className="modal-two-columns">
-              <input className="modal-input" type="text" placeholder="City" />
-              <input className="modal-input" type="text" placeholder="State" />
-            </div>
-
-            <h3 className="modal-section-title">Contact Information</h3>
-
-            <div className="modal-two-columns">
-              <input className="modal-input" type="text" placeholder="Primary Phone Number" />
-              <input className="modal-input" type="text" placeholder="Mobile Number" />
-            </div>
-
-            <div className="modal-two-columns">
-              <input className="modal-input" type="email" placeholder="Email Address" />
-              <input className="modal-input" type="email" placeholder="Confirm Email Address" />
-            </div>
-
-            <h3 className="modal-section-title">Your Account Information</h3>
-
-            <div className="modal-two-columns">
-              <input className="modal-input" type="text" placeholder="Username" />
-              <input className="modal-input" type="text" placeholder="Your Website URL: GOAI.Org" />
-            </div>
-
-            <div className="modal-two-columns">
-              <input className="modal-input" type="password" placeholder="Choose Your Password" />
-              <input className="modal-input" type="password" placeholder="Confirm Your Password" />
-            </div>
-
-          <div className="modal-checkbox-group">
-                <label className="modal-checkbox">
-                  <input type="checkbox" />
-                  <span>I am 18 years old</span>
-                </label>
-
-                <label className="modal-checkbox">
-                  <input type="checkbox" />
-                  <span>I agree to the Terms & Conditions</span>
-                </label>
-              
-            </div>
-
-            <div className="modal-actions">
-              <button className="modal-btn cancel" onClick={handleBack}>
-                Back
-              </button>
-
-              <button className="modal-btn next" onClick={handleContinue}>
-                Continue
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
+    
     </>
   );
 }

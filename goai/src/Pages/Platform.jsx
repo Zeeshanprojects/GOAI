@@ -92,17 +92,12 @@ export default function Platform() {
       {/* VALUE SECTION */}
       <section className="platform-value">
         <div className="platform-container" data-aos="fade-up">
-          <h2 className="section-heading">Why Choose GO Ai?</h2>
-
-          <ul className="value-list">
-            <li>✔ Make smarter financial decisions.</li>
-            <li>✔ Build wealth without guesswork.</li>
-            <li>✔ Access institutional-level technology.</li>
-            <li>✔ Predict opportunities before they happen.</li>
-            <li>✔ Automate repetitive processes.</li>
-            <li>✔ Gain clarity, confidence, and control.</li>
-          </ul>
+            <div className="text-center">
+                  <h2 className="title">Why Choose GOAI?</h2>
+<p className="text-white">GO Ai empowers you to make smarter financial decisions with clarity and precision. It eliminates guesswork by providing institutional-level technology, real-time intelligence, and automation tools once reserved for professional investors. With the ability to predict opportunities before they happen and automate repetitive processes, GO Ai helps you grow your wealth confidently while staying in full control of every decision.</p>
         </div>
+            </div>
+        
       </section>
 
     </>

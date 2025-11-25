@@ -76,13 +76,6 @@
   opacity: 0.9;
 }
 
-/* VALUE LIST */
-.value-list {
-  list-style: none;
-  margin-top: 20px;
-  color: #fff;
-  line-height: 2;
-}
 
 
 .platform-btn:hover {
