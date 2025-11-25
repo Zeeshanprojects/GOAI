@@ -10,6 +10,7 @@ import Home from "./Pages/Home";
 import Payment from "./Pages/Payment";
 import ScrollToTop from "./Components/ScrollToTop";
 import Vision from "./Pages/Vision";
+import Contact from "./Pages/Contact";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -27,19 +28,18 @@ function App() {
 
   return (
     <>
-
       <BrowserRouter>
-          <ScrollToTop/>
-      <Header /> {/* Always visible */}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/payment" element={<Payment />} />
-      <Route path="/vision" element={<Vision/>}/>
-      </Routes>
-      <Footer /> {/* Always visible */}
-    </BrowserRouter>
+        <ScrollToTop />
+        <Header /> {/* Always visible */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/payment" element={<Payment />} />
+          <Route path="/vision" element={<Vision />} />
+          <Route path="/contact" element={<Contact/>}/>
+        </Routes>
+        <Footer /> {/* Always visible */}
+      </BrowserRouter>
     </>
-  
   );
 }
 

@@ -1,6 +1,7 @@
 import { useEffect, useState,useMemo } from "react";
 
 import Images from "../assets/Images/Image";
+import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Payment.css";
 import Select from "react-select";
