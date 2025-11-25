@@ -13,6 +13,8 @@ import Vision from "./Pages/Vision";
 import Contact from "./Pages/Contact";
 import Platform from "./Pages/Platform";
 import Userdetails from "./Pages/userdetails";
+import { FormProvider } from "./Components/FormContext";
+import Checkout from "./Pages/Checkout";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -30,7 +32,8 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+    <FormProvider>
+        <BrowserRouter>
         <ScrollToTop />
         <Header /> {/* Always visible */}
         <Routes>
@@ -40,9 +43,12 @@ function App() {
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/platform" element={<Platform/>}/>
           <Route path="/userdetails" element={<Userdetails/>}/>
+          <Route path="/Checkout" element={<Checkout/>}/>
         </Routes>
         <Footer /> {/* Always visible */}
       </BrowserRouter>
+    </FormProvider>
+    
     </>
   );
 }

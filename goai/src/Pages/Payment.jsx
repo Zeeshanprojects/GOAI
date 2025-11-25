@@ -1,4 +1,4 @@
-import { useEffect, useState,useMemo } from "react";
+import { useEffect, useState,useMemo ,useContext} from "react";
 
 import Images from "../assets/Images/Image";
 import AOS from "aos";
@@ -7,26 +7,24 @@ import "./Payment.css";
 import Select from "react-select";
 import countryList from "react-select-country-list";
 import { useNavigate } from "react-router-dom";
-
+import { FormContext } from "../Components/FormContext";
 import "flag-icons/css/flag-icons.min.css";
 
 
 function MembershipModal({ isOpen, onClose, selectedPlan }) {
   const navigate = useNavigate();
+  const { setFormData } = useContext(FormContext);
 
   const [countryOption, setCountryOption] = useState(null);
   const [languageOption, setLanguageOption] = useState(null);
-  const [showFormModal, setShowFormModal] = useState(false);
 
   const countryOptions = useMemo(() => {
-    return countryList()
-      .getData()
-      .map((country) => ({
-        value: country.value,
-        label: country.label,
-        flagClass: `fi fi-${country.value.toLowerCase()}`,
-        rawLabel: country.label,
-      }));
+    return countryList().getData().map((country) => ({
+      value: country.value,
+      label: country.label,
+      flagClass: `fi fi-${country.value.toLowerCase()}`,
+      rawLabel: country.label,
+    }));
   }, []);
 
   const languageOptions = [
@@ -38,77 +36,69 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
   ];
 
   const selectStyles = {
-    control: (base) => ({
-      ...base,
-      backgroundColor: "#2c1a44",
-      borderColor: "hsla(0, 0%, 100%, 0.20)",
-      boxShadow: "none",
-      minHeight: "44px",
-      cursor: "pointer",
-    }),
-    singleValue: (base) => ({
-      ...base,
-      color: "#ffffff",
-    }),
-    menu: (base) => ({
-      ...base,
-      backgroundColor: "#2c1a44",
-      zIndex: 9999,
-    }),
-    option: (base, state) => ({
-      ...base,
-      backgroundColor: state.isFocused ? "#3b215f" : "#2c1a44",
-      color: "#ffffff",
-    }),
-    placeholder: (base) => ({
-      ...base,
-      color: "rgba(255,255,255,0.7)",
-    }),
-    input: (base) => ({
-      ...base,
-      color: "#ffffff",
-    }),
-  };
+  control: (base) => ({
+    ...base,
+    backgroundColor: "#2c1a44",
+    borderColor: "hsla(0,0%,100%, 0.2)",
+    minHeight: "44px",
+  }),
+
+  singleValue: (base) => ({ 
+    ...base, 
+    color: "#fff" 
+  }),
+
+  placeholder: (base) => ({
+    ...base,
+    color: "rgba(255,255,255,0.7)",
+  }),
+
+  menu: (base) => ({ 
+    ...base, 
+    backgroundColor: "#2c1a44" 
+  }),
+
+  option: (base, state) => ({
+    ...base,
+    backgroundColor: state.isFocused ? "#3b215f" : "#2c1a44",
+    color: "#fff",
+  }),
+
+  // 🔥 FIX SEARCH TYPING COLOR
+  input: (base) => ({
+    ...base,
+    color: "#ffffff !important",
+  }),
+};
+
 
   const filterCountries = (option, rawInput) => {
     if (!rawInput) return true;
-    return option.data.rawLabel
-      .toLowerCase()
-      .startsWith(rawInput.trim().toLowerCase());
+    return option.data.rawLabel.toLowerCase().startsWith(rawInput.toLowerCase());
   };
 
+  // ✅ Next → Go to User Details Page
   const handleNext = () => {
     if (!countryOption || !languageOption) {
       alert("Please select both country and language.");
       return;
     }
-    setShowFormModal(true);
-  };
 
-  const handleBack = () => {
-    setShowFormModal(false);
-  };
+    // Save data globally
+    setFormData((prev) => ({
+      ...prev,
+      country: countryOption.rawLabel,
+      language: languageOption.value,
+      plan: selectedPlan?.title,
+    }));
 
-  const handleContinue = () => {
-    navigate("/payment", {
-      state: {
-        plan: selectedPlan,
-        country: countryOption.rawLabel,
-        language: languageOption.value,
-      },
-    });
-  };
-
-  const resetAllFields = () => {
-    setCountryOption(null);
-    setLanguageOption(null);
-    setShowFormModal(false);
+    onClose();            // close the modal  
+    navigate("/userdetails"); // navigate to user details page
   };
 
   return (
     <>
-      {/* FIRST MODAL */}
-      {isOpen && !showFormModal && (
+      {isOpen && (
         <div className="membership-modal-overlay">
           <div className="membership-modal-1">
             <h2 className="modal-title">Complete Your Membership</h2>
@@ -130,7 +120,7 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
                 filterOption={filterCountries}
                 formatOptionLabel={(option) => (
                   <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                    <span className={option.flagClass}></span>
+                    <span className={option.flagClass} />
                     {option.label}
                   </div>
                 )}
@@ -150,13 +140,7 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
             </div>
 
             <div className="modal-actions">
-              <button
-                className="modal-btn cancel"
-                onClick={() => {
-                  resetAllFields();
-                  onClose();
-                }}
-              >
+              <button className="modal-btn cancel" onClick={onClose}>
                 Cancel
               </button>
 
@@ -167,19 +151,24 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
           </div>
         </div>
       )}
-
-    
     </>
   );
 }
 
 export default function Payment() {
+   useEffect(() => {
+      document.title = "Membership | GOAI";
+      AOS.init({
+        duration: 1200,
+        offset: 120,
+        easing: "ease-in-out",
+        once: true,
+      });
+    }, []);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState(null);
 
-  useEffect(() => {
-    document.title = "Payment | GOAI";
-  }, []);
+ 
 
   const plans = [
     {

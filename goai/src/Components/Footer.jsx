@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 import Images from "../assets/Images/Image";
 export default function Footer() {
   return (
