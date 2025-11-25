@@ -90,6 +90,7 @@
 }
 
 .back-btn {
+   font-family: "Spectron" !important;
   background: black;
   color: white;
 }

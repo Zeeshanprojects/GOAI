@@ -126,7 +126,7 @@
     display: grid;
     grid-template-columns: 25px auto;
     align-items: center;   /* proper vertical align */
-    justify-content: flex-start;
+    justify-content: center;
     width: 100%;
   }
 
@@ -136,6 +136,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    align-items: center !important;
   }
 
   .contact-item span {

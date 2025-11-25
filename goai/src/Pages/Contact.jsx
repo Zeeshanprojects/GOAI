@@ -39,7 +39,7 @@ export default function Contact() {
           <div className="contact-info">
               <div className="contact-item">
               <i className="fa-solid fa-home contact-icon"></i>
-              <span> New York, NY 10012, US</span>
+             <span>New York, NY 10012, US</span>
             </div>
             <div className="contact-item">
               <i className="fa-solid fa-envelope contact-icon"></i>
