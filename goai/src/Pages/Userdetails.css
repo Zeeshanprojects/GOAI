@@ -95,6 +95,7 @@
 }
 
 .continue-btn {
+  font-family: "Spectron" !important;
   background: #a56bfd;
   color: white;
 }
