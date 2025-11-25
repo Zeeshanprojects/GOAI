@@ -207,7 +207,7 @@ export default function Payment() {
   <h1 className="title">Your Journey, Your Plan.</h1>
         </div>
  <p className="payment-subtext">
-  Pick the membership built for your goals. More learning, more tools, more power—your choice.
+  Pick the membership built for your goals. More learning, more tools, more power your choice.
 </p>
         </div>
       
