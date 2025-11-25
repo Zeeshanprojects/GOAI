@@ -20,8 +20,6 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
   const [languageOption, setLanguageOption] = useState(null);
   const [showFormModal, setShowFormModal] = useState(false);
 
-  // Generate country list once
-  // const countryOptions = useMemo(() => countryList().getData(), []);
   const countryOptions = useMemo(() => {
     return countryList()
       .getData()
@@ -69,10 +67,9 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
       color: "rgba(255,255,255,0.7)",
     }),
 
-    // ⭐ FIX TEXT COLOR WHILE TYPING
     input: (base) => ({
       ...base,
-      color: "#ffffff", // typing text color
+      color: "#ffffff",
     }),
   };
 
@@ -115,7 +112,6 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
 
   return (
     <>
-      {/* ---------------- FIRST MODAL ---------------- */}
       {isOpen && !showFormModal && (
         <div className="membership-modal-overlay">
           <div className="membership-modal-1">
@@ -186,7 +182,7 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
       {showFormModal && (
         <div className="membership-modal-overlay">
           <div className="membership-modal-2">
-            <h2 className="modal-title">Your Account Information</h2>
+            <h2 className="modal-title ">Your Account Information</h2>
 
             {/* Mailing Address */}
             <h3 className="modal-section-title">Mailing Address</h3>
@@ -252,7 +248,7 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
             </div>
 
             {/* Account Info */}
-            <h3 className="modal-section-title">Your Account Information</h3>
+            <h3 className="modal-section-title ">Your Account Information</h3>
 
             <div className="modal-two-columns">
               <input
@@ -263,7 +259,7 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
               <input
                 className="modal-input"
                 type="text"
-                placeholder="Your Website URL: ignius.biz"
+                placeholder="Your Website URL"
               />
             </div>
 
@@ -279,7 +275,21 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
                 placeholder="Confirm Your Password"
               />
             </div>
-            <div className="modal-actions">
+        
+              <div className="modal-checkbox-group">
+                <label className="modal-checkbox">
+                  <input type="checkbox" />
+                  <span>I am 18 years old</span>
+                </label>
+
+                <label className="modal-checkbox">
+                  <input type="checkbox" />
+                  <span>I agree to the Terms & Conditions</span>
+                </label>
+              
+            </div>
+
+            <div className="modal-actions ">
               <button className="modal-btn cancel" onClick={handleBack}>
                 Back
               </button>

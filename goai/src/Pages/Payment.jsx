@@ -206,7 +206,7 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
 
             <div className="modal-two-columns">
               <input className="modal-input" type="text" placeholder="Username" />
-              <input className="modal-input" type="text" placeholder="Your Website URL: ignius.biz" />
+              <input className="modal-input" type="text" placeholder="Your Website URL: GOAI.Org" />
             </div>
 
             <div className="modal-two-columns">
@@ -214,7 +214,18 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
               <input className="modal-input" type="password" placeholder="Confirm Your Password" />
             </div>
 
-         
+          <div className="modal-checkbox-group">
+                <label className="modal-checkbox">
+                  <input type="checkbox" />
+                  <span>I am 18 years old</span>
+                </label>
+
+                <label className="modal-checkbox">
+                  <input type="checkbox" />
+                  <span>I agree to the Terms & Conditions</span>
+                </label>
+              
+            </div>
 
             <div className="modal-actions">
               <button className="modal-btn cancel" onClick={handleBack}>
