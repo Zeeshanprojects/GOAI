@@ -81,7 +81,7 @@ export default function Footer() {
                         </Link>
                       </p>
                       <p>
-                        <Link to="/payment" className="text-white">
+                        <Link to="/membership" className="text-white">
                           Membership
                         </Link>
                       </p>

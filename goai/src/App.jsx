@@ -7,7 +7,6 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./Pages/Home";
-import Payment from "./Pages/Payment";
 import ScrollToTop from "./Components/ScrollToTop";
 import Vision from "./Pages/Vision";
 import Contact from "./Pages/Contact";
@@ -16,6 +15,7 @@ import Userdetails from "./Pages/userdetails";
 import { FormProvider } from "./Components/FormContext";
 import Checkout from "./Pages/Checkout";
 import Carddetails from "./Pages/Carddetails";
+import Membership from "./Pages/Membership";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -39,7 +39,7 @@ function App() {
         <Header /> {/* Always visible */}
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/payment" element={<Payment />} />
+       <Route path="/membership" element={<Membership/>}/>
           <Route path="/vision" element={<Vision />} />
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/platform" element={<Platform/>}/>

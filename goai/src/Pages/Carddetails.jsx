@@ -8,7 +8,7 @@ export default function Carddetails() {
   });
   return (
     <section className="payment-container">
-      <h1 className="title">Payment</h1>
+      <h1 className="title mb-3">Payment</h1>
 
       {/* PAYMENT METHODS */}
       <div className="payment-methods">

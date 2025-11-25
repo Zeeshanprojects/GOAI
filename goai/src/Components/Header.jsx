@@ -45,7 +45,7 @@ export default function Header() {
           </a>
         </li></Link>
          
-        <Link to="/payment">
+        <Link to="/membership">
            <li className="nav-item">
           <a className="nav-link " aria-current="page" href="#">
             Membership

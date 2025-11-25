@@ -224,7 +224,7 @@ export default function Home() {
               wealth
             </h1>
 
-            <Link to="/payment">
+            <Link to="/membership">
               <button className="neon-btn">
                 <span>Join Now</span>
                 <div className="btn-glow"></div>

@@ -1,10 +1,10 @@
 .payment-container {
   max-width: 1200px;
-  margin: 120px auto;
-  padding: 30px;
-  background: rgba(255, 255, 255, 0.05);
+  margin: 120px auto 0px;
+
+
   border-radius: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+
   color: #fff;
 }
 
@@ -32,10 +32,10 @@
 /* CARD BOX */
 .card-box {
   background: rgba(255, 255, 255, 0.08);
-  padding: 20px;
+  padding: 10px;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.15);
-  margin-left: 25px;
+
 }
 
 .secure-text {
@@ -96,12 +96,25 @@
 
 .checkbox-row {
   display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  margin-bottom: 12px;
+  align-items: center; /* aligns checkbox + text perfectly */
+  gap: 10px; /* space between checkbox & text */
+  margin: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.4; /* clean multi-line wrapping */
 }
 
-/* ORDER BUTTON */
+.checkbox-row input {
+  width: 18px;
+  height: 18px;
+  accent-color: #a56bfd; /* purple theme checkmark */
+  flex-shrink: 0; /* prevents checkbox from resizing */
+}
+
+.checkbox-row span {
+  display: inline-block;
+}
+
 .order-btn-wrapper {
   display: flex;
   justify-content: flex-end;
@@ -109,6 +122,7 @@
 }
 
 .place-order-btn {
+      font-family: "Spectron";
   background: #8258ff;
   border: none;
   padding: 14px 28px;
@@ -142,4 +156,13 @@
   .place-order-btn {
     width: 100%;
   }
+  .checkbox-row {
+  display: flex;
+  align-items: center; /* aligns checkbox + text perfectly */
+  gap: 10px; /* space between checkbox & text */
+  margin: 10px 0;
+  font-size: 11.5px;
+  color: #fff;
+  line-height: 1.4; /* clean multi-line wrapping */
+}
 }

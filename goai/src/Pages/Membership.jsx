@@ -3,7 +3,7 @@ import { useEffect, useState, useMemo, useContext } from "react";
 import Images from "../assets/Images/Image";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "./Payment.css";
+import "./Membership.css";
 import Select from "react-select";
 import countryList from "react-select-country-list";
 import { useNavigate } from "react-router-dom";
@@ -163,7 +163,7 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
   );
 }
 
-export default function Payment() {
+export default function Membership() {
   useEffect(() => {
     document.title = "Membership | GOAI";
     AOS.init({
