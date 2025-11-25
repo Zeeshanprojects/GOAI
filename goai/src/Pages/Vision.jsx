@@ -16,12 +16,15 @@ export default function Vision() {
   return (
     <>
       <section className="vision-tips-section ">
-                   <div className="pricing-header">
-  <h1 className="title">Vision</h1>
+        <div data-aos="fade-up">
+          <div className="pricing-header">
+            <h1 className="title">Vision</h1>
+          </div>
+          <p className="payment-subtext">
+            A smarter, faster, and more empowered way to create wealth in the
+            digital era.
+          </p>
         </div>
- <p className="payment-subtext">
-A smarter, faster, and more empowered way to create wealth in the digital era.
-</p>
 
         <div className="vision-grid">
           {/* 01 */}
