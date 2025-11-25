@@ -251,8 +251,6 @@ export default function Payment() {
           ))}
         </div>
       </section>
-
-      {/* RENDER MODAL */}
       <MembershipModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
