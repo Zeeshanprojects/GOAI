@@ -374,9 +374,9 @@
   background: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.45) 10%,
-      /* darkest top */ rgba(255, 255, 255, 0.1) 80%,
-      /* subtle light middle */ rgba(255, 255, 255, 0.22) 100%
-        /* lightest bottom */
+      rgba(255, 255, 255, 0.1) 80%,
+   rgba(255, 255, 255, 0.22) 100%
+    
     ),
     #1a0c2e;
 

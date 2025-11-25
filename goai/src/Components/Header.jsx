@@ -31,11 +31,13 @@ export default function Header() {
           </a></Link>
          
         </li>
+        <Link to="/vision">
          <li className="nav-item">
           <a className="nav-link " aria-current="page" href="#">
         Vision
           </a>
-        </li>
+        </li></Link>
+        
           
           <li className="nav-item">
           <a className="nav-link " aria-current="page" href="#">

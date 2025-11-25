@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Payment from "./Pages/Payment";
 import ScrollToTop from "./Components/ScrollToTop";
+import Vision from "./Pages/Vision";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -33,7 +34,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/payment" element={<Payment />} />
-        {/* Add more routes here */}
+      <Route path="/vision" element={<Vision/>}/>
       </Routes>
       <Footer /> {/* Always visible */}
     </BrowserRouter>
