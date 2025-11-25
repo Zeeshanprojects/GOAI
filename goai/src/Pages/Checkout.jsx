@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 import { FormContext } from "../Components/FormContext.jsx";
 import "./Checkout.css"
 
@@ -34,8 +35,9 @@ export default function Checkout() {
       <h3 className="checkout-heading">Account Info</h3>
       <p>Username: {formData.username}</p>
       <p>Website: {formData.website}</p>
-
-      <button className="place-order-btn">Place Order</button>
+<Link to="/carddetails">
+   <button className="place-order-btn">Proceed</button></Link>
+   
     </section>
   );
 }
