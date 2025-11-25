@@ -12,6 +12,7 @@ import ScrollToTop from "./Components/ScrollToTop";
 import Vision from "./Pages/Vision";
 import Contact from "./Pages/Contact";
 import Platform from "./Pages/Platform";
+import Userdetails from "./Pages/userdetails";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -38,6 +39,7 @@ function App() {
           <Route path="/vision" element={<Vision />} />
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/platform" element={<Platform/>}/>
+          <Route path="/userdetails" element={<Userdetails/>}/>
         </Routes>
         <Footer /> {/* Always visible */}
       </BrowserRouter>
