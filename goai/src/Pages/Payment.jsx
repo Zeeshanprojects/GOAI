@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 
 import "flag-icons/css/flag-icons.min.css";
 
-/* ===================== MODAL COMPONENT ===================== */
+
 function MembershipModal({ isOpen, onClose, selectedPlan }) {
   const navigate = useNavigate();
 
@@ -254,7 +254,7 @@ export default function Payment() {
     {
       image: Images.icon2,
       title: "Go Create",
-      price: "$1200",
+      price: "$1000",
       fee: "Initial Fee",
       features: ["More Education", "More Alerts", "More Softwares"],
       orb: "/orb3.png",

@@ -320,7 +320,7 @@ export default function Home() {
     {
       image: Images.icon2,
       title: "Go Create",
-      price: "$1200",
+      price: "$1000",
       fee: "Initial Fee",
       features: ["More Education", "More Alerts", "More Softwares"],
       orb: "/orb3.png",

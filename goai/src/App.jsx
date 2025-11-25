@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./Pages/Home";
 import Payment from "./Pages/Payment";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -24,7 +25,10 @@ function App() {
   }
 
   return (
-    <BrowserRouter>
+    <>
+
+      <BrowserRouter>
+          <ScrollToTop/>
       <Header /> {/* Always visible */}
       <Routes>
         <Route path="/" element={<Home />} />
@@ -33,6 +37,8 @@ function App() {
       </Routes>
       <Footer /> {/* Always visible */}
     </BrowserRouter>
+    </>
+  
   );
 }
 
