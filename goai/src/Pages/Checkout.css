@@ -1,13 +1,9 @@
 /* PAGE CONTAINER */
 .checkout-container {
   max-width: 900px;
-  margin: 150px auto 80px auto;
-  padding: 40px;
+  margin: 120px auto 80px auto;
+
   border-radius: 20px;
-
-
-
-
   color: #fff;
 }
 

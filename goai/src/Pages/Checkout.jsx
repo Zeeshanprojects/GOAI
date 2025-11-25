@@ -12,10 +12,14 @@ export default function Checkout() {
       <h3 className="checkout-heading">Selected Plan</h3>
       <p>Your Plan: {formData.plan}</p>
 
+
       <h3 className="checkout-heading">Country & Language</h3>
       <p>Country: {formData.country}</p>
       <p>Language: {formData.language}</p>
-
+   <h3 className="checkout-heading">Personal Information</h3>
+      <p>First Name: {formData.firstname}</p>
+  <p>Last Name: {formData.lastname}</p>
+    <p>DOB: {formData.dob}</p>
       <h3 className="checkout-heading">Mailing Address</h3>
       <p>Address1: {formData.address1}</p>
       <p>Address2:{formData.address2}</p>

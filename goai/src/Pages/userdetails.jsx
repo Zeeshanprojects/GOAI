@@ -53,7 +53,6 @@ export default function Userdetails() {
     if (
       !form.firstname ||
       !form.lastname ||
-      !form.gender ||
       !form.dob ||
       !form.username ||
       !form.password ||
@@ -116,16 +115,7 @@ export default function Userdetails() {
         />
 
         {/* GENDER DROPDOWN */}
-        <select
-          name="gender"
-          className="details-input"
-          onChange={handleChange}
-        >
-          <option value="">Select Gender *</option>
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-          <option value="other">Other</option>
-        </select>
+      
 
         {/* DOB CALENDAR */}
         <input

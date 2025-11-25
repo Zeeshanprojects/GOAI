@@ -1,19 +1,17 @@
-import React, { useEffect,useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Carddetails.css";
 
 export default function Carddetails() {
   const [method, setMethod] = useState("card");
-useEffect(()=>{
-document.title="Card Details | GOAI"
-})
+  useEffect(() => {
+    document.title = "Card Details | GOAI";
+  });
   return (
     <section className="payment-container">
-
       <h1 className="title">Payment</h1>
 
       {/* PAYMENT METHODS */}
       <div className="payment-methods">
-
         {/* CREDIT/DEBIT CARD */}
         <label className="radio-option">
           <input
@@ -27,7 +25,6 @@ document.title="Card Details | GOAI"
 
         {method === "card" && (
           <div className="card-box">
-
             <p className="secure-text">🔒 Secure, fast checkout</p>
 
             <div className="card-grid">
@@ -48,8 +45,8 @@ document.title="Card Details | GOAI"
             </div>
 
             <p className="terms-note">
-              By providing your card information, you authorize GO Ai
-              to charge your card for future subscription payments.
+              By providing your card information, you authorize GO Ai to charge
+              your card for future subscription payments.
             </p>
           </div>
         )}
@@ -85,14 +82,14 @@ document.title="Card Details | GOAI"
 
       {/* CHECKBOX SECTION */}
       <div className="policy-section">
-
         <h3 className="policy-title">
-          The Company will send automated emails to remind you of upcoming subscription payments before they are due.
+          The Company will send automated emails to remind you of upcoming
+          subscription payments before they are due.
         </h3>
 
         <p className="policy-text">
-          Your personal data will be used to process your order and support your experience.  
-          Read our <span className="link">privacy policy</span>.
+          Your personal data will be used to process your order and support your
+          experience. Read our <span className="link">privacy policy</span>.
         </p>
 
         <label className="checkbox-row">
@@ -114,14 +111,12 @@ document.title="Card Details | GOAI"
           <input type="checkbox" />
           <span>I confirm that I am 18 years old or over. *</span>
         </label>
-
       </div>
 
       {/* BUTTON */}
       <div className="order-btn-wrapper">
         <button className="place-order-btn">Place Order</button>
       </div>
-
     </section>
   );
 }
