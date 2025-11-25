@@ -38,12 +38,13 @@ export default function Header() {
           </a>
         </li></Link>
         
-          
-          <li className="nav-item">
+          <Link to="/platform">
+           <li className="nav-item">
           <a className="nav-link " aria-current="page" href="#">
             Platform
           </a>
-        </li>
+        </li></Link>
+         
         <Link to="/payment">
            <li className="nav-item">
           <a className="nav-link " aria-current="page" href="#">

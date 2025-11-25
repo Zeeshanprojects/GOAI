@@ -1,0 +1,107 @@
+.platform-container {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 120px;
+}
+
+.platform-title {
+  font-size: 60px;
+  font-weight: 700;
+  color: white;
+}
+
+.platform-subtext {
+  font-size: 18px;
+  opacity: 0.8;
+  margin-top: 10px;
+  color: #ccc;
+}
+
+/* OVERVIEW */
+.section-heading {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.section-description {
+  font-size: 16px;
+  opacity: 0.8;
+  line-height: 1.7;
+  color: #ccc;
+}
+
+/* FEATURE GRID */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  margin-top: 40px;
+}
+
+.feature-card {
+   /* DARK at top → LIGHT at bottom */
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.45) 10%,
+      rgba(255, 255, 255, 0.1) 80%,
+   rgba(255, 255, 255, 0.22) 100%
+    
+    ),
+    #1a0c2e;
+
+  backdrop-filter: blur(15px);
+  padding: 30px;
+  border-radius: 14px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease;
+}
+.feature-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #a56bfd;
+}
+
+.feature-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.feature-text {
+  font-size: 14px;
+  color: #ccc;
+  opacity: 0.9;
+}
+
+/* VALUE LIST */
+.value-list {
+  list-style: none;
+  margin-top: 20px;
+  color: #fff;
+  line-height: 2;
+}
+
+
+.platform-btn:hover {
+  background: #6b46e8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .features-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .platform-title {
+    font-size: 42px;
+  }
+}

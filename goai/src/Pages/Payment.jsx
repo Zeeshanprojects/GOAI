@@ -244,8 +244,6 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
   );
 }
 
-/* ===================== PAYMENT PAGE ===================== */
-
 export default function Payment() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState(null);
