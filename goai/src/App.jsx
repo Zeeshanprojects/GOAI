@@ -15,6 +15,7 @@ import Platform from "./Pages/Platform";
 import Userdetails from "./Pages/userdetails";
 import { FormProvider } from "./Components/FormContext";
 import Checkout from "./Pages/Checkout";
+import Carddetails from "./Pages/Carddetails";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -44,6 +45,7 @@ function App() {
           <Route path="/platform" element={<Platform/>}/>
           <Route path="/userdetails" element={<Userdetails/>}/>
           <Route path="/Checkout" element={<Checkout/>}/>
+          <Route path="/carddetails" element={<Carddetails/>}/>
         </Routes>
         <Footer /> {/* Always visible */}
       </BrowserRouter>

@@ -1,4 +1,4 @@
-import { useEffect, useState,useMemo ,useContext} from "react";
+import { useEffect, useState, useMemo, useContext } from "react";
 
 import Images from "../assets/Images/Image";
 import AOS from "aos";
@@ -10,7 +10,6 @@ import { useNavigate } from "react-router-dom";
 import { FormContext } from "../Components/FormContext";
 import "flag-icons/css/flag-icons.min.css";
 
-
 function MembershipModal({ isOpen, onClose, selectedPlan }) {
   const navigate = useNavigate();
   const { setFormData } = useContext(FormContext);
@@ -19,12 +18,14 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
   const [languageOption, setLanguageOption] = useState(null);
 
   const countryOptions = useMemo(() => {
-    return countryList().getData().map((country) => ({
-      value: country.value,
-      label: country.label,
-      flagClass: `fi fi-${country.value.toLowerCase()}`,
-      rawLabel: country.label,
-    }));
+    return countryList()
+      .getData()
+      .map((country) => ({
+        value: country.value,
+        label: country.label,
+        flagClass: `fi fi-${country.value.toLowerCase()}`,
+        rawLabel: country.label,
+      }));
   }, []);
 
   const languageOptions = [
@@ -36,45 +37,46 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
   ];
 
   const selectStyles = {
-  control: (base) => ({
-    ...base,
-    backgroundColor: "#2c1a44",
-    borderColor: "hsla(0,0%,100%, 0.2)",
-    minHeight: "44px",
-  }),
+    control: (base) => ({
+      ...base,
+      backgroundColor: "#2c1a44",
+      borderColor: "hsla(0,0%,100%, 0.2)",
+      minHeight: "44px",
+    }),
 
-  singleValue: (base) => ({ 
-    ...base, 
-    color: "#fff" 
-  }),
+    singleValue: (base) => ({
+      ...base,
+      color: "#fff",
+    }),
 
-  placeholder: (base) => ({
-    ...base,
-    color: "rgba(255,255,255,0.7)",
-  }),
+    placeholder: (base) => ({
+      ...base,
+      color: "rgba(255,255,255,0.7)",
+    }),
 
-  menu: (base) => ({ 
-    ...base, 
-    backgroundColor: "#2c1a44" 
-  }),
+    menu: (base) => ({
+      ...base,
+      backgroundColor: "#2c1a44",
+    }),
 
-  option: (base, state) => ({
-    ...base,
-    backgroundColor: state.isFocused ? "#3b215f" : "#2c1a44",
-    color: "#fff",
-  }),
+    option: (base, state) => ({
+      ...base,
+      backgroundColor: state.isFocused ? "#3b215f" : "#2c1a44",
+      color: "#fff",
+    }),
 
-  // 🔥 FIX SEARCH TYPING COLOR
-  input: (base) => ({
-    ...base,
-    color: "#ffffff !important",
-  }),
-};
-
+    // 🔥 FIX SEARCH TYPING COLOR
+    input: (base) => ({
+      ...base,
+      color: "#ffffff !important",
+    }),
+  };
 
   const filterCountries = (option, rawInput) => {
     if (!rawInput) return true;
-    return option.data.rawLabel.toLowerCase().startsWith(rawInput.toLowerCase());
+    return option.data.rawLabel
+      .toLowerCase()
+      .startsWith(rawInput.toLowerCase());
   };
 
   // ✅ Next → Go to User Details Page
@@ -92,7 +94,7 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
       plan: selectedPlan?.title,
     }));
 
-    onClose();            // close the modal  
+    onClose(); // close the modal
     navigate("/userdetails"); // navigate to user details page
   };
 
@@ -119,7 +121,13 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
                 isSearchable
                 filterOption={filterCountries}
                 formatOptionLabel={(option) => (
-                  <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "8px",
+                    }}
+                  >
                     <span className={option.flagClass} />
                     {option.label}
                   </div>
@@ -156,19 +164,17 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
 }
 
 export default function Payment() {
-   useEffect(() => {
-      document.title = "Membership | GOAI";
-      AOS.init({
-        duration: 1200,
-        offset: 120,
-        easing: "ease-in-out",
-        once: true,
-      });
-    }, []);
+  useEffect(() => {
+    document.title = "Membership | GOAI";
+    AOS.init({
+      duration: 1200,
+      offset: 120,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState(null);
-
- 
 
   const plans = [
     {
@@ -192,25 +198,32 @@ export default function Payment() {
       title: "Go Complete",
       price: "$1700",
       fee: "Initial Fee",
-      features: ["More Education", "More Alerts", "More Softwares", "VIP", "Automations"],
+      features: [
+        "More Education",
+        "More Alerts",
+        "More Softwares",
+        "VIP",
+        "Automations",
+      ],
       orb: "/orb4.png",
     },
   ];
 
   return (
     <>
-<div className="space"></div>
+      <div className="space"></div>
 
       <section className="pricing-section mt-5">
         <div data-aos="fade-up">
-            <div className="pricing-header">
-  <h1 className="title">Your Journey, Your Plan.</h1>
+          <div className="pricing-header">
+            <h1 className="title">Your Journey, Your Plan.</h1>
+          </div>
+          <p className="payment-subtext">
+            Pick the membership built for your goals. More learning, more tools,
+            more power your choice.
+          </p>
         </div>
- <p className="payment-subtext">
-  Pick the membership built for your goals. More learning, more tools, more power your choice.
-</p>
-        </div>
-      
+
         <div className="pricing-wrapper mt-5" data-aos="fade-up">
           {plans.map((plan, index) => (
             <div key={index} className="pricing-card">

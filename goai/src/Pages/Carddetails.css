@@ -1,0 +1,145 @@
+.payment-container {
+  max-width: 1200px;
+  margin: 120px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #fff;
+}
+
+.payment-title {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+/* RADIO BUTTON LIST */
+.payment-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* CARD BOX */
+.card-box {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  margin-left: 25px;
+}
+
+.secure-text {
+  color: #a56bfd;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* GRID FOR CARD INPUTS */
+.card-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 20px;
+}
+
+.card-field label {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.card-field input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  margin-top: 6px;
+}
+
+.terms-note {
+  font-size: 12px;
+  opacity: 0.7;
+  margin-top: 12px;
+}
+
+/* POLICY / CHECKBOXES */
+.policy-section {
+  margin-top: 40px;
+}
+
+.policy-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.policy-text {
+  font-size: 14px;
+  opacity: 0.85;
+  margin-bottom: 20px;
+}
+
+.link {
+  color: #a56bfd;
+  cursor: pointer;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+/* ORDER BUTTON */
+.order-btn-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+.place-order-btn {
+  background: #8258ff;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.place-order-btn:hover {
+  background: #6f49e8;
+  transform: translateY(-2px);
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .payment-container {
+    padding: 20px;
+  }
+
+  .radio-option {
+    font-size: 15px;
+  }
+
+  .place-order-btn {
+    width: 100%;
+  }
+}

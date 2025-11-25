@@ -24,6 +24,7 @@ export default function Footer() {
                     
                     <div className="col-md-3 col-lg-6 col-xl-6 mx-auto mb-4">
                       {/* Content */}
+                      
                       <img
                         src={Images.logo}
                         alt="logo"
@@ -37,24 +38,24 @@ export default function Footer() {
                         of empowerment...
                       </p>
                       <div>
-                        <a href="" className="text-white me-4">
+                        <Link href="" className="text-white me-4">
                           <i className="fab fa-facebook-f" />
-                        </a>
-                        <a href="" className="text-white me-4">
+                        </Link>
+                        <Link href="" className="text-white me-4">
                           <i className="fab fa-twitter" />
-                        </a>
-                        <a href="" className="text-white me-4">
+                        </Link>
+                        <Link href="" className="text-white me-4">
                           <i className="fab fa-google" />
-                        </a>
-                        <a href="" className="text-white me-4">
+                        </Link>
+                        <Link href="" className="text-white me-4">
                           <i className="fab fa-instagram" />
-                        </a>
-                        <a href="" className="text-white me-4">
+                        </Link>
+                        <Link href="" className="text-white me-4">
                           <i className="fab fa-linkedin" />
-                        </a>
-                        <a href="" className="text-white me-4">
+                        </Link>
+                        <Link href="" className="text-white me-4">
                           <i className="fab fa-github" />
-                        </a>
+                        </Link>
                       </div>
                     </div>
 
@@ -70,25 +71,25 @@ export default function Footer() {
                         }}
                       />
                       <p>
-                        <a href="#!" className="text-white">
+                        <Link to="/vision" className="text-white">
                           Vision
-                        </a>
+                        </Link>
                       </p>
                       <p>
-                        <a href="#!" className="text-white">
+                        <Link to="/platform" className="text-white">
                           Platform
-                        </a>
+                        </Link>
                       </p>
                       <p>
-                        <a href="#!" className="text-white">
+                        <Link to="/payment" className="text-white">
                           Membership
-                        </a>
+                        </Link>
                       </p>
 
                       <p>
-                        <a href="#!" className="text-white">
+                        <Link to="/Contact" className="text-white">
                           Contact
-                        </a>
+                        </Link>
                       </p>
                     </div>
                     {/* Grid column */}
