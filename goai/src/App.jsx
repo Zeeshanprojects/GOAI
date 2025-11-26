@@ -16,6 +16,8 @@ import { FormProvider } from "./Components/FormContext";
 import Checkout from "./Pages/Checkout";
 import Carddetails from "./Pages/Carddetails";
 import Membership from "./Pages/Membership";
+import TermsandConditions from "./Pages/TermsandConditions";
+import RefundPolicy from "./Pages/RefundPolicy";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -46,6 +48,8 @@ function App() {
           <Route path="/userdetails" element={<Userdetails/>}/>
           <Route path="/Checkout" element={<Checkout/>}/>
           <Route path="/carddetails" element={<Carddetails/>}/>
+          <Route path="/termandcondition" element={<TermsandConditions/>}/>
+          <Route path="/refundpolicy" element={<RefundPolicy/>}/>
         </Routes>
         <Footer /> {/* Always visible */}
       </BrowserRouter>

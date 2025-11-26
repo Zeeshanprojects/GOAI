@@ -85,23 +85,46 @@ export default function Platform() {
       </section>
 
       {/* VALUE SECTION */}
-      <section className="platform-value">
-      
-        <div className="" data-aos="fade-up">
-          <div className="text-center">
-            <h2 className="title">Why Choose GOAI?</h2>
-            <p className="text-white">
-              GO AI empowers you to make smarter financial decisions with
-              clarity and precision. It eliminates guesswork by providing
-              institutional-level technology, real-time intelligence, and
-              automation tools once reserved for professional investors. With
-              the ability to predict opportunities before they happen and
-              automate repetitive processes, GO AI helps you grow your wealth
-              confidently while staying in full control of every decision.
-            </p>
-          </div>
-        </div>
-      </section>
+    <section className="platform-value">
+  <div data-aos="fade-up">
+    <div className="text-center">
+      <h2 className="title">Why Choose GOAI?</h2>
+      <p className="text-white">
+        GO AI empowers you to make smarter financial decisions with clarity and
+        precision. It eliminates guesswork by providing institutional-level
+        technology, real-time intelligence, and automation tools once reserved
+        for professional investors. With the ability to predict opportunities
+        before they happen and automate repetitive processes, GO AI helps you
+        grow your wealth confidently while staying in full control of every
+        decision.
+      </p>
+    </div>
+  </div>
+
+  {/* ⭐ CLEAN & RESPONSIVE STATS GRID */}
+  <div className="stats-grid" data-aos="fade-up">
+    <div className="stat-box">
+      <h2>1000+</h2>
+      <p>Active Members</p>
+    </div>
+
+    <div className="stat-box">
+      <h2>20+</h2>
+      <p>Countries Available</p>
+    </div>
+
+    <div className="stat-box">
+      <h2>10+</h2>
+      <p>Languages Supported</p>
+    </div>
+
+    <div className="stat-box">
+      <h2>100%</h2>
+      <p>Member Satisfaction</p>
+    </div>
+  </div>
+</section>
+
     </>
   );
 }
