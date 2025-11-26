@@ -1,0 +1,39 @@
+.terms-wrapper {
+  margin-top: 100px;
+}
+.payment-subtext{
+    text-align: center;
+}
+.terms-wrapper {
+  max-width: 1000px;
+}
+.terms-content {
+    text-align: center !important;
+}
+.terms-content p,
+.terms-content ul,
+.terms-content li {
+  color: #e0e0e0;
+  line-height: 1.7;
+  font-size: 16px;
+  text-align: center !important;
+  margin-bottom: 12px;
+
+}
+
+.terms-heading {
+      font-family: "SFPro-Medium";
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.terms-content ul {
+  padding-left: 20px;
+}
+
+.terms-content ul li {
+  margin-bottom: 8px;
+}

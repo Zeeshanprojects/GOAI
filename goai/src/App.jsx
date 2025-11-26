@@ -48,7 +48,7 @@ function App() {
           <Route path="/userdetails" element={<Userdetails/>}/>
           <Route path="/Checkout" element={<Checkout/>}/>
           <Route path="/carddetails" element={<Carddetails/>}/>
-          <Route path="/termandcondition" element={<TermsandConditions/>}/>
+          <Route path="/termandconditions" element={<TermsandConditions/>}/>
           <Route path="/refundpolicy" element={<RefundPolicy/>}/>
         </Routes>
         <Footer /> {/* Always visible */}
