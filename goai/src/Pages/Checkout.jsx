@@ -19,8 +19,8 @@ export default function Checkout() {
 
   return (
     <section className="checkout-container"  data-aos="fade-up">
-      <h1 className="title">Checkout</h1>
-      <div className="details-input" >
+      <h1 className="title mb-5">Checkout</h1>
+      <div className="details-input " >
         <h3 className="checkout-heading">Selected Plan</h3>
         <p>Your Plan: {formData.plan}</p>
       </div>
