@@ -45,7 +45,7 @@ export default function Carddetails() {
             </div>
 
             <p className="terms-note">
-              By providing your card information, you authorize GO Ai to charge
+              By providing your card information, you authorize GO AI to charge
               your card for future subscription payments.
             </p>
           </div>

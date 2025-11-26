@@ -143,11 +143,11 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
 
             <div className="modal-actions">
               <button className="modal-btn cancel" onClick={onClose}>
-                Cancel
+                cancel
               </button>
 
               <button className="modal-btn next" onClick={handleNext}>
-                Next
+                NEXT
               </button>
             </div>
           </div>
@@ -263,7 +263,7 @@ export default function Home() {
 
           <p>
             <h6>To reinvent wealth through intelligence.</h6>
-            GO Ai exists to merge financial education, trading technology, and
+            GO AI exists to merge financial education, trading technology, and
             human potential into a single ecosystem of empowerment. We engineer
             prosperity through community, automation, and data-driven precision.
             We are building the next generation of digital wealth creators, a
@@ -405,7 +405,7 @@ export default function Home() {
           Vision
         </h1>
         <p className="vision-text" data-aos="fade-up">
-          GO Ai is building the world’s most intelligent and unified wealth
+          GO AI is building the world’s most intelligent and unified wealth
           ecosystem—an environment where automation, precision, and human
           potential merge into a single force. Our vision is to create tools
           that operate at institutional speed, providing individuals with
@@ -426,7 +426,7 @@ export default function Home() {
           achievers working together toward financial independence.
           <br />
           <br />
-          GO Ai is not just innovating for today—we are building the foundation
+          GO AI is not just innovating for today—we are building the foundation
           for the next era of wealth creation, where every individual has the
           ability to think smarter, move faster, and unlock limitless potential.
         </p>
@@ -525,7 +525,7 @@ export default function Home() {
         <div className="container">
           <h1 className="title">Testimonials</h1>
           <p className="testimonials-sub">
-            Hear from the GO Ai members transforming their financial future.
+            Hear from the GO AI members transforming their financial future.
           </p>
 
           <Swiper
@@ -546,7 +546,7 @@ export default function Home() {
               {
                 name: "Ahsan R.",
                 role: "Entrepreneur",
-                text: "GO Ai transformed my trading mindset completely.",
+                text: "GO AI transformed my trading mindset completely.",
               },
               {
                 name: "Nimra S.",

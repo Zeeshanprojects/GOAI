@@ -68,7 +68,7 @@ export default function Platform() {
             <i className="fa-solid fa-lightbulb feature-icon"></i>
             <h3 className="feature-title">Smart Insights</h3>
             <p className="feature-text">
-              From decision support to forecasting, GO Ai provides actionable
+              From decision support to forecasting, GO AI provides actionable
               insights tailored to your goals.
             </p>
           </div>
@@ -91,12 +91,12 @@ export default function Platform() {
           <div className="text-center">
             <h2 className="title">Why Choose GOAI?</h2>
             <p className="text-white">
-              GO Ai empowers you to make smarter financial decisions with
+              GO AI empowers you to make smarter financial decisions with
               clarity and precision. It eliminates guesswork by providing
               institutional-level technology, real-time intelligence, and
               automation tools once reserved for professional investors. With
               the ability to predict opportunities before they happen and
-              automate repetitive processes, GO Ai helps you grow your wealth
+              automate repetitive processes, GO AI helps you grow your wealth
               confidently while staying in full control of every decision.
             </p>
           </div>

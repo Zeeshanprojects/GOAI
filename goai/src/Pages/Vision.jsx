@@ -32,7 +32,7 @@ export default function Vision() {
             <div className="vision-number color">01</div>
             <h3 className="vision-heading">Intelligent Wealth Ecosystem</h3>
             <p className="vision-desc">
-              GO Ai is building a unified wealth ecosystem where automation,
+              GO AI is building a unified wealth ecosystem where automation,
               intelligence, and human decision-making work together seamlessly.
               Our vision is to provide individuals with institutional-grade
               tools that analyze markets, predict opportunities, and optimize
@@ -49,7 +49,7 @@ export default function Vision() {
             <h3 className="vision-heading">Breaking Barriers</h3>
             <p className="vision-desc">
               The future of wealth should not be restricted by geography,
-              education, or access to traditional financial systems. GO Ai
+              education, or access to traditional financial systems. GO AI
               breaks these limitations by delivering real-time analytics,
               scalable automation, and a globally connected infrastructure. We
               are removing outdated barriers and opening pathways for
@@ -79,7 +79,7 @@ export default function Vision() {
             <div className="vision-number color">04</div>
             <h3 className="vision-heading">Key Driving Questions</h3>
             <p className="vision-desc">
-              GO Ai is built around the questions that shape long-term success:
+              GO AI is built around the questions that shape long-term success:
               What are you capable of mastering? What drives your ambition? What
               opportunities can fuel your financial growth? Our technology helps
               members discover their strongest direction, identify their
@@ -93,7 +93,7 @@ export default function Vision() {
             <div className="vision-number color">05</div>
             <h3 className="vision-heading">Clarity Over Illusion</h3>
             <p className="vision-desc">
-              In a world filled with misleading promises, GO Ai stands for
+              In a world filled with misleading promises, GO AI stands for
               authenticity. We do not sell illusions—we deliver systems designed
               for measurable results. Our focus is on real performance, real
               insights, and real outcomes. By removing noise and providing
@@ -108,7 +108,7 @@ export default function Vision() {
             <h3 className="vision-heading">Rising Beyond Failure</h3>
             <p className="vision-desc">
               Failure is not a stopping point—it is a valuable lesson in the
-              journey toward success. GO Ai equips members with tools that
+              journey toward success. GO AI equips members with tools that
               accelerate recovery, identify improvements, and transform setbacks
               into growth. With intelligent monitoring, automated insights, and
               strategic guidance, we help individuals rise stronger, think
