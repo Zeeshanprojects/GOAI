@@ -2,16 +2,7 @@
 .checkout-container {
   max-width: 900px;
   margin: 120px auto 80px auto;
-  background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.45) 10%,
-      rgba(255, 255, 255, 0.1) 80%,
-      rgba(255, 255, 255, 0.22) 100%
-    ),
-    #1a0c2e;
 
-  color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 20px;
   color: #fff;
 }

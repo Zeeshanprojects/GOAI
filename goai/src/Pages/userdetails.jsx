@@ -35,10 +35,30 @@ export default function Userdetails() {
     mobile: "",
     email: "",
     confirmEmail: "",
-
+    cardName: "",
+    expiry: "",
+    cvv: "",
+    cardNumber: "",
+    subscription: false,
+    refundpolicy: false,
     ageConfirmed: false,
     termsAccepted: false,
   });
+  const handleExpiryMonth = (e) => {
+    const value = e.target.value; // Example: "2025-08"
+
+    if (!value) return;
+
+    const [year, month] = value.split("-");
+
+    // Convert "2025-08" → 08/25
+    const formatted = `${month}/${year.slice(2)}`;
+
+    setForm((prev) => ({
+      ...prev,
+      expiry: formatted,
+    }));
+  };
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -244,10 +264,10 @@ export default function Userdetails() {
         {/* Expiry Date */}
         <input
           name="expiry"
-          onChange={handleChange}
-          placeholder="Expiry Date (MM/YY) *"
+          type="month"
+          onChange={handleExpiryMonth}
           className="details-input"
-          maxLength="5"
+          required
         />
 
         {/* CVV */}
@@ -273,23 +293,37 @@ export default function Userdetails() {
           <input type="checkbox" name="ageConfirmed" onChange={handleChange} />
           <span>I am above 18 years old *</span>
         </label>
-        
-         <label className="details-checkbox">
-          <input type="checkbox" name="termsAccepted" onChange={handleChange} />
-          <span>
-I understand this is a subscription *</span>
+
+        <label className="details-checkbox">
+          <input type="checkbox" name="subscription" onChange={handleChange} />
+          <span>I understand this is a subscription *</span>
         </label>
 
         <label className="details-checkbox">
           <input type="checkbox" name="termsAccepted" onChange={handleChange} />
-          <span> <a href="https://docs.google.com/document/d/1zU8IriOM7fD4BZFQC__OYr-SktNJujn3dk5QRkgV9p8/edit?usp=sharing"target="_blank">I agree to the Terms & Conditions *</a></span>
+          <span>
+            {" "}
+            <a
+              href="https://docs.google.com/document/d/1zU8IriOM7fD4BZFQC__OYr-SktNJujn3dk5QRkgV9p8/edit?usp=sharing"
+              target="_blank"
+            >
+              I agree to the Terms & Conditions *
+            </a>
+          </span>
         </label>
 
-         <label className="details-checkbox">
-          <input type="checkbox" name="termsAccepted" onChange={handleChange} />
-          <span> <a href="https://docs.google.com/document/d/1zU8IriOM7fD4BZFQC__OYr-SktNJujn3dk5QRkgV9p8/edit?usp=sharing"target="_blank">I agree to the refund policy *</a></span>
+        <label className="details-checkbox">
+          <input type="checkbox" name="refundpolicy" onChange={handleChange} />
+          <span>
+            {" "}
+            <a
+              href="https://docs.google.com/document/d/1zU8IriOM7fD4BZFQC__OYr-SktNJujn3dk5QRkgV9p8/edit?usp=sharing"
+              target="_blank"
+            >
+              I agree to the refund policy *
+            </a>
+          </span>
         </label>
-
       </div>
 
       <div className="details-buttons">
