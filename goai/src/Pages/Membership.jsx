@@ -13,7 +13,7 @@ import "flag-icons/css/flag-icons.min.css";
 function MembershipModal({ isOpen, onClose, selectedPlan }) {
   const navigate = useNavigate();
   const { setFormData } = useContext(FormContext);
-
+const [loading, setLoading] = useState(false);
   const [countryOption, setCountryOption] = useState(null);
   const [languageOption, setLanguageOption] = useState(null);
 
@@ -36,41 +36,51 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
     { value: "French", label: "French" },
   ];
 
-  const selectStyles = {
-    control: (base) => ({
-      ...base,
-      backgroundColor: "#2c1a44",
-      borderColor: "hsla(0,0%,100%, 0.2)",
-      minHeight: "44px",
-    }),
+ const selectStyles = {
+  control: (base) => ({
+    ...base,
+    backgroundColor: "#2c1a44",
+    borderColor: "hsla(0,0%,100%, 0.2)",
+    minHeight: "44px",
+  }),
 
-    singleValue: (base) => ({
-      ...base,
-      color: "#fff",
-    }),
+  singleValue: (base) => ({
+    ...base,
+    color: "#fff",
+  }),
 
-    placeholder: (base) => ({
-      ...base,
-      color: "rgba(255,255,255,0.7)",
-    }),
+  placeholder: (base) => ({
+    ...base,
+    color: "rgba(255,255,255,0.7)",
+  }),
 
-    menu: (base) => ({
-      ...base,
-      backgroundColor: "#2c1a44",
-    }),
+  // 🔥 SCROLLBAR ADDED
+  menu: (base) => ({
+    ...base,
+    backgroundColor: "#2c1a44",
+    maxHeight: "120px",     // dropdown height limit
+    overflow: "hidden",
+  }),
 
-    option: (base, state) => ({
-      ...base,
-      backgroundColor: state.isFocused ? "#3b215f" : "#2c1a44",
-      color: "#fff",
-    }),
+  menuList: (base) => ({
+    ...base,
+    maxHeight: "120px",
+    overflowY: "auto",      // scrolling enabled
+    paddingRight: "6px",    // prevents content shifting
+  }),
 
-    // 🔥 FIX SEARCH TYPING COLOR
-    input: (base) => ({
-      ...base,
-      color: "#ffffff !important",
-    }),
-  };
+  option: (base, state) => ({
+    ...base,
+    backgroundColor: state.isFocused ? "#3b215f" : "#2c1a44",
+    color: "#fff",
+    cursor: "pointer",
+  }),
+
+  input: (base) => ({
+    ...base,
+    color: "#ffffff",
+  }),
+};
 
   const filterCountries = (option, rawInput) => {
     if (!rawInput) return true;
@@ -79,87 +89,94 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
       .startsWith(rawInput.toLowerCase());
   };
 
-  // ✅ Next → Go to User Details Page
   const handleNext = () => {
-    if (!countryOption || !languageOption) {
-      alert("Please select both country and language.");
-      return;
-    }
+  if (!countryOption || !languageOption) {
+    alert("Please select both country and language.");
+    return;
+  }
 
-    // Save data globally
-    setFormData((prev) => ({
-      ...prev,
-      country: countryOption.rawLabel,
-      language: languageOption.value,
-      plan: selectedPlan?.title,
-    }));
+  // Show loader
+  setLoading(true);
 
-    onClose(); // close the modal
-    navigate("/userdetails"); // navigate to user details page
-  };
+  // Save data globally
+  setFormData((prev) => ({
+    ...prev,
+    country: countryOption.rawLabel,
+    language: languageOption.value,
+    plan: selectedPlan?.title,
+  }));
+
+  // Wait before navigation to show loader smoothly
+  setTimeout(() => {
+    navigate("/userdetails");
+  }, 800); // smooth delay
+};
+
 
   return (
-    <>
-      {isOpen && (
-        <div className="membership-modal-overlay">
-          <div className="membership-modal-1">
-            <h2 className="modal-title">Complete Your Membership</h2>
+       <>
+ {isOpen && (
+  <div className="membership-modal-overlay">
+    <div className="membership-modal-1">
 
-            {selectedPlan && (
-              <p className="modal-plan">
-                Selected Plan: <strong>{selectedPlan.title}</strong>
-              </p>
-            )}
-
-            <div className="modal-field">
-              <label>Country</label>
-              <Select
-                options={countryOptions}
-                value={countryOption}
-                onChange={setCountryOption}
-                placeholder="Select Country"
-                isSearchable
-                filterOption={filterCountries}
-                formatOptionLabel={(option) => (
-                  <div
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "8px",
-                    }}
-                  >
-                    <span className={option.flagClass} />
-                    {option.label}
-                  </div>
-                )}
-                styles={selectStyles}
-              />
-            </div>
-
-            <div className="modal-field">
-              <label>Language</label>
-              <Select
-                options={languageOptions}
-                value={languageOption}
-                onChange={setLanguageOption}
-                placeholder="Select Language"
-                styles={selectStyles}
-              />
-            </div>
-
-            <div className="modal-actions">
-              <button className="modal-btn cancel" onClick={onClose}>
-                Cancel
-              </button>
-
-              <button className="modal-btn next" onClick={handleNext}>
-                Next
-              </button>
-            </div>
-          </div>
+      {/* LOADER OVERLAY INSIDE MODAL */}
+      {loading && (
+        <div className="modal-loader-overlay">
+          <div className="loader"></div>
+          <p className="loader-text">Processing...</p>
         </div>
       )}
-    </>
+
+      <h2 className="modal-title">Complete Your Membership</h2>
+
+      {selectedPlan && (
+        <p className="modal-plan">
+          Selected Plan: <strong>{selectedPlan.title}</strong>
+        </p>
+      )}
+
+      <div className="modal-field">
+        <label>Country</label>
+        <Select
+          options={countryOptions}
+          value={countryOption}
+          onChange={setCountryOption}
+          placeholder="Select Country"
+          isSearchable
+          filterOption={filterCountries}
+          formatOptionLabel={(option) => (
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <span className={option.flagClass} />
+              {option.label}
+            </div>
+          )}
+          styles={selectStyles}
+        />
+      </div>
+
+      <div className="modal-field">
+        <label>Language</label>
+        <Select
+          options={languageOptions}
+          value={languageOption}
+          onChange={setLanguageOption}
+          placeholder="Select Language"
+          styles={selectStyles}
+        />
+      </div>
+
+      <div className="modal-actions">
+        <button className="modal-btn cancel" onClick={onClose}>
+          cancel
+        </button>
+
+        <button className="modal-btn next" onClick={handleNext}>
+          NEXT
+        </button>
+      </div>
+    </div>
+  </div>
+)}   </>
   );
 }
 
