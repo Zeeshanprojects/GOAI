@@ -106,8 +106,8 @@ export default function Footer() {
                         }}
                       />
                       <p>
-                        <i className="fas fa-home mr-3" /> New York, NY 10012,
-                        US
+                        <i className="fas fa-home mr-3" /> GO AI, LLC • Wyoming, USA
+                        
                       </p>
                       <p>
                         <i className="fas fa-envelope mr-3" /> info@goai.com
