@@ -84,7 +84,7 @@ export default function Userdetails() {
       !form.termsAccepted ||
       !form.cardName ||
       !form.cardNumber ||
-      !form.expiry ||
+      
       !form.cvv
     ) {
       showError("Please fill all required fields.");
@@ -261,14 +261,7 @@ export default function Userdetails() {
           maxLength="19"
         />
 
-        {/* Expiry Date */}
-        <input
-          name="expiry"
-          type="month"
-          onChange={handleExpiryMonth}
-          className="details-input"
-          required
-        />
+      
 
         {/* CVV */}
         <input
