@@ -1,4 +1,4 @@
-/* PAGE CONTAINER */
+
 .checkout-container {
   max-width: 900px;
   margin: 120px auto 80px auto;
@@ -6,11 +6,15 @@
   border-radius: 20px;
   color: #fff;
 }
+.checkout-card{
+  background-color: orange;
+  padding: 10px
+}
 .checkout-heading {
   font-size: 22px;
   font-weight: 600;
   color: #a56bfd;
-  margin-top: 35px;
+
   margin-bottom: 10px;
 }
 

@@ -52,13 +52,64 @@
   color: gray;
 }
 
-/* CHECKBOXES */
-.details-checkboxes {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin: 25px 0;
+/* CHECKBOX SECTION WRAPPER */
+.details-checkbox-container {
+  margin-top: 25px;
+  padding: 25px;
+  border-radius: 14px;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.45) 10%,
+      rgba(255, 255, 255, 0.08) 80%
+    ),
+    #1a0c2e;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+
+  /* 🔥 NEW → Make it 2 columns on larger screens */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 25px; /* row gap, column gap */
 }
+
+/* EACH CHECKBOX ROW */
+.details-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Styling checkbox text */
+.details-checkbox span {
+  font-size: 15px;
+  color: #e4d8ff;
+}
+
+/* Checkbox style */
+.details-checkbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #a56bfd;
+  cursor: pointer;
+}
+
+/* Links inside checkbox text */
+.details-checkbox a {
+  color: #c892ff;
+  text-decoration: underline;
+}
+
+.details-checkbox a:hover {
+  color: #e6c2ff;
+}
+
+/* 📱 MOBILE RESPONSIVE: 1 column only */
+@media (max-width: 768px) {
+  .details-checkbox-container {
+    grid-template-columns: 1fr; /* Only one checkbox per row */
+  }
+}
+
 
 .details-checkbox {
   display: flex;

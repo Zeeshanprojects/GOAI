@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useMemo,useContext } from "react";
+import React, { useEffect, useState, useMemo, useContext } from "react";
 import Images from "../assets/Images/Image";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -21,12 +21,14 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
   const [languageOption, setLanguageOption] = useState(null);
 
   const countryOptions = useMemo(() => {
-    return countryList().getData().map((country) => ({
-      value: country.value,
-      label: country.label,
-      flagClass: `fi fi-${country.value.toLowerCase()}`,
-      rawLabel: country.label,
-    }));
+    return countryList()
+      .getData()
+      .map((country) => ({
+        value: country.value,
+        label: country.label,
+        flagClass: `fi fi-${country.value.toLowerCase()}`,
+        rawLabel: country.label,
+      }));
   }, []);
 
   const languageOptions = [
@@ -37,46 +39,47 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
     { value: "French", label: "French" },
   ];
 
- const selectStyles = {
-  control: (base) => ({
-    ...base,
-    backgroundColor: "#2c1a44",
-    borderColor: "hsla(0,0%,100%, 0.2)",
-    minHeight: "44px",
-  }),
+  const selectStyles = {
+    control: (base) => ({
+      ...base,
+      backgroundColor: "#2c1a44",
+      borderColor: "hsla(0,0%,100%, 0.2)",
+      minHeight: "44px",
+    }),
 
-  singleValue: (base) => ({ 
-    ...base, 
-    color: "#fff" 
-  }),
+    singleValue: (base) => ({
+      ...base,
+      color: "#fff",
+    }),
 
-  placeholder: (base) => ({
-    ...base,
-    color: "rgba(255,255,255,0.7)",
-  }),
+    placeholder: (base) => ({
+      ...base,
+      color: "rgba(255,255,255,0.7)",
+    }),
 
-  menu: (base) => ({ 
-    ...base, 
-    backgroundColor: "#2c1a44" 
-  }),
+    menu: (base) => ({
+      ...base,
+      backgroundColor: "#2c1a44",
+    }),
 
-  option: (base, state) => ({
-    ...base,
-    backgroundColor: state.isFocused ? "#3b215f" : "#2c1a44",
-    color: "#fff",
-  }),
+    option: (base, state) => ({
+      ...base,
+      backgroundColor: state.isFocused ? "#3b215f" : "#2c1a44",
+      color: "#fff",
+    }),
 
-  // 🔥 FIX SEARCH TYPING COLOR
-  input: (base) => ({
-    ...base,
-    color: "#ffffff !important",
-  }),
-};
-
+    // 🔥 FIX SEARCH TYPING COLOR
+    input: (base) => ({
+      ...base,
+      color: "#ffffff !important",
+    }),
+  };
 
   const filterCountries = (option, rawInput) => {
     if (!rawInput) return true;
-    return option.data.rawLabel.toLowerCase().startsWith(rawInput.toLowerCase());
+    return option.data.rawLabel
+      .toLowerCase()
+      .startsWith(rawInput.toLowerCase());
   };
 
   // ✅ Next → Go to User Details Page
@@ -94,7 +97,7 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
       plan: selectedPlan?.title,
     }));
 
-    onClose();            // close the modal  
+    onClose(); // close the modal
     navigate("/userdetails"); // navigate to user details page
   };
 
@@ -121,7 +124,13 @@ function MembershipModal({ isOpen, onClose, selectedPlan }) {
                 isSearchable
                 filterOption={filterCountries}
                 formatOptionLabel={(option) => (
-                  <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "8px",
+                    }}
+                  >
                     <span className={option.flagClass} />
                     {option.label}
                   </div>
