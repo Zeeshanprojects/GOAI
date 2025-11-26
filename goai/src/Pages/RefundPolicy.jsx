@@ -33,21 +33,15 @@ export default function RefundPolicy() {
             refund on eligible products. Payments made in cryptocurrency are
             non-refundable in all cases. Renewals are generally non-refundable,
             but you can cancel to prevent future charges.
-            <h3 className="terms-heading mt-5">
-What’s Eligible</h3>
+            <h3 className="terms-heading mt-5">What’s Eligible</h3>
             <p>
-             We may issue a refund within 7 days of purchase for:
-First-time purchases of GO AI digital products (e.g., education content, software subscriptions, and services) that have not been substantially used (e.g., no significant course completion, excessive downloads, or extended software usage).
-
-
+              We may issue a refund within 7 days of purchase for: First-time
+              purchases of GO AI digital products (e.g., education content,
+              software subscriptions, and services) that have not been
+              substantially used (e.g., no significant course completion,
+              excessive downloads, or extended software usage).
             </p>
-            <h3 className="terms-heading mt-5">Accidental duplicate charges of the same product.
-</h3>
-            <p>
-              NO REFUNDS of initial purchases will be made, except when
-              requested within seven (7) days of the initial purchase date by
-              written notice to GO AI via email, ticket, or Live Chat.
-            </p>
+           
           </div>
         </div>
       </section>
