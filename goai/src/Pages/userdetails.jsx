@@ -302,12 +302,12 @@ export default function Userdetails() {
           <input type="checkbox" name="refundpolicy" onChange={handleChange} />
           <span>
             I agree to the{" "}
-            <a
-              href="https://docs.google.com/document/d/1zU8IriOM7fD4BZFQC__OYr-SktNJujn3dk5QRkgV9p8/edit?usp=sharing"
-              target="_blank"
+            <Link
+              to="/refundpolicy"
+            
             >
               refund policy
-            </a>{" "}
+            </Link>{" "}
             *
           </span>
         </label>
