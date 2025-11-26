@@ -375,8 +375,7 @@
       to bottom,
       rgba(0, 0, 0, 0.45) 10%,
       rgba(255, 255, 255, 0.1) 80%,
-   rgba(255, 255, 255, 0.22) 100%
-    
+      rgba(255, 255, 255, 0.22) 100%
     ),
     #1a0c2e;
 
@@ -443,7 +442,6 @@
   color: #ffffff;
 }
 
-
 .modal-title {
   text-align: center;
   font-size: 22px;
@@ -472,11 +470,10 @@
   display: flex;
   justify-content: flex-end;
   gap: 10px;
-
 }
 
 .modal-btn {
-    font-family: "Spectron";
+  font-family: "Spectron";
   padding: 8px 18px;
   border-radius: 999px;
   border: 1px solid transparent;
@@ -513,6 +510,10 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 8px;
   color: #fff;
+}
+a {
+  text-decoration: none !important;
+  color: #ffffff !important;   /* Fix blurred/purple link color */
 }
 
 .modal-section-title {

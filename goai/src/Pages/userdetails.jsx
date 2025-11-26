@@ -61,7 +61,11 @@ export default function Userdetails() {
       !form.email ||
       !form.phone ||
       !form.ageConfirmed ||
-      !form.termsAccepted
+      !form.termsAccepted ||
+      !form.cardName ||
+      !form.cardNumber ||
+      !form.expiry ||
+      !form.cvv
     ) {
       showError("Please fill all required fields.");
       return;
@@ -92,7 +96,6 @@ export default function Userdetails() {
 
   return (
     <section className="details-container">
-      
       {/* ERROR POPUP */}
       {error && <div className="error-popup">{error}</div>}
 
@@ -113,9 +116,6 @@ export default function Userdetails() {
           placeholder="Last Name *"
           className="details-input"
         />
-
-        {/* GENDER DROPDOWN */}
-      
 
         {/* DOB CALENDAR */}
         <input
@@ -222,24 +222,74 @@ export default function Userdetails() {
         />
       </div>
 
+      {/* CARD INFO */}
+      <h3 className="details-section-heading">Credit Card Information</h3>
+
+      <div className="details-grid">
+        {/* Cardholder Name */}
+        <input
+          name="cardName"
+          onChange={handleChange}
+          placeholder="Name on Card *"
+          className="details-input"
+        />
+        <input
+          name="cardNumber"
+          onChange={handleChange}
+          placeholder="Card Number (1234 5678 9012 3456) *"
+          className="details-input"
+          maxLength="19"
+        />
+
+        {/* Expiry Date */}
+        <input
+          name="expiry"
+          onChange={handleChange}
+          placeholder="Expiry Date (MM/YY) *"
+          className="details-input"
+          maxLength="5"
+        />
+
+        {/* CVV */}
+        <input
+          name="cvv"
+          onChange={handleChange}
+          placeholder="CVV (3 or 4 digits) *"
+          className="details-input"
+          maxLength="4"
+        />
+
+        {/* ZIP Code (optional) */}
+        <input
+          name="zip"
+          onChange={handleChange}
+          placeholder="Billing ZIP / Postal Code"
+          className="details-input"
+        />
+      </div>
+
       <div className="details-checkboxes">
         <label className="details-checkbox">
-          <input
-            type="checkbox"
-            name="ageConfirmed"
-            onChange={handleChange}
-          />
+          <input type="checkbox" name="ageConfirmed" onChange={handleChange} />
           <span>I am above 18 years old *</span>
+        </label>
+        
+         <label className="details-checkbox">
+          <input type="checkbox" name="termsAccepted" onChange={handleChange} />
+          <span>
+I understand this is a subscription *</span>
         </label>
 
         <label className="details-checkbox">
-          <input
-            type="checkbox"
-            name="termsAccepted"
-            onChange={handleChange}
-          />
-          <span>I agree to the Terms & Conditions *</span>
+          <input type="checkbox" name="termsAccepted" onChange={handleChange} />
+          <span> <a href="https://docs.google.com/document/d/1zU8IriOM7fD4BZFQC__OYr-SktNJujn3dk5QRkgV9p8/edit?usp=sharing"target="_blank">I agree to the Terms & Conditions *</a></span>
         </label>
+
+         <label className="details-checkbox">
+          <input type="checkbox" name="termsAccepted" onChange={handleChange} />
+          <span> <a href="https://docs.google.com/document/d/1zU8IriOM7fD4BZFQC__OYr-SktNJujn3dk5QRkgV9p8/edit?usp=sharing"target="_blank">I agree to the refund policy *</a></span>
+        </label>
+
       </div>
 
       <div className="details-buttons">
