@@ -87,7 +87,7 @@ export default function Platform() {
       {/* VALUE SECTION */}
       <section className="platform-value">
       
-        <div className="platform-container" data-aos="fade-up">
+        <div className="" data-aos="fade-up">
           <div className="text-center">
             <h2 className="title">Why Choose GOAI?</h2>
             <p className="text-white">
