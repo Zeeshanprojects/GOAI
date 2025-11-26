@@ -1,5 +1,6 @@
 import { useEffect, useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Userdetails.css";
@@ -84,7 +85,6 @@ export default function Userdetails() {
       !form.termsAccepted ||
       !form.cardName ||
       !form.cardNumber ||
-  
       !form.cvv
     ) {
       showError("Please fill all required fields.");
@@ -261,8 +261,6 @@ export default function Userdetails() {
           maxLength="19"
         />
 
-      
-
         {/* CVV */}
         <input
           name="cvv"
@@ -281,40 +279,39 @@ export default function Userdetails() {
         />
       </div>
 
-   <div className="details-checkbox-container">
-  <label className="details-checkbox">
-    <input type="checkbox" name="ageConfirmed" onChange={handleChange} />
-    <span>I am above 18 years old *</span>
-  </label>
+      <div className="details-checkbox-container">
+        <label className="details-checkbox">
+          <input type="checkbox" name="ageConfirmed" onChange={handleChange} />
+          <span>I am above 18 years old *</span>
+        </label>
 
-  <label className="details-checkbox">
-    <input type="checkbox" name="subscription" onChange={handleChange} />
-    <span>I understand this is a subscription *</span>
-  </label>
+        <label className="details-checkbox">
+          <input type="checkbox" name="subscription" onChange={handleChange} />
+          <span>I understand this is a subscription *</span>
+        </label>
 
-  <label className="details-checkbox">
-    <input type="checkbox" name="termsAccepted" onChange={handleChange} />
-    <span>
-      I agree to the{" "}
-      <a href="https://docs.google.com/document/d/1zU8IriOM7fD4BZFQC__OYr-SktNJujn3dk5QRkgV9p8/edit?usp=sharing" target="_blank">
-        Terms & Conditions
-      </a>{" "}
-      *
-    </span>
-  </label>
+        <label className="details-checkbox">
+          <input type="checkbox" name="termsAccepted" onChange={handleChange} />
+          <span>
+            I agree to the
+            <Link to="/termandconditions"> Terms & Conditions *</Link>
+          </span>
+        </label>
 
-  <label className="details-checkbox">
-    <input type="checkbox" name="refundpolicy" onChange={handleChange} />
-    <span>
-      I agree to the{" "}
-      <a href="https://docs.google.com/document/d/1zU8IriOM7fD4BZFQC__OYr-SktNJujn3dk5QRkgV9p8/edit?usp=sharing" target="_blank">
-        refund policy
-      </a>{" "}
-      *
-    </span>
-  </label>
-</div>
-
+        <label className="details-checkbox">
+          <input type="checkbox" name="refundpolicy" onChange={handleChange} />
+          <span>
+            I agree to the{" "}
+            <a
+              href="https://docs.google.com/document/d/1zU8IriOM7fD4BZFQC__OYr-SktNJujn3dk5QRkgV9p8/edit?usp=sharing"
+              target="_blank"
+            >
+              refund policy
+            </a>{" "}
+            *
+          </span>
+        </label>
+      </div>
 
       <div className="details-buttons">
         <button className="details-btn back-btn" onClick={() => navigate(-1)}>
