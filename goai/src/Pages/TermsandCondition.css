@@ -20,7 +20,9 @@
   margin-bottom: 12px;
 
 }
-
+li{
+  color: white !important;
+}
 .terms-heading {
       font-family: "SFPro-Medium";
   font-size: 22px;
