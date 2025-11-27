@@ -38,23 +38,28 @@ export default function Footer() {
                         of empowerment...
                       </p>
                       <div>
-                        <Link href="" className="text-white me-4">
+                        <Link to="https://www.facebook.com/profile.php?id=61583860222236" className="text-white me-4" target="_blank">
                           <i className="fab fa-facebook-f" />
                         </Link>
-                        <Link href="" className="text-white me-4">
-                          <i className="fab fa-twitter" />
-                        </Link>
-                        <Link href="" className="text-white me-4">
-                          <i className="fab fa-google" />
-                        </Link>
-                        <Link href="" className="text-white me-4">
+                         <Link to="https://www.instagram.com/goai.global/" className="text-white me-4"target="_blank">
                           <i className="fab fa-instagram" />
                         </Link>
-                        <Link href="" className="text-white me-4">
+                        <Link to="https://x.com/GOAI_GLOBAL" className="text-white me-4"target="_blank">
+                          <i className="fab fa-twitter" />
+                        </Link>
+                         <Link to="https://www.linkedin.com/in/go-ai-global-258758398/" className="text-white me-4"target="_blank">
                           <i className="fab fa-linkedin" />
                         </Link>
-                        <Link href="" className="text-white me-4">
-                          <i className="fab fa-github" />
+                        <Link to="http://www.youtube.com/@GOAIGLOBAL" className="text-white me-4"target="_blank">
+                          <i className="fab fa-youtube" />
+                        </Link>
+                       
+                          <Link to="https://www.tiktok.com/@goai.global" className="text-white me-4"target="_blank">
+                          <i className="fab fa-tiktok" />
+                        </Link>
+                       
+                        <Link to="https://t.me/GOAIGLOBAL" className="text-white me-4"target="_blank">
+                          <i className="fab fa-telegram" />
                         </Link>
                       </div>
                     </div>
@@ -128,7 +133,7 @@ export default function Footer() {
                 style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
               >
                 © 2025&nbsp;
-                <a className="text-white" href="https://mdbootstrap.com/">
+                <a className="text-white" to="https://mdbootstrap.com/">
                   GOAI
                 </a>
               </div>
