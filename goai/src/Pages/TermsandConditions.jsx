@@ -20,7 +20,7 @@ export default function TermsandConditions() {
         <div className="container terms-wrapper" data-aos="fade-up">
           {/* PAGE HEADER */}
           <div className="text-center">
-            <h1 className="title">Terms & Conditions</h1>
+            <h1 className="title">GO AI, LLC — Privacy Policy</h1>
           <p className="text-white">
             <span className="fw-bold">Last Updated: November 25, 2025</span>
           </p>

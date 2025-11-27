@@ -18,6 +18,7 @@ import Carddetails from "./Pages/Carddetails";
 import Membership from "./Pages/Membership";
 import TermsandConditions from "./Pages/TermsandConditions";
 import RefundPolicy from "./Pages/RefundPolicy";
+import Privacypolicy from "./Pages/Privacypolicy";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -50,6 +51,7 @@ function App() {
           <Route path="/carddetails" element={<Carddetails/>}/>
           <Route path="/termandconditions" element={<TermsandConditions/>}/>
           <Route path="/refundpolicy" element={<RefundPolicy/>}/>
+          <Route path="/privacypolicy" element={<Privacypolicy/>}/>
         </Routes>
         <Footer /> {/* Always visible */}
       </BrowserRouter>
