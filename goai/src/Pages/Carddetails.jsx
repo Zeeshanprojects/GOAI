@@ -81,19 +81,22 @@ export default function Carddetails() {
 
         <p className="policy-text">
           Your personal data will be used to process your order and support your
-          experience. Read our <span className="link">privacy policy</span>.
+          experience. Read our privacy policy
         </p>
 
         <label className="checkbox-row">
           <input type="checkbox" />
-          <span>I have read and agree to the website refund policy *</span>
+          <span>I have read and agree to the website Refund Policy *</span>
         </label>
 
         <label className="checkbox-row">
           <input type="checkbox" />
-          <span>I confirm that this is a recurring subscription. *</span>
+          <span>I confirm that this is a Recurring Subscription. *</span>
         </label>
-
+  <label className="checkbox-row">
+          <input type="checkbox" />
+ <span>I have read and agree to the website Terms and Condition *</span>
+        </label>
         <label className="checkbox-row">
           <input type="checkbox" />
           <span>I want to receive updates about products and promotions.</span>
