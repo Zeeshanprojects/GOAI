@@ -52,7 +52,6 @@ export default function Carddetails() {
         )}
 
         {/* OTHER OPTIONS */}
-       
 
         <label className="radio-option">
           <input
