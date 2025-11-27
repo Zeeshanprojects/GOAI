@@ -231,8 +231,8 @@ export default function Privacypolicy() {
               laws to determine which rights may be available and any
               limitations.
             </p>
-            <ol>
-              <h5>Examples of Rights That May Apply</h5>
+            <ul>
+              <h5 className="mt-4">A. Examples of Rights That May Apply</h5>
               <ul>
                 <li>
                   <p>
@@ -256,7 +256,7 @@ export default function Privacypolicy() {
                 </li>
                 <li>
                   <p>
-                    <strong>Restriction.</strong> Request that we restrict
+                    <strong>Restriction.</strong>Request that we restrict
                     processing in certain circumstances.
                   </p>
                 </li>
@@ -268,15 +268,15 @@ export default function Privacypolicy() {
                 </li>
                 <li>
                   <p>
-                    <strong>Portability.</strong> Receive a copy of certain
+                    <strong>Portability</strong> Receive a copy of certain
                     information in a machine-readable format and/or request we
                     transmit it to another controller (where technically
-                    feasible).
+                    feasible)
                   </p>
                 </li>
                 <li>
                   <p>
-                    <strong>Consent Withdrawal.</strong> Withdraw consent where
+                    <strong>Consent Withdrawal. </strong>Withdraw consent where
                     processing is based on consent.
                   </p>
                 </li>
@@ -288,11 +288,12 @@ export default function Privacypolicy() {
                   </p>
                 </li>
               </ul>
-            </ol>
-
-            <h5>California (CCPA/CPRA) and U.S. State Notices</h5>
+            </ul>
+            <h5 className="mt-4">
+              B. California (CCPA/CPRA) and U.S. State Notices
+            </h5>
             <p>
-              If you are a California resident (or a resident of a U.S. state
+              f you are a California resident (or a resident of a U.S. state
               with similar laws), you may have rights to know, access, correct,
               delete, and opt out of certain processing (e.g., “sales,”
               “sharing” for cross-context behavioral advertising, targeted
@@ -300,23 +301,119 @@ export default function Privacypolicy() {
               sell personal information for money. To exercise rights, see How
               to Contact Us below.
             </p>
-
-            <h5>evada Residents</h5>
+            <h5 className="mt-4">C. Nevada Residents</h5>
             <p>
               Nevada residents may have the right to opt out of future “sales”
               of personal information as defined by Nevada law. See How to
               Contact Us.
             </p>
-            <h5>EU/EEA/UK Residents</h5>
+
+            <h5 className="mt-4">D. EU/EEA/UK Residents</h5>
             <p>
               EU/EEA/UK residents may exercise rights as described above. We
               respond within one month (or as permitted by law). See How to
               Contact Us.
             </p>
-            <h5>Marketing Preferences</h5>
-            <p>You may opt out of marketing emails by using the “unsubscribe” link in the email or contacting us. You will still receive transactional or service-related messages.
-</p>
+            <h5 className="mt-4">E. Marketing Preferences</h5>
+            <p>
+              You may opt out of marketing emails by using the “unsubscribe”
+              link in the email or contacting us. You will still receive
+              transactional or service-related messages.
+            </p>
           </div>
+          <h3 className="terms-heading mt-5">
+            SECURITY AND STORAGE OF INFORMATION
+          </h3>
+          <p className="text-white">
+            We take the security of your personal information seriously and use
+            administrative, technical, and physical safeguards designed to
+            protect it against loss, misuse, unauthorized access, alteration,
+            and destruction. However, no method of transmission or storage is
+            100% secure.
+          </p>
+
+          <h5 className="mt-5">Your responsibilities:</h5>
+          <p className="text-white">
+            Use a unique, strong password; keep your login credentials
+            confidential; and promptly notify us of any suspected unauthorized
+            access. We are not responsible for activity resulting from
+            compromised credentials.
+          </p>
+          <h5 className="mt-5">Retention:</h5>
+          <p className="text-white">
+            We retain personal information as reasonably necessary to fulfill
+            the purposes described in this Policy, comply with legal/contractual
+            obligations, resolve disputes, enforce agreements, and meet
+            applicable limitation periods.
+          </p>
+
+          <h3 className="terms-heading mt-5">THIRD-PARTY WEBSITES</h3>
+          <p className="text-white">
+            The Website may contain links to third-party websites or
+            applications. Your use of those properties is governed by their
+            privacy policies, not this Policy. We do not endorse and are not
+            responsible for the information practices of those third parties.
+          </p>
+          <h3 className="terms-heading mt-5">
+            TRANSFERS OF YOUR INFORMATION (INCLUDING PAYMENTS)
+          </h3>
+          <p className="text-white">
+            GO AI is based in the United States. Your information may be
+            processed and stored in the U.S. or other countries where privacy
+            laws may be different from those in your jurisdiction. By using the
+            Website or Services and providing information to us, you consent
+            (where required) to cross-border transfers in accordance with this
+            Policy and applicable law.
+            <br /> Payments. GO AI does not store full credit card numbers on
+            our servers. Payments are processed by third-party payment
+            processors via secure integrations (e.g., hosted fields/iframes).
+            Our processors—and GO AI—endeavor to maintain PCI compliance at the
+            levels required by the PCI Security Standards Council.
+          </p>
+          <h3 className="terms-heading mt-5">DO NOT TRACK</h3>
+          <p className="text-white">
+            There is currently no universally accepted standard for responding
+            to “Do Not Track” signals. Accordingly, we do not respond to DNT
+            signals at this time.
+          </p>
+          <h3 className="terms-heading mt-5">
+            CHILDREN AND PRIVACY 
+          </h3>
+          <p className="text-white">The Website and Services are not directed to
+            children under eighteen (18) years of age, and we do not knowingly
+            collect personal information from children under 18. If we learn
+            that a child under 18 has provided personal information, we will
+            delete it promptly. For more on children’s privacy, visit the U.S.
+            FTC’s guidance:
+            <a
+              href="https://www.ftc.gov/tips-advice/business-center/privacy-and-security/children%27s-privacy
+"
+            ></a></p>
+          <h3 className="terms-heading mt-5">
+            CONTACT INFORMATION & CHANGES TO THIS POLICY
+          </h3>
+          <p className="text-white">How to Contact Us (including rights requests)</p>
+          <ul className="text-white">
+            <li>
+              <p>Email: privacy@goai.global</p>
+            </li>
+            <li>
+              <p>Mail: GO AI, LLC — Privacy Office, [Insert Mailing Address]</p>
+            </li>
+          </ul>
+          <p className="text-white">
+            To exercise applicable privacy rights or ask questions about this
+            Policy, contact us using the methods above. We may need to verify
+            your identity to process certain requests.
+          </p>
+          <h5 className="mt-5 text-white">Changes to This Policy</h5>
+          <p className="text-white">
+            We may update this Policy from time to time. When we do, we will
+            revise the “Effective date” above and, where required by law,
+            provide additional notice. Your continued use of the Website or
+            Services after an update signifies your acceptance of the revised
+            Policy.
+          </p>
         </div>
       </section>
     </>
