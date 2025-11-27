@@ -152,15 +152,27 @@ export default function Footer() {
               </section>
               {/* Section: Links  */}
               {/* Copyright */}
-              <div
-                className="text-center p-3"
-                style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
-              >
-                © 2025&nbsp;
-                <a className="text-white" to="https://mdbootstrap.com/">
-                  GO AI, LLC
-                </a>
-              </div>
+             {/* FOOTER POLICY LINKS */}
+<div className="footer-links text-center py-3">
+  <Link to="/privacypolicy" className="footer-link">Privacy Policy</Link>
+  <Link to="/termandconditions" className="footer-link">Terms & Conditions</Link>
+  <Link to="/refundpolicy" className="footer-link">Refund/Cancellation Policy</Link>
+  <Link to="/cookie-policy" className="footer-link">Cookie Policy</Link>
+  <Link to="/policies-procedures" className="footer-link">Policies & Procedures</Link>
+  <Link to="/ca-residents" className="footer-link">CA Residents</Link>
+</div>
+
+{/* COPYRIGHT */}
+<div
+  className="text-center p-3"
+  style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
+>
+  © 2025&nbsp;
+  <a className="text-white" href="https://mdbootstrap.com/">
+    GO AI, LLC
+  </a>
+</div>
+
               {/* Copyright */}
             </footer>
             {/* Footer */}

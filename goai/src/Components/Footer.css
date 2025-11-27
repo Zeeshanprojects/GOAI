@@ -4,3 +4,20 @@ footer{
 a{
     text-decoration: none !important;
 }
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer-link {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.footer-link:hover {
+  color: #a78bfa; /* light purple hover or your brand color */
+}
