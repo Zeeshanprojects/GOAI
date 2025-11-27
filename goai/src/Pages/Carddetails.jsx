@@ -52,14 +52,7 @@ export default function Carddetails() {
         )}
 
         {/* OTHER OPTIONS */}
-        <label className="radio-option">
-          <input
-            type="radio"
-            name="payment"
-            onChange={() => setMethod("crypto")}
-          />
-          <span>Bitcoin and other cryptocurrencies</span>
-        </label>
+       
 
         <label className="radio-option">
           <input

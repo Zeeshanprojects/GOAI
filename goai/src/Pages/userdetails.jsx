@@ -21,7 +21,7 @@ export default function Userdetails() {
   const [form, setForm] = useState({
     firstname: "",
     lastname: "",
-    gender: "",
+   
     dob: "",
     username: "",
     website: "",
@@ -45,21 +45,7 @@ export default function Userdetails() {
     ageConfirmed: false,
     termsAccepted: false,
   });
-  const handleExpiryMonth = (e) => {
-    const value = e.target.value; // Example: "2025-08"
 
-    if (!value) return;
-
-    const [year, month] = value.split("-");
-
-    // Convert "2025-08" → 08/25
-    const formatted = `${month}/${year.slice(2)}`;
-
-    setForm((prev) => ({
-      ...prev,
-      expiry: formatted,
-    }));
-  };
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -70,7 +56,7 @@ export default function Userdetails() {
   };
 
   const handleContinue = () => {
-    // REQUIRED FIELDS
+   
     if (
       !form.firstname ||
       !form.lastname ||
@@ -123,162 +109,244 @@ export default function Userdetails() {
       <h1 className="title">Your Account Information</h1>
 
       {/* PERSONAL INFO */}
-      <h3 className="details-section-heading">Personal Information</h3>
-      <div className="details-grid">
-        <input
-          name="firstname"
-          onChange={handleChange}
-          placeholder="First Name *"
-          className="details-input"
-        />
-        <input
-          name="lastname"
-          onChange={handleChange}
-          placeholder="Last Name *"
-          className="details-input"
-        />
+    <h3 className="details-section-heading">Personal Information</h3>
+<div className="details-grid">
 
-        {/* DOB CALENDAR */}
-        <input
-          name="dob"
-          onChange={handleChange}
-          type="date"
-          className="details-input"
-          placeholder="Date of Birth *"
-        />
-      </div>
+  {/* FIRST NAME */}
+  <div className="details-field">
+    <label className="details-label">First Name *</label>
+    <input
+      name="firstname"
+      onChange={handleChange}
+      placeholder="e.g., John"
+      className="details-input"
+    />
+  </div>
+
+  {/* LAST NAME */}
+  <div className="details-field">
+    <label className="details-label">Last Name *</label>
+    <input
+      name="lastname"
+      onChange={handleChange}
+      placeholder="e.g., Doe"
+      className="details-input"
+    />
+  </div>
+
+  {/* DOB */}
+  <div className="details-field">
+    <label className="details-label">Date of Birth *</label>
+    <input
+      name="dob"
+      onChange={handleChange}
+      type="date"
+      className="details-input"
+    />
+  </div>
+
+</div>
+
 
       {/* ACCOUNT INFO */}
-      <h3 className="details-section-heading">Account Information</h3>
-      <div className="details-grid">
-        <input
-          name="username"
-          onChange={handleChange}
-          placeholder="Username *"
-          className="details-input"
-        />
-        <input
-          name="website"
-          onChange={handleChange}
-          placeholder="Your Website URL"
-          className="details-input"
-        />
-        <input
-          name="password"
-          onChange={handleChange}
-          placeholder="Choose Your Password *"
-          className="details-input"
-          type="password"
-        />
-        <input
-          name="confirmPassword"
-          onChange={handleChange}
-          placeholder="Confirm Your Password *"
-          className="details-input"
-          type="password"
-        />
-      </div>
+    <h3 className="details-section-heading">Account Information</h3>
+<div className="details-grid">
+
+  <div className="details-field">
+    <label className="details-label">Username *</label>
+    <input
+      name="username"
+      onChange={handleChange}
+      placeholder="e.g., johndoe99"
+      className="details-input"
+    />
+  </div>
+
+  <div className="details-field">
+    <label className="details-label">Website (Optional)</label>
+    <input
+      name="website"
+      onChange={handleChange}
+      placeholder="e.g., https://yourwebsite.com"
+      className="details-input"
+    />
+  </div>
+
+  <div className="details-field">
+    <label className="details-label">Password *</label>
+    <input
+      name="password"
+      onChange={handleChange}
+      placeholder="Enter a strong password"
+      type="password"
+      className="details-input"
+    />
+  </div>
+
+  <div className="details-field">
+    <label className="details-label">Confirm Password *</label>
+    <input
+      name="confirmPassword"
+      onChange={handleChange}
+      placeholder="Re-enter your password"
+      type="password"
+      className="details-input"
+    />
+  </div>
+
+</div>
 
       {/* MAILING ADDRESS */}
-      <h3 className="details-section-heading">Mailing Address</h3>
-      <div className="details-grid">
-        <input
-          name="address1"
-          onChange={handleChange}
-          placeholder="Address Line 1 *"
-          className="details-input"
-        />
-        <input
-          name="address2"
-          onChange={handleChange}
-          placeholder="Address Line 2"
-          className="details-input"
-        />
-        <input
-          name="zip"
-          onChange={handleChange}
-          placeholder="ZIP Code"
-          className="details-input"
-        />
-        <input
-          name="city"
-          onChange={handleChange}
-          placeholder="City *"
-          className="details-input"
-        />
-        <input
-          name="state"
-          onChange={handleChange}
-          placeholder="State"
-          className="details-input"
-        />
-      </div>
+    <h3 className="details-section-heading">Mailing Address</h3>
+<div className="details-grid">
+
+  <div className="details-field">
+    <label className="details-label">Address Line 1 *</label>
+    <input
+      name="address1"
+      onChange={handleChange}
+      placeholder="e.g., 221B Baker Street"
+      className="details-input"
+    />
+  </div>
+
+  <div className="details-field">
+    <label className="details-label">Address Line 2</label>
+    <input
+      name="address2"
+      onChange={handleChange}
+      placeholder="Apartment, Suite, etc."
+      className="details-input"
+    />
+  </div>
+
+  <div className="details-field">
+    <label className="details-label">ZIP Code</label>
+    <input
+      name="zip"
+      onChange={handleChange}
+      placeholder="e.g., 75001"
+      className="details-input"
+    />
+  </div>
+
+  <div className="details-field">
+    <label className="details-label">City *</label>
+    <input
+      name="city"
+      onChange={handleChange}
+      placeholder="e.g., New York"
+      className="details-input"
+    />
+  </div>
+
+  <div className="details-field">
+    <label className="details-label">State</label>
+    <input
+      name="state"
+      onChange={handleChange}
+      placeholder="e.g., California"
+      className="details-input"
+    />
+  </div>
+
+</div>
+
 
       {/* CONTACT INFO */}
-      <h3 className="details-section-heading">Contact Information</h3>
-      <div className="details-grid">
-        <input
-          name="phone"
-          onChange={handleChange}
-          placeholder="Primary Phone Number *"
-          className="details-input"
-        />
-        <input
-          name="mobile"
-          onChange={handleChange}
-          placeholder="Mobile Number"
-          className="details-input"
-        />
-        <input
-          name="email"
-          onChange={handleChange}
-          placeholder="Email Address *"
-          className="details-input"
-        />
-        <input
-          name="confirmEmail"
-          onChange={handleChange}
-          placeholder="Confirm Email Address *"
-          className="details-input"
-        />
-      </div>
+    <h3 className="details-section-heading">Contact Information</h3>
+<div className="details-grid">
+
+  <div className="details-field">
+    <label className="details-label">Primary Phone Number *</label>
+    <input
+      name="phone"
+      onChange={handleChange}
+      placeholder="e.g., +1 555 123 4567"
+      className="details-input"
+    />
+  </div>
+
+  <div className="details-field">
+    <label className="details-label">Mobile Number</label>
+    <input
+      name="mobile"
+      onChange={handleChange}
+      placeholder="e.g., +1 555 987 6543"
+      className="details-input"
+    />
+  </div>
+
+  <div className="details-field">
+    <label className="details-label">Email Address *</label>
+    <input
+      name="email"
+      onChange={handleChange}
+      placeholder="e.g., john@example.com"
+      className="details-input"
+    />
+  </div>
+
+  <div className="details-field">
+    <label className="details-label">Confirm Email Address *</label>
+    <input
+      name="confirmEmail"
+      onChange={handleChange}
+      placeholder="Re-enter your email"
+      className="details-input"
+    />
+  </div>
+
+</div>
 
       {/* CARD INFO */}
-      <h3 className="details-section-heading">Credit Card Information</h3>
+     <h3 className="details-section-heading">Credit Card Information</h3>
+<div className="details-grid">
 
-      <div className="details-grid">
-        {/* Cardholder Name */}
-        <input
-          name="cardName"
-          onChange={handleChange}
-          placeholder="Name on Card *"
-          className="details-input"
-        />
-        <input
-          name="cardNumber"
-          onChange={handleChange}
-          placeholder="Card Number (1234 5678 9012 3456) *"
-          className="details-input"
-          maxLength="19"
-        />
+  <div className="details-field">
+    <label className="details-label">Name on Card *</label>
+    <input
+      name="cardName"
+      onChange={handleChange}
+      placeholder="e.g., John Doe"
+      className="details-input"
+    />
+  </div>
 
-        {/* CVV */}
-        <input
-          name="cvv"
-          onChange={handleChange}
-          placeholder="CVV (3 or 4 digits) *"
-          className="details-input"
-          maxLength="4"
-        />
+  <div className="details-field">
+    <label className="details-label">Card Number *</label>
+    <input
+      name="cardNumber"
+      onChange={handleChange}
+      placeholder="1234 5678 9012 3456"
+      maxLength="19"
+      className="details-input"
+    />
+  </div>
 
-        {/* ZIP Code (optional) */}
-        <input
-          name="zip"
-          onChange={handleChange}
-          placeholder="Billing ZIP / Postal Code"
-          className="details-input"
-        />
-      </div>
+  <div className="details-field">
+    <label className="details-label">CVV *</label>
+    <input
+      name="cvv"
+      onChange={handleChange}
+      placeholder="3 or 4 digits"
+      maxLength="4"
+      className="details-input"
+    />
+  </div>
+
+  <div className="details-field">
+    <label className="details-label">Billing ZIP / Postal Code</label>
+    <input
+      name="zip"
+      onChange={handleChange}
+      placeholder="e.g., 75001"
+      className="details-input"
+    />
+  </div>
+
+</div>
+
 
       <div className="details-checkbox-container">
         <label className="details-checkbox">

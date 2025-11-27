@@ -84,6 +84,21 @@
   font-size: 15px;
   color: #e4d8ff;
 }
+.details-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.details-label {
+  color: #cfc9dd;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.details-input {
+  height: 50px;
+}
 
 /* Checkbox style */
 .details-checkbox input[type="checkbox"] {
