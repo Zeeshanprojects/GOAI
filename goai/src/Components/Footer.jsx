@@ -161,7 +161,7 @@ export default function Footer() {
                   Terms & Conditions
                 </Link>
                 <Link to="/refundpolicy" className="footer-link">
-                  Refund/Cancellation Policy
+                  Refund Policy
                 </Link>
                 <Link to="/cookie" className="footer-link">
                   Cookie Policy

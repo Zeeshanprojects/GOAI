@@ -30,24 +30,23 @@ export default function Carddetails() {
             <p className="secure-text">🔒 Secure, fast checkout</p>
 
             <div className="card-grid">
-             <div className="card-field">
-  <label>Card number</label>
+              <div className="card-field">
+                <label>Card number</label>
 
-  <div className="card-input-wrapper">
-    <input
-      type="text"
-      placeholder="1234 1234 1234 1234"
-      className="card-input"
-    />
+                <div className="card-input-wrapper">
+                  <input
+                    type="text"
+                    placeholder="1234 1234 1234 1234"
+                    className="card-input"
+                  />
 
-    <img
-      src={Images.cardlogos}
-      alt="cardlogo"
-      className="card-logo"
-    />
-  </div>
-</div>
-
+                  <img
+                    src={Images.cardlogos}
+                    alt="cardlogo"
+                    className="card-logo"
+                  />
+                </div>
+              </div>
 
               <div className="card-field">
                 <label>Expiration date</label>
@@ -97,47 +96,51 @@ export default function Carddetails() {
 
         <p className="policy-text">
           Your personal data will be used to process your order and support your
-          experience. Read our <span ><Link to="/privacypolicy"></Link>privacy policy</span>
+          experience. Read our{" "}
+          <span>
+            <Link to="/privacypolicy"></Link>privacy policy
+          </span>
         </p>
 
         <label className="checkbox-row">
-      <input type="checkbox" />
-
-  <span>
-    I have read and agree to the website{" "}
-    <Link to="/refundpolicy">
-      <strong>Refund Policy *</strong>
-    </Link>
-  </span>
-        </label>
-  <label className="checkbox-row">
           <input type="checkbox" />
- <span>I have read and agree to the website  <Link to="/termandconditions">
-      <strong>Terms and Conditions *</strong>
-    </Link> </span>
-   
+
+          <span>
+            I have read and agree to the website{" "}
+            <Link to="/refundpolicy">
+              <strong>Refund Policy *</strong>
+            </Link>
+          </span>
+        </label>
+        <label className="checkbox-row">
+          <input type="checkbox" />
+          <span>
+            I have read and agree to the website{" "}
+            <Link to="/termandconditions">
+              <strong>Terms and Conditions *</strong>
+            </Link>{" "}
+          </span>
         </label>
 
-         
-  <label className="checkbox-row">
+        <label className="checkbox-row">
           <input type="checkbox" />
- <span>I have read and agree to the website  <Link to="/privacypolicy">
-      <strong>Privacy Policy*</strong>
-    </Link> </span>
-   
+          <span>
+            I have read and agree to the website{" "}
+            <Link to="/privacypolicy">
+              <strong>Privacy Policy*</strong>
+            </Link>{" "}
+          </span>
         </label>
         <label className="checkbox-row">
           <input type="checkbox" />
           <span>I confirm that this is a Recurring Subscription *</span>
         </label>
 
-      
-
         <label className="checkbox-row">
           <input type="checkbox" />
           <span>I confirm that I am 18 years old or over. *</span>
         </label>
-          <label className="checkbox-row">
+        <label className="checkbox-row">
           <input type="checkbox" />
           <span>I want to receive updates about products and promotions</span>
         </label>
