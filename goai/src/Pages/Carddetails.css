@@ -165,7 +165,9 @@
   .card-grid {
     grid-template-columns: 1fr;
   }
-
+.card-logo{
+  height: 22px;
+  margin-top: 4px;}
   .payment-container {
     padding: 20px;
   }
