@@ -20,6 +20,7 @@ import TermsandConditions from "./Pages/TermsandConditions";
 import RefundPolicy from "./Pages/RefundPolicy";
 import Privacypolicy from "./Pages/Privacypolicy";
 import Cookie from "./Pages/Cookie";
+import CAresidents from "./Pages/CAresidents.jsx"
 import PoliciesandProcedures from "./Pages/PoliciesandProcedures";
 
 function App() {
@@ -56,6 +57,7 @@ function App() {
           <Route path="/privacypolicy" element={<Privacypolicy/>}/>
           <Route path="/cookie" element={<Cookie/>}/>
           <Route path="/PoliciesandProcedures" element={<PoliciesandProcedures/>}/>
+          <Route path="/caresident" element={<CAresidents/>}/>
         </Routes>
         <Footer /> {/* Always visible */}
       </BrowserRouter>

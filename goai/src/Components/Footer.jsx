@@ -166,10 +166,10 @@ export default function Footer() {
                 <Link to="/cookie" className="footer-link">
                   Cookie Policy
                 </Link>
-                <Link to="/policies-procedures" className="footer-link">
+                <Link to="/PoliciesandProcedures" className="footer-link">
                   Policies & Procedures
                 </Link>
-                <Link to="/ca-residents" className="footer-link">
+                <Link to="/caresident" className="footer-link">
                   CA Residents
                 </Link>
               </div>
