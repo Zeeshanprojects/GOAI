@@ -5,7 +5,7 @@ import "./Platform.css";
 
 export default function Platform() {
   useEffect(() => {
-    document.title = "Platform | GOAI";
+    document.title = "Platform | GO AI";
     AOS.init({
       duration: 1200,
       offset: 120,
@@ -88,7 +88,7 @@ export default function Platform() {
     <section className="platform-value">
   <div data-aos="fade-up">
     <div className="text-center">
-      <h2 className="title">Why Choose GOAI?</h2>
+      <h2 className="title">Why Choose GO AI?</h2>
       <p className="text-white">
         GO AI empowers you to make smarter financial decisions with clarity and
         precision. It eliminates guesswork by providing institutional-level

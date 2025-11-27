@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 export default function RefundPolicy() {
   useEffect(() => {
-    document.title = "Terms and Conditions | GOAI";
+    document.title = "Terms and Conditions | GO AI";
     AOS.init({
       duration: 1200,
       offset: 120,

@@ -182,7 +182,7 @@ const [loading, setLoading] = useState(false);
 
 export default function Membership() {
   useEffect(() => {
-    document.title = "Membership | GOAI";
+    document.title = "Membership | GO AI";
     AOS.init({
       duration: 1200,
       offset: 120,
@@ -207,7 +207,7 @@ export default function Membership() {
       title: "Go Create",
       price: "$1000",
       fee: "Initial Fee",
-      features: ["More Education", "More Alerts", "More Softwares"],
+      features: ["More Education", "More Alerts", "More Software"],
       orb: "/orb3.png",
     },
     {
@@ -218,7 +218,7 @@ export default function Membership() {
       features: [
         "More Education",
         "More Alerts",
-        "More Softwares",
+        "More Software",
         "VIP",
         "Automations",
       ],

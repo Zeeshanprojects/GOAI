@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 
 export default function TermsandConditions() {
   useEffect(() => {
-    document.title = "Terms and Conditions | GOAI";
+    document.title = "Terms and Conditions | GO AI";
     AOS.init({
       duration: 1200,
       offset: 120,
@@ -23,7 +23,7 @@ export default function TermsandConditions() {
             <h1 className="title">Terms & Conditions</h1>
             <p className="payment-subtext ">
               Please review the following terms carefully. By purchasing or
-              accessing GOAI services, you agree to comply with these
+              accessing GO AI services, you agree to comply with these
               conditions.
               <br />
               <span className="fw-bold">Last Updated: November 25, 2025</span>

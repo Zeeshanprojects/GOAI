@@ -4,7 +4,7 @@ import "./Carddetails.css";
 export default function Carddetails() {
   const [method, setMethod] = useState("card");
   useEffect(() => {
-    document.title = "Card Details | GOAI";
+    document.title = "Card Details | GO AI";
   });
   return (
     <section className="payment-container">

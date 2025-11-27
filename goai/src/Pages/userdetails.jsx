@@ -111,6 +111,7 @@ export default function Userdetails() {
   };
 
   useEffect(() => {
+    document.title="Userdetails | GO AI "
     AOS.init({ duration: 1200, offset: 120, once: true });
   }, []);
 

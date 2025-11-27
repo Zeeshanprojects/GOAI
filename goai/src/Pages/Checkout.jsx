@@ -7,7 +7,7 @@ import "./Checkout.css";
 
 export default function Checkout() {
   useEffect(() => {
-    document.title = "Checkout | GOAI";
+    document.title = "Checkout | GO AI";
     AOS.init({
       duration: 1200,
       offset: 120,

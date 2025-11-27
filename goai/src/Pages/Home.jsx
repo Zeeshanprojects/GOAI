@@ -188,7 +188,7 @@ export default function Home() {
   const [selectedPlan, setSelectedPlan] = useState(null);
 
   useEffect(() => {
-    document.title = "Home | GOAI";
+    document.title = "Home | GO AI";
     AOS.init({
       duration: 1200,
       offset: 120,
@@ -211,7 +211,7 @@ export default function Home() {
       title: "Go Create",
       price: "$1000",
       fee: "Initial Fee",
-      features: ["More Education", "More Alerts", "More Softwares"],
+      features: ["More Education", "More Alerts", "More Software"],
       orb: "/orb3.png",
     },
     {
@@ -222,7 +222,7 @@ export default function Home() {
       features: [
         "More Education",
         "More Alerts",
-        "More Softwares",
+        "More Software",
         "VIP",
         "Automations",
       ],
@@ -242,7 +242,7 @@ export default function Home() {
             src={Images.bannercircle}
             className="banner-circle"
             fetchPriority="high"
-            alt="GOAI Sphere"
+            alt="GO AI Sphere"
           />
           <div className="text-content" data-aos="fade-up">
             <h1>
@@ -472,11 +472,11 @@ export default function Home() {
               data-bs-toggle="collapse"
               data-bs-target="#faq1"
             >
-              What is GOAI and how does it work?
+              What is GO AI and how does it work?
               <i className="fa-solid fa-chevron-down faq-icon mt-2"></i>
             </button>
             <div id="faq1" className="collapse faq-answer">
-              GOAI is a wealth-tech ecosystem combining AI, automation, tools,
+              GO AI is a wealth-tech ecosystem combining AI, automation, tools,
               and education to help individuals make smarter financial
               decisions. Members access analytics, mentorship, and software
               built for scalable growth.

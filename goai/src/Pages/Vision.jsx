@@ -5,7 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 export default function Vision() {
   useEffect(() => {
-    document.title = "Vision | GOAI";
+    document.title = "Vision | GO AI";
     AOS.init({
       duration: 1200,
       offset: 120,
