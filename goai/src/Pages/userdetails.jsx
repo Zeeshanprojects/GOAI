@@ -39,11 +39,6 @@ export default function Userdetails() {
     expiry: "",
     cvv: "",
     cardNumber: "",
-    subscription: false,
-    refundpolicy: false,
-    ageConfirmed: false,
-    termsAccepted: false,
-    promotion: false,
   });
 
   const handleChange = (e) => {
@@ -65,10 +60,6 @@ export default function Userdetails() {
       !form.city ||
       !form.email ||
       !form.phone ||
-      !form.ageConfirmed ||
-      !form.termsAccepted ||
-        !form.refundpolicy ||
-      !form.termsAccepted ||
       !form.cardName ||
       !form.cardNumber ||
       !form.cvv
@@ -143,6 +134,8 @@ export default function Userdetails() {
             className="details-input"
           />
         </div>
+
+        {/* GENDER */}
       </div>
 
       {/* ACCOUNT INFO */}
@@ -333,37 +326,6 @@ export default function Userdetails() {
             className="details-input"
           />
         </div>
-      </div>
-
-      <div className="details-checkbox-container">
-        <label className="details-checkbox">
-          <input type="checkbox" name="ageConfirmed" onChange={handleChange} />
-          <span>I Confirm that I am 18 years old or over. *</span>
-        </label>
-
-        <label className="details-checkbox">
-          <input type="checkbox" name="subscription" onChange={handleChange} />
-          <span>I confirm that this is a recurring subscription. *</span>
-        </label>
-
-        <label className="details-checkbox">
-          <input type="checkbox" name="termsAccepted" onChange={handleChange} />
-          <span>
-            I agree to the
-            <Link to="/termandconditions"> Terms & Conditions *</Link>
-          </span>
-        </label>
-
-        <label className="details-checkbox">
-          <input type="checkbox" name="refundpolicy" onChange={handleChange} />
-          <span>
-            I agree to the <Link to="/refundpolicy">refund policy</Link> *
-          </span>
-        </label>
-        <label className="details-checkbox">
-          <input type="checkbox" name="promotions" onChange={handleChange} />
-          <span>I want to receive updates about products and promotions</span>
-        </label>
       </div>
 
       <div className="details-buttons">
