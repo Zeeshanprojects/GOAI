@@ -16,5 +16,6 @@ const Images = {
   icon2: new URL("./icon2.png", import.meta.url).href,
   icon3: new URL("./icon3.png", import.meta.url).href,
   rankimage:new URL("./rank-image.webp",import.meta.url).href,
+  cardlogos:new URL("./credit-cardlogos.webp",import.meta.url).href,
 };
 export default Images;

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./Carddetails.css";
 
 export default function Carddetails() {
@@ -81,22 +82,22 @@ export default function Carddetails() {
 
         <p className="policy-text">
           Your personal data will be used to process your order and support your
-          experience. Read our privacy policy
+          experience. Read our <span ><Link to="/privacypolicy"></Link>privacy policy</span>
         </p>
 
         <label className="checkbox-row">
           <input type="checkbox" />
-          <span>I have read and agree to the website Refund Policy *</span>
+          <span>I have read and agree to the website<span><Link to="/refundpolicy"></Link>Refund Policy *</span></span>
         </label>
-
+  <label className="checkbox-row">
+          <input type="checkbox" />
+ <span>I have read and agree to the website<span><Link to="/termandconditions"></Link>Terms and Condition *</span> </span>
+        </label>
         <label className="checkbox-row">
           <input type="checkbox" />
           <span>I confirm that this is a Recurring Subscription. *</span>
         </label>
-  <label className="checkbox-row">
-          <input type="checkbox" />
- <span>I have read and agree to the website Terms and Condition *</span>
-        </label>
+
         <label className="checkbox-row">
           <input type="checkbox" />
           <span>I want to receive updates about products and promotions.</span>
