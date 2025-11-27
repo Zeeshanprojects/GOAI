@@ -21,12 +21,11 @@ export default function TermsandConditions() {
           {/* PAGE HEADER */}
           <div className="text-center">
             <h1 className="title">Terms & Conditions</h1>
-            <p className="payment-subtext ">
-              GO AI, LLC – Unified Website Terms, Purchase Terms &
-              Communications Policy
-              <br />
-              <span className="fw-bold">Last Updated: November 25, 2025</span>
-            </p>
+          <p className="text-white">
+            <span className="fw-bold">Last Updated: November 25, 2025</span>
+          </p>
+              
+          
           </div>
 
           {/* MAIN CONTENT */}
