@@ -315,27 +315,202 @@ export default function PoliciesandProcedures() {
             <h5>Rewards Buying</h5>
             <p>Prohibited; may result in legal action.</p>
           </li>
-           <h3 className="terms-heading mt-5">Responsibilities of Affiliates
-</h3>
-<p>Keep your contact/tax info current; educate your team ethically; no disparagement; provide current documents to applicants; respect privacy; zero tolerance for harassment.</p>
-       
-       <h5 className="terms-heading mt-5">Sales Requirements
-</h5>
-<ol>
-    <li>
-        <h5>Product Sales</h5>
-        <p> Rewards are based on bona fide sales to end users. Orders and payments must be placed through official GO AI systems; do not accept direct payments except approved “cash for virtual gift card” workflows; misrepresentation/redirection of client funds is grounds for termination and potential criminal referral.</p>
-    </li>
-    <li>
-        <h5>No Territory Restrictions
-</h5>
-<p>No exclusive territories.
-</p>
-    </li>
-    <li>
-        
-    </li>
-</ol>
+          <h3 className="terms-heading mt-5">Responsibilities of Affiliates</h3>
+          <p>
+            Keep your contact/tax info current; educate your team ethically; no
+            disparagement; provide current documents to applicants; respect
+            privacy; zero tolerance for harassment.
+          </p>
+          <h5 className="terms-heading mt-5">Sales Requirements</h5>
+          <ol>
+            <li>
+              <h5>Product Sales</h5>
+              <p>
+                {" "}
+                Rewards are based on bona fide sales to end users. Orders and
+                payments must be placed through official GO AI systems; do not
+                accept direct payments except approved “cash for virtual gift
+                card” workflows; misrepresentation/redirection of client funds
+                is grounds for termination and potential criminal referral.
+              </p>
+            </li>
+            <li>
+              <h5>No Territory Restrictions</h5>
+              <p>No exclusive territories.</p>
+            </li>
+          </ol>
+          <h3 className="terms-heading mt-5">Rewards & Commissions</h3>
+          <ul>
+            <li>
+              <h5>Qualifications & Payouts</h5>
+              <p>
+                {" "}
+                Stay active and compliant to earn. Minimum payout $25. Paid via
+                current payout method; GO AI isn’t responsible if you lose
+                access to your third-party payout accounts.
+              </p>
+            </li>
+            <li>
+              <h5> Adjustments</h5>
+              <p>
+                Returns/cancellations may be deducted from future payouts;
+                submit payout issues to support@goai.global with documentation.
+                Missing tax forms may trigger withholdings as required by law.
+              </p>
+            </li>
+          </ul>
+          <h3 className="terms-heading mt-5">
+            {" "}
+            Product Guarantees, Repurchase & Rescission
+          </h3>
+          <ul>
+            <li>
+              <h5>Right to Cancel</h5>
+              <p>
+                {" "}
+                Three (3) business-day rescission (5 in AK, 15 in MT) for
+                applicable sales; refer clients to their invoice/notice of right
+                to cancel.
+              </p>
+            </li>
+            <li>
+              <h5>Guarantee & Refund Policy</h5>
+              <p>
+                {" "}
+                GO AI offers a 7-day 100% satisfaction guarantee on applicable
+                subscriptions; after 7 days, no refunds (cancel stops future
+                billing; access remains through current term). Montana residents
+                may cancel Affiliate enrollment within 15 days. Billing grace
+                period: 48 hours, after which unpaid subscriptions cancel.
+              </p>
+            </li>
+            <li>
+              <h5>Stop Payments/Reissues</h5>
+              <p>
+                {" "}
+                $50 processing fee; fraudulent payment activity leads to
+                termination and referral to law enforcement.
+              </p>
+            </li>
+          </ul>
+          <h3 className="terms-heading mt-5">
+            {" "}
+            Dispute Resolution & Disciplinary Proceedings
+          </h3>
+          <ul>
+            <li>
+              <h5> Sanctions</h5>
+              <p>
+                {" "}
+                GO AI may issue warnings, require corrective action, impose
+                fines, withhold/forfeit commissions, suspend, terminate,
+                restrict access, or take legal action.
+              </p>
+            </li>
+            <li>
+              <h5>Grievances</h5>
+              <p>
+                Attempt to resolve with upline; policy matters go to
+                legal@goai.global; timely reporting required (within two years
+                of first occurrence).
+              </p>
+            </li>
+            <li>
+              <h5>Mediation</h5>
+              <p>
+                Good-faith mediation in the City of Sheridan, Wyoming within 60
+                days of mediator appointment; parties split costs; each pays own
+                attorneys’ fees.
+              </p>
+            </li>
+            <li>
+              <h5>Arbitration</h5>
+              <p>
+                {" "}
+                If mediation fails, arbitration (AAA or JAMS) under their rules
+                with Federal Rules of Evidence/Civil Procedure discovery and
+                motion practice; held in Sheridan, Wyoming; one arbitrator;
+                equal time; decision binding; confidentiality required.
+                Injunctive relief may be sought in court for IP and
+                non-solicitation.
+              </p>
+            </li>
+            <li>
+              <h5>Damage Waiver</h5>
+              <p>
+                {" "}
+                No incidental/consequential, exemplary, or punitive damages
+              </p>
+            </li>
+            <li>
+              <h5>Class Action Waiver</h5>
+              <p>Claims must be brought individually.</p>
+            </li>
+            <li>
+              <h5> Governing Law, Jurisdiction & Venue</h5>
+              <p>
+                For matters not subject to arbitration: Sheridan County, Wyoming
+                courts have exclusive jurisdiction/venue; FAA governs
+                arbitration; Wyoming law governs all other matters.
+              </p>
+            </li>
+            <li>
+              <h5>Louisiana Residents</h5>
+              <p>
+                Residents may bring actions in their home forum under Louisiana
+                law.
+              </p>
+            </li>
+          </ul>
+          <h3 className="terms-heading mt-5">Payments</h3>
+          <ul>
+            <h5>Credit Cards & Checking Accounts</h5>
+            <p>
+              {" "}
+              Do not use another person’s card/account for enrollments or
+              purchases; payments are made only to the registered Affiliate
+              account.
+            </p>
+          </ul>
+          <ul>
+            <h5> Sales Taxes</h5>
+            <p>
+              GO AI collects/remits sales taxes as required (where applicable).
+              Exemptions require valid certificates on file; subscriptions may
+              be tax-exempt under current law (subject to change).
+            </p>
+          </ul>
+          <h3 className="terms-heading mt-5">
+            GO AI Affiliate Compensation Plan
+          </h3>
+          <p>
+            GO AI operates a binary compensation model with two other bonuses to
+            earn from. Please see the Compensation Plan on the website for more
+            details. Illustrative examples are available upon request and will
+            be delivered with a current Income Disclosure Statement.
+          </p>
+          <h3 className="terms-heading mt-5">efinitions</h3>
+          <p>
+            Key terms (Glossary) follow the meanings used in this document and
+            the current Compensation Plan.
+          </p>
+          <ul>
+            <h5>Corporate Directory (GO AI)</h5>
+            <li>
+              <p>
+                Corporate Address: 30 N Gould St. #57397, Sheridan, WY 82801
+              </p>
+            </li>
+            <li>
+              <p>Phone: (770) 847-GOAI (4264)</p>
+            </li>
+            <li>
+              <p>Support: support@goai.global</p>
+            </li>
+            <li>
+              <p>Legal/Compliance: legal@goai.global</p>
+            </li>
+          </ul>
         </div>
       </section>
     </>
