@@ -19,6 +19,7 @@ import Membership from "./Pages/Membership";
 import TermsandConditions from "./Pages/TermsandConditions";
 import RefundPolicy from "./Pages/RefundPolicy";
 import Privacypolicy from "./Pages/Privacypolicy";
+import Cookie from "./Pages/Cookie";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -52,6 +53,7 @@ function App() {
           <Route path="/termandconditions" element={<TermsandConditions/>}/>
           <Route path="/refundpolicy" element={<RefundPolicy/>}/>
           <Route path="/privacypolicy" element={<Privacypolicy/>}/>
+          <Route path="/cookie" element={<Cookie/>}/>
         </Routes>
         <Footer /> {/* Always visible */}
       </BrowserRouter>
