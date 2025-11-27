@@ -112,7 +112,7 @@ export default function PoliciesandProcedures() {
             </li>
           </ul>{" "}
           <h3 className="terms-heading mt-5"> Becoming an Affiliate</h3>
-          <p>
+          <p className="text-white">
             Affiliates are independent contractors and must represent themselves
             as an “Independent GO AI Affiliate.” No one may imply employment or
             corporate office.
@@ -316,7 +316,7 @@ export default function PoliciesandProcedures() {
             <p>Prohibited; may result in legal action.</p>
           </li>
           <h3 className="terms-heading mt-5">Responsibilities of Affiliates</h3>
-          <p>
+          <p className="text-white">
             Keep your contact/tax info current; educate your team ethically; no
             disparagement; provide current documents to applicants; respect
             privacy; zero tolerance for harassment.
@@ -463,7 +463,7 @@ export default function PoliciesandProcedures() {
             </li>
           </ul>
           <h3 className="terms-heading mt-5">Payments</h3>
-          <ul>
+          <ul className="text-white">
             <h5>Credit Cards & Checking Accounts</h5>
             <p>
               {" "}
@@ -472,9 +472,9 @@ export default function PoliciesandProcedures() {
               account.
             </p>
           </ul>
-          <ul>
+          <ul className="text-white">
             <h5> Sales Taxes</h5>
-            <p>
+            <p className="text-white">
               GO AI collects/remits sales taxes as required (where applicable).
               Exemptions require valid certificates on file; subscriptions may
               be tax-exempt under current law (subject to change).
@@ -483,19 +483,20 @@ export default function PoliciesandProcedures() {
           <h3 className="terms-heading mt-5">
             GO AI Affiliate Compensation Plan
           </h3>
-          <p>
+          <p className="text-white">
             GO AI operates a binary compensation model with two other bonuses to
             earn from. Please see the Compensation Plan on the website for more
             details. Illustrative examples are available upon request and will
             be delivered with a current Income Disclosure Statement.
           </p>
-          <h3 className="terms-heading mt-5">efinitions</h3>
-          <p>
+          <h3 className="terms-heading mt-5">definitions</h3>
+          <p className="text-white">
             Key terms (Glossary) follow the meanings used in this document and
             the current Compensation Plan.
           </p>
+          <h5 className="text-white">Corporate Directory (GO AI)</h5>
           <ul>
-            <h5>Corporate Directory (GO AI)</h5>
+            
             <li>
               <p>
                 Corporate Address: 30 N Gould St. #57397, Sheridan, WY 82801
