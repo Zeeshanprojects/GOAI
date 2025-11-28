@@ -136,8 +136,8 @@ export default function Footer() {
                         }}
                       />
                       <p>
-                        <i className="fas fa-home mr-3" /> GO AI, LLC 30 N Gould
-                        St. #57397 Sheridan, WY, 82801
+                        <i className="fas fa-home mr-3" /> GO AI, LLC Wyoming, USA
+
                       </p>
                       <p>
                         <i className="fas fa-envelope mr-3" /> info@goai.com
