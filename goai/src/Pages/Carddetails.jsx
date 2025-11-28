@@ -40,11 +40,7 @@ export default function Carddetails() {
                     className="card-input"
                   />
 
-                  <img
-                    src={Images.cardlogos}
-                    alt="cardlogo"
-                    className="card-logo"
-                  />
+                 
                 </div>
               </div>
 

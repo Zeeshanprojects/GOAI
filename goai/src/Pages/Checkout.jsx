@@ -57,14 +57,7 @@ export default function Checkout() {
         <p>Website: {formData.website}</p>
       </div>
 
-      <div className="details-input mt-3">
-        <h3 className="checkout-heading">Credit Card Information</h3>
-        <p>Card Name:{formData.cardName}</p>
-        <p>Card Number:{formData.cardNumber}</p>
-        <p>Card Name:{formData.cardName}</p>
-        <p>Card Number:{formData.cardNumber}</p>
-        <p></p>
-      </div>
+      
 
       <Link to="/carddetails">
         <button className="place-order-btn">Proceed</button>
