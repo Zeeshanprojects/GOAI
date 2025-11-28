@@ -97,7 +97,7 @@ export default function CAresidents() {
                       <p>Email: legal@goai.global or support@goai.global</p>
                     </li>
                     <li>
-                      <p>Phone: (770) 847-GOAI (4264)</p>
+                      <p>Phone:+1 770 847 GOAI (4264)</p>
                     </li>
                   </ul>
                 </li>
