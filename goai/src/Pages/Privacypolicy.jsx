@@ -332,14 +332,14 @@ export default function Privacypolicy() {
             100% secure.
           </p>
 
-          <h5 className="mt-5">Your responsibilities:</h5>
+          <h3 className=" terms-heading mt-5">Your responsibilities:</h3>
           <p className="text-white">
             Use a unique, strong password; keep your login credentials
             confidential; and promptly notify us of any suspected unauthorized
             access. We are not responsible for activity resulting from
             compromised credentials.
           </p>
-          <h5 className="mt-5">Retention:</h5>
+          <h3 className=" terms-heading mt-5">Retention:</h3>
           <p className="text-white">
             We retain personal information as reasonably necessary to fulfill
             the purposes described in this Policy, comply with legal/contractual
