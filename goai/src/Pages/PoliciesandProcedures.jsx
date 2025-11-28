@@ -197,11 +197,12 @@ export default function PoliciesandProcedures() {
             </li>
             <li>
               <h5>Unsolicited Faxes</h5>
-              <li>
+              
                 {" "}
-                Not permitted except with prior permission or established
-                relationship and where legal.
-              </li>
+                <p>  Not permitted except with prior permission or established
+                relationship and where legal.</p>
+              
+              
             </li>
             <li>
               <h5>GO AI Affiliate</h5>
@@ -265,17 +266,17 @@ export default function PoliciesandProcedures() {
               </p>
             </li>
           </ul>
-          <li>
-            <h5>Conflicts of Interest</h5>
-            <p>
+          
+            <h3 className="terms-heading mt-5">Conflicts of Interest</h3>
+            <p className="text-white">
               Non-solicitation of GO AI Clients/Affiliates for competing offers
               during the Agreement and for 6 months post-termination (except
               personally enrolled). Participation in other programs must remain
               fully separate and compliant. Protect confidential information
               (back-office data and reports).
             </p>
-          </li>
-          <li>
+        <ul>
+            <li>
             <h5>External Use Restriction</h5>
             <p>
               {" "}
@@ -315,6 +316,8 @@ export default function PoliciesandProcedures() {
             <h5>Rewards Buying</h5>
             <p>Prohibited; may result in legal action.</p>
           </li>
+        </ul>
+        
           <h3 className="terms-heading mt-5">Responsibilities of Affiliates</h3>
           <p className="text-white">
             Keep your contact/tax info current; educate your team ethically; no
@@ -489,7 +492,7 @@ export default function PoliciesandProcedures() {
             details. Illustrative examples are available upon request and will
             be delivered with a current Income Disclosure Statement.
           </p>
-          <h3 className="terms-heading mt-5">definitions</h3>
+          <h3 className="terms-heading mt-5">Definitions</h3>
           <p className="text-white">
             Key terms (Glossary) follow the meanings used in this document and
             the current Compensation Plan.
