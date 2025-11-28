@@ -504,7 +504,7 @@ export default function PoliciesandProcedures() {
             
             <li>
               <p>
-                Corporate Address: 30 N Gould St. #57397, Sheridan, WY 82801
+                Corporate Address: GO AI, LLC 30 N Gould St. #57397 Sheridan, WY, 82801
               </p>
             </li>
             <li>
