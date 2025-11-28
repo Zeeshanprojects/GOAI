@@ -399,7 +399,7 @@ export default function Privacypolicy() {
               <p>Email: privacy@goai.global</p>
             </li>
             <li>
-              <p>Mail: GO AI, LLC — Privacy Office, [Insert Mailing Address]</p>
+              <p>Mail: GO AI, LLC Wyoming, USA</p>
             </li>
           </ul>
           <p className="text-white">
