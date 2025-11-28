@@ -237,6 +237,8 @@ export default function TermsandConditions() {
                         will be returned within fourteen (14) business days
                         after we receive your cancellation notice; and
                       </p>
+                      </li>
+                      <li>
                       <p>
                         Any security interest arising out of the transaction
                         will be canceled.

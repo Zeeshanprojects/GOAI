@@ -126,13 +126,13 @@ export default function CAresidents() {
             <h3 className="terms-heading mt-5">
               Categories of personal information involved
             </h3>
-            <p>
+            <p className="text-white text-start">
               Depending on how you interact with us, the following categories
               may be subject to “sale” or “share” (primarily via cookies/SDKs):
             </p>
-            <ul>
+            <ul className="text-start">
               <li>
-                <p>Identifiers (e.g., device identifiers, cookie IDs)</p>
+                <p >Identifiers (e.g., device identifiers, cookie IDs)</p>
               </li>
               <li>
                 <p>
@@ -147,21 +147,22 @@ export default function CAresidents() {
                   content profiles
                 </p>
               </li>
-              <p>
+             
+            </ul>
+             <p className="text-white text-start">
                 We make these categories available to advertising networks,
                 analytics providers, social networks, and similar partners for
                 ad delivery, measurement, and optimization.
               </p>
-            </ul>
             <h3 className="terms-heading mt-5">How we process your request</h3>
-            <ul>
-              <li>
-                <p>
+            <ul className="text-start">
+              <li >
+                <p >
                   Timing: We will process opt-out requests as soon as reasonably
                   possible and within the timelines required by California law.
                 </p>
               </li>
-              <li>
+              <li >
                 <p>
                   Scope: Your “Do Not Sell or Share” choice applies to future
                   collection and disclosure.
@@ -185,21 +186,21 @@ export default function CAresidents() {
               </li>
             </ul>
             <h3 className="terms-heading mt-5">Non-discrimination</h3>
-            <p>
+            <p className="text-white text-start">
               Exercising your privacy rights will not result in us unlawfully
               discriminating against you. However, some site features that rely
               on advertising or personalization partners may be limited if you
               opt out.
             </p>
             <h3 className="terms-heading mt-5">Minors under 16</h3>
-            <p>
+            <p className="text-white text-start">
               We do not knowingly “sell” or “share” the personal information of
               consumers we know are under 16 years old. If you are a parent or
               guardian and believe your child provided personal information to
               us, contact us using the information below.
             </p>
             <h3 className="terms-heading mt-5">More information</h3>
-            <p>
+            <p className="text-white text-start">
               For details about the information we collect, how we use it, and
               your California privacy rights (including right to know/access,
               correction, deletion, appeal, and data retention), please see our

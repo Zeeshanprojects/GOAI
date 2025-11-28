@@ -156,13 +156,15 @@ export default function Footer() {
               {/* Section: Links  */}
               {/* Copyright */}
               {/* FOOTER POLICY LINKS */}
+              
               <div className="footer-links text-center py-3">
+                 <Link to="/termandconditions" className="footer-link">
+                  Terms & Conditions
+                </Link>
                 <Link to="/privacypolicy" className="footer-link">
                   Privacy Policy
                 </Link>
-                <Link to="/termandconditions" className="footer-link">
-                  Terms & Conditions
-                </Link>
+               
                 <Link to="/refundpolicy" className="footer-link">
                   Refund Policy
                 </Link>
