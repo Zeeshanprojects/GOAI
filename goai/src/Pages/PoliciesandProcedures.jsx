@@ -22,7 +22,7 @@ export default function PoliciesandProcedures() {
             </p>
           </div>
           <h3 className="terms-heading mt-5">
-            Who We Are (No Investment Advice)
+            1.&nbsp;Who We Are (No Investment Advice)
           </h3>
           <ol>
             <li>
@@ -63,7 +63,7 @@ export default function PoliciesandProcedures() {
               <p> “Go Beyond”</p>
             </li>
           </ol>
-          <h3 className="terms-heading mt-5">Introduction</h3>
+          <h3 className="terms-heading mt-5">2.&nbsp;Introduction</h3>
           <ul>
             <li>
               <h5> Adherence to Terms & Code of Ethics</h5>
@@ -111,7 +111,7 @@ export default function PoliciesandProcedures() {
               </p>
             </li>
           </ul>{" "}
-          <h3 className="terms-heading mt-5"> Becoming an Affiliate</h3>
+          <h3 className="terms-heading mt-5">3.&nbsp;Becoming an Affiliate</h3>
           <p className="text-white">
             Affiliates are independent contractors and must represent themselves
             as an “Independent GO AI Affiliate.” No one may imply employment or
@@ -147,7 +147,7 @@ export default function PoliciesandProcedures() {
               </p>
             </li>
           </ul>
-          <h3 className="terms-heading mt-5"> Operating Your Business</h3>
+          <h3 className="terms-heading mt-5">4.&nbsp; Operating Your Business</h3>
           <ul>
             <li>
               <h5>Adherence to the Compensation Plan</h5>
@@ -267,7 +267,7 @@ export default function PoliciesandProcedures() {
             </li>
           </ul>
           
-            <h3 className="terms-heading mt-5">Conflicts of Interest</h3>
+            <h3 className="terms-heading mt-5">5.&nbsp;Conflicts of Interest</h3>
             <p className="text-white">
               Non-solicitation of GO AI Clients/Affiliates for competing offers
               during the Agreement and for 6 months post-termination (except
@@ -318,13 +318,13 @@ export default function PoliciesandProcedures() {
           </li>
         </ul>
         
-          <h3 className="terms-heading mt-5">Responsibilities of Affiliates</h3>
+          <h3 className="terms-heading mt-5">6.&nbsp;Responsibilities of Affiliates</h3>
           <p className="text-white">
             Keep your contact/tax info current; educate your team ethically; no
             disparagement; provide current documents to applicants; respect
             privacy; zero tolerance for harassment.
           </p>
-          <h5 className="terms-heading mt-5">Sales Requirements</h5>
+          <h5 className="terms-heading mt-5">7.&nbsp;Sales Requirements</h5>
           <ol>
             <li>
               <h5>Product Sales</h5>
@@ -342,7 +342,7 @@ export default function PoliciesandProcedures() {
               <p>No exclusive territories.</p>
             </li>
           </ol>
-          <h3 className="terms-heading mt-5">Rewards & Commissions</h3>
+          <h3 className="terms-heading mt-5">8.&nbsp;Rewards & Commissions</h3>
           <ul>
             <li>
               <h5>Qualifications & Payouts</h5>
@@ -364,7 +364,7 @@ export default function PoliciesandProcedures() {
           </ul>
           <h3 className="terms-heading mt-5">
             {" "}
-            Product Guarantees, Repurchase & Rescission
+           9.&nbsp; Product Guarantees, Repurchase & Rescission
           </h3>
           <ul>
             <li>
@@ -398,7 +398,7 @@ export default function PoliciesandProcedures() {
           </ul>
           <h3 className="terms-heading mt-5">
             {" "}
-            Dispute Resolution & Disciplinary Proceedings
+           10.&nbsp; Dispute Resolution & Disciplinary Proceedings
           </h3>
           <ul>
             <li>
@@ -465,7 +465,7 @@ export default function PoliciesandProcedures() {
               </p>
             </li>
           </ul>
-          <h3 className="terms-heading mt-5">Payments</h3>
+          <h3 className="terms-heading mt-5">11.&nbsp;Payments</h3>
           <ul className="text-white">
             <h5>Credit Cards & Checking Accounts</h5>
             <p>
@@ -484,7 +484,7 @@ export default function PoliciesandProcedures() {
             </p>
           </ul>
           <h3 className="terms-heading mt-5">
-            GO AI Affiliate Compensation Plan
+            12.&nbsp;GO AI Affiliate Compensation Plan
           </h3>
           <p className="text-white">
             GO AI operates a binary compensation model with two other bonuses to
@@ -492,12 +492,14 @@ export default function PoliciesandProcedures() {
             details. Illustrative examples are available upon request and will
             be delivered with a current Income Disclosure Statement.
           </p>
-          <h3 className="terms-heading mt-5">Definitions</h3>
+          <h3 className="terms-heading mt-5">13.&nbsp;Definitions</h3>
+      
           <p className="text-white">
             Key terms (Glossary) follow the meanings used in this document and
             the current Compensation Plan.
           </p>
-          <h5 className="text-white">Corporate Directory (GO AI)</h5>
+      <ul>
+        <li><h5 className="text-white">Corporate Directory (GO AI)</h5></li>
           <ul>
             
             <li>
@@ -515,6 +517,9 @@ export default function PoliciesandProcedures() {
               <p>Legal/Compliance: legal@goai.global</p>
             </li>
           </ul>
+      </ul>
+          
+        
         </div>
       </section>
     </>
