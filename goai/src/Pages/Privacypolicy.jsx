@@ -33,7 +33,7 @@ export default function Privacypolicy() {
               This Privacy Policy (“Policy”) explains how we collect, use,
               disclose, and protect information about you.
             </p>
-            <h3 className="terms-heading mt-5">INFORMATION WE COLLECT</h3>
+            <h3 className="terms-heading mt-5">1.&nbsp;INFORMATION WE COLLECT</h3>
 
             <p>
               We collect information about you directly from you and
@@ -124,7 +124,7 @@ export default function Privacypolicy() {
               </li>
             </ol>
 
-            <h3 className="terms-heading mt-5">HOW WE USE YOUR INFORMATION</h3>
+            <h3 className="terms-heading mt-5">2.&nbsp;HOW WE USE YOUR INFORMATION</h3>
             <p>
               We may use information we collect about you, including personal
               information, to:
@@ -179,7 +179,7 @@ export default function Privacypolicy() {
               </li>
             </ol>
             <h3 className="terms-heading mt-5">
-              WITH WHOM WE SHARE YOUR INFORMATION
+              3.&nbsp;WITH WHOM WE SHARE YOUR INFORMATION
             </h3>
             <p>
               We do not sell your personal information for money or other
@@ -221,7 +221,7 @@ export default function Privacypolicy() {
                 </p>
               </li>
             </ul>
-            <h3 className="terms-heading mt-5">YOUR RIGHTS AND CHOICES</h3>
+            <h3 className="terms-heading mt-5">4.&nbsp;YOUR RIGHTS AND CHOICES</h3>
             <p>
               Depending on where you live, you may have certain rights under
               local data protection laws (e.g., GDPR/UK GDPR, CCPA/CPRA, and
@@ -323,7 +323,7 @@ export default function Privacypolicy() {
             </p>
           </div>
           <h3 className="terms-heading mt-5">
-            SECURITY AND STORAGE OF INFORMATION
+            5.&nbsp;SECURITY AND STORAGE OF INFORMATION
           </h3>
           <p className="text-white">
             We take the security of your personal information seriously and use
@@ -333,14 +333,14 @@ export default function Privacypolicy() {
             100% secure.
           </p>
 
-          <h3 className=" terms-heading mt-5">Your responsibilities:</h3>
+          <h3 className=" terms-heading mt-5">6.&nbsp;Your responsibilities:</h3>
           <p className="text-white">
             Use a unique, strong password; keep your login credentials
             confidential; and promptly notify us of any suspected unauthorized
             access. We are not responsible for activity resulting from
             compromised credentials.
           </p>
-          <h3 className=" terms-heading mt-5">Retention:</h3>
+          <h3 className=" terms-heading mt-5">7.&nbsp;Retention:</h3>
           <p className="text-white">
             We retain personal information as reasonably necessary to fulfill
             the purposes described in this Policy, comply with legal/contractual
@@ -348,7 +348,7 @@ export default function Privacypolicy() {
             applicable limitation periods.
           </p>
 
-          <h3 className="terms-heading mt-5">THIRD-PARTY WEBSITES</h3>
+          <h3 className="terms-heading mt-5">8.&nbsp;THIRD-PARTY WEBSITES</h3>
           <p className="text-white">
             The Website may contain links to third-party websites or
             applications. Your use of those properties is governed by their
@@ -356,7 +356,7 @@ export default function Privacypolicy() {
             responsible for the information practices of those third parties.
           </p>
           <h3 className="terms-heading mt-5">
-            TRANSFERS OF YOUR INFORMATION (INCLUDING PAYMENTS)
+            9.&nbsp;TRANSFERS OF YOUR INFORMATION (INCLUDING PAYMENTS)
           </h3>
           <p className="text-white">
             GO AI is based in the United States. Your information may be
@@ -371,14 +371,14 @@ export default function Privacypolicy() {
             Our processors—and GO AI—endeavor to maintain PCI compliance at the
             levels required by the PCI Security Standards Council.
           </p>
-          <h3 className="terms-heading mt-5">DO NOT TRACK</h3>
+          <h3 className="terms-heading mt-5">10.&nbsp;DO NOT TRACK</h3>
           <p className="text-white">
             There is currently no universally accepted standard for responding
             to “Do Not Track” signals. Accordingly, we do not respond to DNT
             signals at this time.
           </p>
           <h3 className="terms-heading mt-5">
-            CHILDREN AND PRIVACY 
+            11.&nbsp;CHILDREN AND PRIVACY 
           </h3>
           <p className="text-white">The Website and Services are not directed to
             children under eighteen (18) years of age, and we do not knowingly
@@ -391,7 +391,7 @@ export default function Privacypolicy() {
 "
             ></a></p>
           <h3 className="terms-heading mt-5">
-            CONTACT INFORMATION & CHANGES TO THIS POLICY
+            12.&nbsp;CONTACT INFORMATION & CHANGES TO THIS POLICY
           </h3>
           <p className="text-white">How to Contact Us (including rights requests)</p>
           <ul className="text-white">
