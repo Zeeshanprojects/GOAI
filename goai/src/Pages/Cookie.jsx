@@ -132,6 +132,7 @@ export default function Cookie() {
                 may vary by vendor.
               </p>
             </li>
+            </ul>
             <h3 className="terms-heading mt-5">
               8. How to manage your choices
             </h3>
@@ -161,8 +162,10 @@ export default function Cookie() {
                   links (when applicable).
                 </p>
               </li>
-              <li>
-                <h5>9. Do Not Sell or Share (CA)</h5>
+             
+            </ul>
+           
+                <h3 className="terms-heading">9. Do Not Sell or Share (CA)</h3>
                 <p className="text-white">
                   California residents can opt out of the “sale” or “sharing” of
                   personal information for advertising at any time via:
@@ -181,8 +184,7 @@ export default function Cookie() {
                     </p>
                   </li>
                 </ul>
-              </li>
-            </ul>
+      
             <h3 className="terms-heading mt-5">10. Children</h3>
             <p className="text-white">
               Our services are not directed to children, and we do not knowingly
@@ -206,7 +208,7 @@ export default function Cookie() {
                 <p>Support: support@goai.global</p>
               </li>
             </ul>
-          </ul>
+       
         </div>
       </section>
     </>
