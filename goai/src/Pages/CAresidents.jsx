@@ -33,7 +33,7 @@ export default function CAresidents() {
                 rights mean and how to use them.
               </p>
               <h3 className="terms-heading-mt-5">
-                What counts as a “sale” or “share” here?
+               1.&nbsp; What counts as a “sale” or “share” here?
               </h3>
               <p>
                 Under California law, a “sale” can include letting advertising
@@ -49,7 +49,7 @@ export default function CAresidents() {
               </p>
 
               <h3 className="terms-heading-mt-5">
-                Your choices (how to opt out)
+                2.&nbsp;Your choices (how to opt out)
               </h3>
               <p>
                 You can tell us “Do Not Sell or Share” using any of the
@@ -110,7 +110,7 @@ export default function CAresidents() {
                 </p>
               </ul>
               <h3 className="terms-heading mt-5">
-                Right to limit the use and disclosure of Sensitive Personal
+                3.&nbsp;Right to limit the use and disclosure of Sensitive Personal
                 Information
               </h3>
               <p>
@@ -124,7 +124,7 @@ export default function CAresidents() {
               </p>
             </div>
             <h3 className="terms-heading mt-5">
-              Categories of personal information involved
+              4.&nbsp;Categories of personal information involved
             </h3>
             <p className="text-white text-start">
               Depending on how you interact with us, the following categories
@@ -154,7 +154,7 @@ export default function CAresidents() {
                 analytics providers, social networks, and similar partners for
                 ad delivery, measurement, and optimization.
               </p>
-            <h3 className="terms-heading mt-5">How we process your request</h3>
+            <h3 className="terms-heading mt-5">5.&nbsp;How we process your request</h3>
             <ul className="text-start">
               <li >
                 <p >
@@ -185,21 +185,21 @@ export default function CAresidents() {
                 </p>
               </li>
             </ul>
-            <h3 className="terms-heading mt-5">Non-discrimination</h3>
+            <h3 className="terms-heading mt-5">6.&nbsp;Non-discrimination</h3>
             <p className="text-white text-start">
               Exercising your privacy rights will not result in us unlawfully
               discriminating against you. However, some site features that rely
               on advertising or personalization partners may be limited if you
               opt out.
             </p>
-            <h3 className="terms-heading mt-5">Minors under 16</h3>
+            <h3 className="terms-heading mt-5">7.&nbsp;Minors under 16</h3>
             <p className="text-white text-start">
               We do not knowingly “sell” or “share” the personal information of
               consumers we know are under 16 years old. If you are a parent or
               guardian and believe your child provided personal information to
               us, contact us using the information below.
             </p>
-            <h3 className="terms-heading mt-5">More information</h3>
+            <h3 className="terms-heading mt-5">8.&nbsp;More information</h3>
             <p className="text-white text-start">
               For details about the information we collect, how we use it, and
               your California privacy rights (including right to know/access,
