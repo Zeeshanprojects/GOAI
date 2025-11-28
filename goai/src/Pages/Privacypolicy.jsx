@@ -231,8 +231,9 @@ export default function Privacypolicy() {
               laws to determine which rights may be available and any
               limitations.
             </p>
+             <h5 className="mt-4">A. Examples of Rights That May Apply</h5>
             <ul>
-              <h5 className="mt-4">A. Examples of Rights That May Apply</h5>
+             
               <ul>
                 <li>
                   <p>
