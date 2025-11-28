@@ -203,7 +203,7 @@ export default function Home() {
       title: "Go Connect",
       price: "$350",
       fee: "Initial Fee",
-      features: ["More Education", "More Alerts"],
+      features: ["Education", "Alerts"],
       orb: "/orb2.png",
     },
     {
@@ -211,7 +211,7 @@ export default function Home() {
       title: "Go Create",
       price: "$1000",
       fee: "Initial Fee",
-      features: ["More Education", "More Alerts", "More Software"],
+      features: ["More Education", "More Alerts", "Software"],
       orb: "/orb3.png",
     },
     {
@@ -289,7 +289,7 @@ export default function Home() {
           <h1 className="title">Mission</h1>
 
           <p>
-            To reinvent wealth through intelligence
+           <p> To reinvent wealth through intelligence</p>
             GO AI exists to merge financial education, trading technology, and
             human potential into a single ecosystem of empowerment. We engineer
             prosperity through community, automation, and data-driven precision.

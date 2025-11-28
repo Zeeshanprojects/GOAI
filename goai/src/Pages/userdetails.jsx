@@ -35,10 +35,7 @@ export default function Userdetails() {
     mobile: "",
     email: "",
     confirmEmail: "",
-    cardName: "",
-    expiry: "",
-    cvv: "",
-    cardNumber: "",
+  
   });
 
   const handleChange = (e) => {
@@ -59,10 +56,8 @@ export default function Userdetails() {
       !form.address1 ||
       !form.city ||
       !form.email ||
-      !form.phone ||
-      !form.cardName ||
-      !form.cardNumber ||
-      !form.cvv
+      !form.phone 
+     
     ) {
       showError("Please fill all required fields.");
       return;
@@ -282,51 +277,7 @@ export default function Userdetails() {
         </div>
       </div>
 
-      {/* CARD INFO */}
-      <h3 className="details-section-heading">Credit Card Information</h3>
-      <div className="details-grid">
-        <div className="details-field">
-          <label className="details-label">Name on Card *</label>
-          <input
-            name="cardName"
-            onChange={handleChange}
-            placeholder="e.g., John Doe"
-            className="details-input"
-          />
-        </div>
-
-        <div className="details-field">
-          <label className="details-label">Card Number *</label>
-          <input
-            name="cardNumber"
-            onChange={handleChange}
-            placeholder="1234 5678 9012 3456"
-            maxLength="19"
-            className="details-input"
-          />
-        </div>
-
-        <div className="details-field">
-          <label className="details-label">CVV *</label>
-          <input
-            name="cvv"
-            onChange={handleChange}
-            placeholder="3 or 4 digits"
-            maxLength="4"
-            className="details-input"
-          />
-        </div>
-
-        <div className="details-field">
-          <label className="details-label">Billing ZIP / Postal Code</label>
-          <input
-            name="zip"
-            onChange={handleChange}
-            placeholder="e.g., 75001"
-            className="details-input"
-          />
-        </div>
-      </div>
+     
 
       <div className="details-buttons">
         <button className="details-btn back-btn" onClick={() => navigate(-1)}>

@@ -87,6 +87,7 @@ export default function Footer() {
                           <i className="fab fa-telegram" />
                         </Link>
                       </div>
+                      <img src={Images.cardlogos} alt="cardlogo" className="card-logos mt-3"/>
                     </div>
 
                     <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
@@ -142,7 +143,9 @@ export default function Footer() {
                         <i className="fas fa-envelope mr-3" /> info@goai.com
                       </p>
                       <p>
-                        <i className="fas fa-phone mr-3" /> + 01 234 567 88
+                        <i className="fas fa-phone mr-3" /> 
++1 770 847 GOAI (4264)
+
                       </p>
                     </div>
                     {/* Grid column */}

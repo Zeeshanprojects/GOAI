@@ -199,7 +199,7 @@ export default function Membership() {
       title: "Go Connect",
       price: "$350",
       fee: "Initial Fee",
-      features: ["More Education", "More Alerts"],
+      features: ["Education", "Alerts"],
       orb: "/orb2.png",
     },
     {
@@ -207,7 +207,7 @@ export default function Membership() {
       title: "Go Create",
       price: "$1000",
       fee: "Initial Fee",
-      features: ["More Education", "More Alerts", "More Software"],
+      features: ["More Education", "More Alerts", "Software"],
       orb: "/orb3.png",
     },
     {
