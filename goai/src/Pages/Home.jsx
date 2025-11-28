@@ -289,7 +289,7 @@ export default function Home() {
           <h1 className="title">Mission</h1>
 
           <p>
-            <h6>To reinvent wealth through intelligence.</h6>
+            To reinvent wealth through intelligence
             GO AI exists to merge financial education, trading technology, and
             human potential into a single ecosystem of empowerment. We engineer
             prosperity through community, automation, and data-driven precision.
