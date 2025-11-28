@@ -110,13 +110,16 @@ export default function RefundPolicy() {
                 We may ask you to complete an attestation regarding usage (e.g.,
                 course progress, software activity).
               </li>
-              <p>
+              <li>
+                  <p>
                 Our team will review eligibility and respond via email. If
                 approved, refunds are issued to the original payment method
                 (except crypto, which is not refundable). Depending on your bank
                 or card issuer, it can take 5–10 business days to appear on your
                 statement.
               </p>
+              </li>
+            
               <li>Requests submitted after the 7-day window.</li>
             </ul>
             <h3 className="terms-heading mt-5">Cancellations</h3>

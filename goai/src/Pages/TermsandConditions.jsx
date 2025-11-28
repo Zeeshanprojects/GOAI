@@ -21,11 +21,9 @@ export default function TermsandConditions() {
           {/* PAGE HEADER */}
           <div className="text-center">
             <h1 className="title">GO AI, LLC Terms and Conditions</h1>
-          <p className="text-white">
-            <span className="fw-bold">Last Updated: November 25, 2025</span>
-          </p>
-              
-          
+            <p className="text-white">
+              <span className="fw-bold">Last Updated: November 25, 2025</span>
+            </p>
           </div>
 
           {/* MAIN CONTENT */}
@@ -45,7 +43,7 @@ export default function TermsandConditions() {
             Documents”). If you do not agree to all of the terms in this
             Agreement, you must not complete your purchase or use the Services.
             <h3 className="terms-heading mt-5">
-              Who We Are (No Investment Advice)
+              1.&nbsp;Who We Are (No Investment Advice)
             </h3>
             <p>
               GO AI, LLC is an e-commerce company providing subscription-based
@@ -63,7 +61,7 @@ export default function TermsandConditions() {
               consult your own qualified financial, tax, and legal advisors
               before making any investment
             </p>
-            <h3 className="terms-heading mt-5">2. Eligibility</h3>
+            <h3 className="terms-heading mt-5">2. &nbsp;Eligibility</h3>
             <p>
               By using the Website, creating an account, or making a purchase,
               you represent and warrant that:
@@ -83,7 +81,7 @@ export default function TermsandConditions() {
               </ul>
             </p>
             <h3 className="terms-heading mt-5">
-              3. Account Registration & Security
+              3.&nbsp; Account Registration & Security
             </h3>
             <p>
               You may be required to create an account to access certain
@@ -111,7 +109,7 @@ export default function TermsandConditions() {
               safeguard your login credentials.
             </p>
             <h3 className="terms-heading mt-5">
-              4. Products, Subscriptions & Auto-Renewal
+              4.&nbsp; Products, Subscriptions & Auto-Renewal
             </h3>
             <ol>
               <li>
@@ -173,7 +171,7 @@ export default function TermsandConditions() {
               </li>
             </ol>
             <h3 className="terms-heading mt-5">
-              5. Pricing, Payments & Billing Authorization
+              5.&nbsp; Pricing, Payments & Billing Authorization
             </h3>
             <ul>
               <li>
@@ -199,7 +197,7 @@ export default function TermsandConditions() {
               </li>
             </ul>
             <h3 className="terms-heading mt-5">
-              6. Refunds, Cancellations & Chargebacks
+              6.&nbsp; Refunds, Cancellations & Chargebacks
             </h3>
             <p>
               To the extent of any inconsistency, the specific purchase terms in
@@ -237,8 +235,8 @@ export default function TermsandConditions() {
                         will be returned within fourteen (14) business days
                         after we receive your cancellation notice; and
                       </p>
-                      </li>
-                      <li>
+                    </li>
+                    <li>
                       <p>
                         Any security interest arising out of the transaction
                         will be canceled.
@@ -283,7 +281,7 @@ export default function TermsandConditions() {
               </li>
             </ol>
             <h3 className="terms-heading mt-5">
-              7. Consent to Electronic Agreement & Communications
+              7.&nbsp; Consent to Electronic Agreement & Communications
             </h3>
             <p>
               By selecting the “I have read and AGREE” option on the enrollment
@@ -314,7 +312,7 @@ export default function TermsandConditions() {
               about marketing messages and opt-out rights.
             </p>
             <h3 className="terms-heading mt-5">
-              8. License to Use the Services & Software
+              8.&nbsp; License to Use the Services & Software
             </h3>
             <p>
               Subject to your compliance with this Agreement and timely payment
@@ -369,7 +367,7 @@ export default function TermsandConditions() {
                 Use the Services for any unlawful, harmful, or prohibited purpos
               </li>
             </ul>
-            <h3 className="terms-heading mt-5">9. Your Content & AI Outputs</h3>
+            <h3 className="terms-heading mt-5">9.&nbsp; Your Content & AI Outputs</h3>
             <ol>
               <li>
                 <h5>Your Content.</h5>
@@ -424,7 +422,7 @@ export default function TermsandConditions() {
               </li>
             </ol>
             <h3 className="terms-heading mt-5">
-              10. Acceptable Use & Prohibited Activities
+              10.&nbsp; Acceptable Use & Prohibited Activities
             </h3>
             <p>You agree not to use the Website or Services to:</p>
             <ul>
@@ -475,7 +473,7 @@ export default function TermsandConditions() {
             We may investigate suspected violations, and we reserve the right to
             suspend or terminate access for any violation of this Agreement.
             <h3 className="terms-heading mt-5">
-              11. No Investment Advice & Trading Risks (Reaffirmed)
+              11.&nbsp; No Investment Advice & Trading Risks (Reaffirmed)
             </h3>
             <p>
               There is a very high degree of risk involved in trading securities
@@ -506,7 +504,7 @@ export default function TermsandConditions() {
                 </p>
               </li>
             </ul>
-            <h3 className="terms-heading mt-5">12. Intellectual Property</h3>
+            <h3 className="terms-heading mt-5">12.&nbsp;Intellectual Property</h3>
             <p>
               The Company (and its licensors, where applicable) owns all rights,
               title, and interest in and to the Services, including software,
@@ -534,7 +532,7 @@ export default function TermsandConditions() {
               </p>
             </p>
             <h3 className="terms-heading mt-5">
-              13. Third-Party Services & Links
+              13.&nbsp; Third-Party Services & Links
             </h3>
             <p>
               The Website and Services may contain links to or integrations with
@@ -560,7 +558,7 @@ export default function TermsandConditions() {
             their own terms and privacy policies.
             <ul></ul>
             <h3 className="terms-heading mt-5">
-              14. Availability, Support & Updates
+              14.&nbsp; Availability, Support & Updates
             </h3>
             <p>
               We strive for high availability but do not guarantee
@@ -584,7 +582,7 @@ export default function TermsandConditions() {
                 </p>
               </li>
             </ul>
-            <h3 className="terms-heading mt-5">15. Confidentiality</h3>
+            <h3 className="terms-heading mt-5">15.&nbsp; Confidentiality</h3>
             <p>
               Where either party receives non-public information from the other
               that is marked or reasonably understood as confidential
@@ -609,7 +607,7 @@ export default function TermsandConditions() {
               you consent to our data practices described there.
             </p>
             <h3 className="terms-heading mt-5">
-              17. Communications & Anti-Spam Policy
+              17.&nbsp; Communications & Anti-Spam Policy
             </h3>
             <p>
               This section incorporates our Spam Policy and applies to all
@@ -800,7 +798,7 @@ export default function TermsandConditions() {
               </li>
             </ul>
             <h3 className="terms-heading mt-5">
-              18. Compliance, Export & Sanctions
+              18.&nbsp; Compliance, Export & Sanctions
             </h3>
             <p>
               You represent that you are not subject to U.S. sanctions and will
@@ -808,7 +806,7 @@ export default function TermsandConditions() {
               connection with your use of the Services.
             </p>
             <h3 className="terms-heading mt-5">
-              19. DMCA / Copyright Complaints
+              19.&nbsp; DMCA / Copyright Complaints
             </h3>
             <p>
               If you believe that any content on the Services infringes your
@@ -848,7 +846,7 @@ export default function TermsandConditions() {
                 </p>
               </li>
             </ol>
-            <h3 className="terms-heading mt-5">20.Disclaimers of Warranties</h3>
+            <h3 className="terms-heading mt-5">20. &nbsp;Disclaimers of Warranties</h3>
             <p>
               THE WEBSITE, SERVICES, SOFTWARE, INFORMATION, CONTENT, AND OUTPUTS
               ARE PROVIDED “AS IS” AND “AS AVAILABLE”, WITHOUT WARRANTY OF ANY
@@ -882,7 +880,7 @@ export default function TermsandConditions() {
               complete. You are responsible for verifying and evaluating any
               Outputs or Information before relying on them.
             </p>{" "}
-            <h3 className="terms-heading mt-5">21. Limitation of Liability</h3>
+            <h3 className="terms-heading mt-5">21.&nbsp; Limitation of Liability</h3>
             <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW:</p>
             <ul>
               <li>
@@ -909,7 +907,7 @@ export default function TermsandConditions() {
               cases, our liability will be limited to the greatest extent
               permitted by applicable law.
             </p>
-            <h3 className="terms-heading mt-5">22. Indemnification</h3>
+            <h3 className="terms-heading mt-5">22.&nbsp; Indemnification</h3>
             <p>
               You agree to indemnify, defend, and hold harmless GO AI and its
               officers, directors, employees, agents, affiliates, licensors, and
@@ -931,7 +929,7 @@ export default function TermsandConditions() {
                 <p>Your violation of law or any third-party rights.</p>
               </li>
             </ul>
-            <h3 className="terms-heading mt-5">23. Termination & Suspension</h3>
+            <h3 className="terms-heading mt-5">23.&nbsp; Termination & Suspension</h3>
             <p>
               You may stop using the Services at any time. We may suspend or
               terminate your access (with or without notice) if we believe you:
@@ -961,7 +959,7 @@ export default function TermsandConditions() {
               </li>
             </ul>
             <h3 className="terms-heading mt-5">
-              24. Governing Law & Dispute Resolution
+              24.&nbsp; Governing Law & Dispute Resolution
             </h3>
             <ol>
               <li>
@@ -1023,7 +1021,7 @@ export default function TermsandConditions() {
               </li>
             </ol>
             <h3 className="terms-heading mt-5">
-              25. Changes to the Services or This Agreement
+              25.&nbsp; Changes to the Services or This Agreement
             </h3>
             <p>
               We may revise and update this Agreement and/or update the Services
@@ -1034,7 +1032,7 @@ export default function TermsandConditions() {
               notice. Your continued use of the Website or Services after the
               effective date constitutes acceptance of the revised terms.
             </p>
-            <h3 className="terms-heading mt-5">26. Miscellaneous</h3>
+            <h3 className="terms-heading mt-5">26.&nbsp; Miscellaneous</h3>
             <ul>
               <li>
                 <h5>Entire Agreement.</h5>
@@ -1095,7 +1093,7 @@ export default function TermsandConditions() {
                 </p>
               </li>
             </ul>
-            <h3 className="terms-heading mt-5">27. Contact Information</h3>
+            <h3 className="terms-heading mt-5">27.&nbsp; Contact Information</h3>
             <p>
               If you have questions about this Agreement or the Services, you
               may contact us at:

@@ -21,7 +21,7 @@ export default function Cookie() {
               <span className="fw-bold">Last Updated: November 25, 2025</span>
             </p>
           </div>
-          <h3 className="terms-heading mt-5">1. What this policy covers</h3>
+          <h3 className="terms-heading mt-5">1.&nbsp; What this policy covers</h3>
           <p className="text-white"> 
             This Cookie Policy explains how we use cookies and similar
             technologies on goai.global and any sub-pages that link to it. It
@@ -30,7 +30,7 @@ export default function Cookie() {
             broadly, see our Privacy Policy
           </p>
           <h3 className="terms-heading mt-5">
-            2. What are cookies and similar technologies?
+            2.&nbsp; What are cookies and similar technologies?
           </h3>
           <ul>
             <li>
@@ -46,7 +46,7 @@ export default function Cookie() {
               </p>
             </li>
           </ul>
-          <h3 className="terms-heading mt-5">3. Why do we use them</h3>
+          <h3 className="terms-heading mt-5">3.&nbsp; Why do we use them</h3>
           <p className="text-white">We use cookies for the following purposes:</p>
           <ol>
             <li>
@@ -78,7 +78,7 @@ export default function Cookie() {
               </p>
             </li>
           </ol>
-          <h3 className="terms-heading mt-5">4. Legal basis (EEA/UK visitors)</h3>
+          <h3 className="terms-heading mt-5">4.&nbsp; Legal basis (EEA/UK visitors)</h3>
           <p className="text-white">
             For visitors in the EEA/UK, we place non-essential cookies
             (Performance, Functional, Advertising) only where you give consent
@@ -87,7 +87,7 @@ export default function Cookie() {
             service you request.
           </p>
           <h3 className="terms-heading mt-5">
-            5. “Sale/Share” (California, CPRA)
+            5.&nbsp; “Sale/Share” (California, CPRA)
           </h3>
           <p className="text-white">
             Some advertising and analytics cookies may constitute a “sale” or
@@ -96,7 +96,7 @@ export default function Cookie() {
             “Do Not Sell or Share My Personal Information” link or via Cookie
             Preferences (see Section 8).
           </p>
-          <h3 className="terms-heading mt-5">6. Cookies we use (examples)</h3>
+          <h3 className="terms-heading mt-5">6.&nbsp; Cookies we use (examples)</h3>
           <p className="text-white">
             Your exact list may vary over time; your Cookie Preferences panel
             will always show the current, authoritative list.
@@ -120,7 +120,7 @@ export default function Cookie() {
             change. Always check the live Cookie Preferences center for the
             current vendors, purposes, and lifetimes.
           </p>
-          <h3 className="terms-heading mt-5">7. Cookie duration</h3>
+          <h3 className="terms-heading mt-5">7.&nbsp; Cookie duration</h3>
           <ul>
             <li>
               <p>Session cookies expire when you close your browser.</p>
@@ -134,7 +134,7 @@ export default function Cookie() {
             </li>
             </ul>
             <h3 className="terms-heading mt-5">
-              8. How to manage your choices
+              8.&nbsp; How to manage your choices
             </h3>
             <ul>
               <li>
@@ -165,7 +165,7 @@ export default function Cookie() {
              
             </ul>
            
-                <h3 className="terms-heading">9. Do Not Sell or Share (CA)</h3>
+                <h3 className="terms-heading">9.&nbsp; Do Not Sell or Share (CA)</h3>
                 <p className="text-white">
                   California residents can opt out of the “sale” or “sharing” of
                   personal information for advertising at any time via:
@@ -185,20 +185,20 @@ export default function Cookie() {
                   </li>
                 </ul>
       
-            <h3 className="terms-heading mt-5">10. Children</h3>
+            <h3 className="terms-heading mt-5">10.&nbsp; Children</h3>
             <p className="text-white">
               Our services are not directed to children, and we do not knowingly
               place targeting cookies on users under the age required by
               applicable law.
             </p>
-            <h3 className="terms-heading mt-5">11. Updates to this policy</h3>
+            <h3 className="terms-heading mt-5">11.&nbsp; Updates to this policy</h3>
             <p className="text-white">
               We may update this policy from time to time (for example, if we
               add or remove vendors or technologies). Changes will be posted
               here with a new “Effective date.” Material changes may also be
               highlighted in the banner or by other reasonable means.
             </p>
-            <h3 className="terms-heading mt-5">12. How to contact us</h3>
+            <h3 className="terms-heading mt-5">12.&nbsp; How to contact us</h3>
             <p className="text-white"> Questions about this Cookie Policy?</p>
             <ul>
               <li>
