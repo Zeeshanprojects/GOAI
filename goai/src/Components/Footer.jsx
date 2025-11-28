@@ -136,15 +136,14 @@ export default function Footer() {
                         }}
                       />
                       <p>
-                        <i className="fas fa-home mr-3" /> GO AI, LLC Wyoming, USA
+                        <i className="fas fa-home mr-3" />&nbsp;GO AI, LLC Wyoming, USA
 
                       </p>
                       <p>
-                        <i className="fas fa-envelope mr-3" /> info@goai.com
+                        <i className="fas fa-envelope mr-3" />&nbsp;info@goai.com
                       </p>
                       <p>
-                        <i className="fas fa-phone mr-3" /> 
-+1 770 847 GOAI (4264)
+                        <i className="fas fa-phone mr-3" />&nbsp;+1 770 847 GOAI (4264)
 
                       </p>
                     </div>
