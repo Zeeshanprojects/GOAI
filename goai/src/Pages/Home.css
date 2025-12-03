@@ -1324,7 +1324,7 @@ a {
 }
 .orbits {
   display: flex;
-  gap: 15px;
+  gap: 4px;
 }
 
 .orbits img {
